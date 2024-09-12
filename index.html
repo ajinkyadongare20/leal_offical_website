@@ -1,0 +1,877 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Project Leal</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Ubuntu:wght@500;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Stylesheet Montserrat -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Spinner Start -->
+    <div id="spinner"
+        class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-grow text-primary" style="width: 3rem; height: 3rem;" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+    </div>
+    <!-- Spinner End -->
+
+
+    <!-- Navbar Start -->
+    <div class="container-fluid sticky-top">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-dark p-0">
+                <a href="index.html" class="navbar-brand">
+                    <img src="img/index_images/leal-software-logo.jpg" alt="Button Image" class="animated slideInDown">
+                </a>
+                <button type="button" class="navbar-toggler ms-auto me-0" data-bs-toggle="collapse"
+                    data-bs-target="#navbarCollapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <div class="navbar-nav ms-auto">
+                        <a href="index.html" class="nav-item nav-link active">Home</a>
+                        <a href="service.html" class="nav-item nav-link">Services</a>
+                        <a href="product.html" class="nav-item nav-link">Product</a>
+                        <a href="research.html" class="nav-item nav-link">Research</a>
+                        <a href="about.html" class="nav-item nav-link">About</a>
+                        <a href="career.html" class="nav-item nav-link">Career</a>
+                        <a href="blogs.html" class="nav-item nav-link">Blogs</a>
+                        <a href="contact.html" class="nav-item nav-link">Contact US</a>
+                    </div>
+                    <butaton type="button" class="btn text-white p-0 d-none d-lg-block" data-bs-toggle="modal"
+                        data-bs-target="#searchModal"><i class="fa fa-search"></i></butaton>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <!-- Navbar End -->
+
+
+    <!-- Hero Start -->
+    <div class="container-fluid pt-5 bg-primary hero-header">
+        <div class="container pt-5">
+            <div class="row g-5 pt-5">
+                <div class="col-lg-6 align-self-center text-center text-lg-start mb-lg-5">
+                    <!-- <div class="btn btn-sm border rounded-pill text-white px-3 mb-3 animated fadeInLeftBig">Banner</div> -->
+                    <h1 class="display-4 text-white mb-4 animated fadeInLeftBig">Leal Software Solution</h1>
+                    <p class="text-white mb-4 animated fadeInLeftBig">Leal Software Solution Offers Straightforward
+                        Industrial Refrigeration Solutions Tailored For Efficiency And Reliability. We Streamline
+                        Complex Systems, Ensuring Seamless Performance And Minimal Downtime. Trust Us To Simplify Your
+                        Refrigeration Needs With Innovative Technology And Expert Support For Optimal Cooling And Energy
+                        Savings.</p>
+                    <a href="" class="btn btn-light py-sm-3 px-sm-5 rounded-pill me-3 animated fadeInLeftBig">Read
+                        More</a>
+                    <a href="" class="btn btn-outline-light py-sm-3 px-sm-5 rounded-pill animated fadeInLeftBig">About
+                        More</a>
+                </div>
+                <div class="col-lg-6 align-self-end text-center text-lg-end wow fadeInRightBig">
+                    <img class="img-fluid" src="img/home-banner.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Hero End -->
+
+
+    <!-- Full Screen Search Start -->
+    <div class="modal fade" id="searchModal" tabindex="-1">
+        <div class="modal-dialog modal-fullscreen">
+            <div class="modal-content" style="background: rgba(20, 24, 62, 0.7);">
+                <div class="modal-header border-0">
+                    <button type="button" class="btn btn-square bg-white btn-close" data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+                </div>
+                <div class="modal-body d-flex align-items-center justify-content-center">
+                    <div class="input-group" style="max-width: 600px;">
+                        <input type="text" class="form-control bg-transparent border-light p-3"
+                            placeholder="Type search keyword">
+                        <button class="btn btn-light px-4"><i class="bi bi-search"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Full Screen Search End -->
+
+
+    <!-- About Start -->
+    <section class="bg-light py-4">
+        <div class="container my-5">
+            <div class="row text-center">
+                <!-- Our Mission Box -->
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="section-box">
+                        <h3 class="fw-bold">Our Mission</h3>
+                        <div class="section-line"></div>
+                        <p>Our mission is to empower businesses with innovative software solutions that enhance
+                            efficiency,
+                            drive growth, and deliver exceptional value through cutting-edge technology and dedicated
+                            support.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Our Values Box -->
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="section-box">
+                        <h3 class="fw-bold">Our Values</h3>
+                        <div class="section-line"></div>
+                        <p>Our values are innovation, integrity, customer-centricity, collaboration, and excellence. We
+                            strive to
+                            deliver top-tier software solutions while maintaining a commitment to ethical practices and
+                            outstanding
+                            customer service.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Consulting Box -->
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="section-box">
+                        <h3 class="fw-bold">Consulting</h3>
+                        <div class="section-line"></div>
+                        <p>Our consulting services focus on providing expert guidance and tailored strategies to help
+                            businesses
+                            optimize their operations, embrace digital transformation, and achieve their goals with
+                            confidence and
+                            efficiency.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Business Goals Box -->
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="section-box">
+                        <h3 class="fw-bold">Business Goals</h3>
+                        <div class="section-line"></div>
+                        <p>Our business goals are to drive technological innovation, foster long-term client
+                            partnerships,
+                            expand
+                            our global presence, and continuously improve our services to deliver maximum value and
+                            impact
+                            for
+                            our clients.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- About End -->
+
+
+    <!--  -->
+    <section class="strategy-section">
+        <h1 class="strategy-heading" style="font-size: 2.5rem; color: rgb(63, 63, 63);">What <span class="highlight-red"
+                style="color: red;">is</span> a <span class="highlight-blue" style="color: #007bff;;">business growth
+                strategy</span>?</h1>
+
+        <p class="strategy-desc">
+            The result of our company branding process is a comprehensive brand guideline that can be used to design a
+            Marketing Website and other design assets like brand illustrations that reflect the new brand.
+        </p>
+
+        <div class="container">
+            <div class="row justify-content-center py-5">
+                <!-- Box 1 -->
+                <div class="col-md-4 my-3">
+                    <div class="strategy-box bg-lightdark text-dark m-0" data-id="box-1">
+                        <div class="strategy-info">
+                        </div>
+                        <img src="img/team-1.jpg" alt="Software Development Image">
+                        <h4>Software Development</h4>
+                        <p>Our team specializes in creating custom applications that drive efficiency and growth...
+                            Software Development: Our team creates custom applications to drive efficiency and growth.
+                            From concept to deployment, we deliver scalable, high-performance software tailored to your
+                            needs.</p>
+                    </div>
+                </div>
+
+                <!-- Box 2 -->
+                <div class="col-md-4 my-3">
+                    <div class="strategy-box bg-danger-custom m-0" data-id="box-2">
+                        <div class="strategy-info">
+                        </div>
+                        <img src="img/team-2.jpg" alt="App Development Image">
+                        <h4>App Development</h4>
+                        <p>Our team specializes in creating custom applications that drive efficiency and growth...
+                            Software Development: Our team creates custom applications to drive efficiency and growth.
+                            From concept to deployment, we deliver scalable, high-performance software tailored to your
+                            needs.</p>
+                    </div>
+                </div>
+
+                <!-- Box 3 -->
+                <div class="col-md-4 my-3">
+                    <div class="strategy-box bg-lightdark text-dark m-0" data-id="box-3">
+                        <div class="strategy-info">
+                        </div>
+                        <img src="img/team-1.jpg" alt="Mobility Services Image">
+                        <h4>Mobility Services</h4>
+                        <p>Our team specializes in creating custom applications that drive efficiency and growth...
+                            Software Development: Our team creates custom applications to drive efficiency and growth.
+                            From concept to deployment, we deliver scalable, high-performance software tailored to your
+                            needs.</p>
+                    </div>
+                </div>
+
+                <!-- Box 4 -->
+                <div class="col-md-4 my-3">
+                    <div class="strategy-box bg-danger-custom m-0" data-id="box-4">
+                        <div class="strategy-info">
+                        </div>
+                        <img src="img/team-4.jpg" alt="Web Development Image">
+                        <h4>Web Development</h4>
+                        <p>Our team specializes in creating custom applications that drive efficiency and growth...
+                            Software Development: Our team creates custom applications to drive efficiency and growth.
+                            From concept to deployment, we deliver scalable, high-performance software tailored to your
+                            needs.</p>
+                    </div>
+                </div>
+
+                <!-- Box 5 -->
+                <div class="col-md-4 my-3">
+                    <div class="strategy-box bg-lightdark text-dark m-0" data-id="box-5">
+                        <div class="strategy-info">
+                        </div>
+                        <img src="img/team-3.jpg" alt="Cloud Services Image">
+                        <h4>Cloud Services</h4>
+                        <p>Our team specializes in creating custom applications that drive efficiency and growth...
+                            Software Development: Our team creates custom applications to drive efficiency and growth.
+                            From concept to deployment, we deliver scalable, high-performance software tailored to your
+                            needs.</p>
+                    </div>
+                </div>
+
+                <!-- Box 6 -->
+                <div class="col-md-4 my-3">
+                    <div class="strategy-box bg-danger-custom m-0" data-id="box-6">
+                        <div class="strategy-info">
+                        </div>
+                        <img src="img/team-2.jpg" alt="Consulting Services Image">
+                        <h4>Consulting Services</h4>
+                        <p>Our team specializes in creating custom applications that drive efficiency and growth...
+                            Software Development: Our team creates custom applications to drive efficiency and growth.
+                            From concept to deployment, we deliver scalable, high-performance software tailored to your
+                            needs.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--  -->
+
+
+    <!-- Service Start -->
+    <div class="container-fluid bg-light mt-5 py-5">
+        <div class="container py-5">
+            <div class="row g-5 align-items-center">
+                <div class="col-lg-5 wow fadeInLeftBig" data-wow-delay="0.1s">
+                    <!-- <div class="btn btn-sm border rounded-pill text-primary px-3 mb-3">Our Services</div> -->
+                    <h1 class="mb-4">What is our Service</h1>
+                    <p class="mb-4">Leal Software Solution services focus on delivering high-performance, scalable,
+                        and tailored solutions designed to meet your business needs. Whether you're looking to
+                        streamline operations, improve customer experiences, or create innovative products, our team of
+                        expert developers is equipped to handle projects from conception to deployment. We specialize in
+                        developing custom software applications, ensuring seamless integration with your existing
+                        systems. Our approach is centered on leveraging cutting-edge technologies to deliver secure,
+                        robust, and efficient solutions.<br><br>
+
+                        With a focus on flexibility, we adapt our development process to match your unique requirements,
+                        ensuring that your goals are met on time and within budget. From mobile applications to complex
+                        enterprise software, we build platforms that drive business growth, improve efficiency, and give
+                        you a competitive edge. Let us help you turn your ideas into a reality with our comprehensive
+                        Software Development services.</p>
+                    <a class="btn btn-primary rounded-pill px-4" href="">Read More</a>
+                </div>
+                <div class="col-lg-7">
+                    <div class="row g-4">
+                        <div class="col-md-6">
+                            <div class="row g-4">
+                                <div class="col-12 wow fadeInDownBig" data-wow-delay="0.1s">
+                                    <div
+                                        class="service-item d-flex flex-column justify-content-center text-center rounded">
+                                        <div class="service-icon btn-square">
+                                            <img src="img/index_images/sw_development.jpg" alt="Service Icon"
+                                                style="width: 50px; height: 50px;">
+                                        </div>
+                                        <h5 class="mb-3">Software Development</h5>
+                                        <p>Expert design and execution of refrigeration projects, including cold
+                                            storages, blast freezers, and chillers, ensuring efficient, tailored
+                                            solutions.</p>
+                                        <a class="btn px-3 mt-auto mx-auto" href="">Read More</a>
+                                    </div>
+                                </div>
+                                <div class="col-12 wow fadeInDownBig" data-wow-delay="0.5s">
+                                    <div
+                                        class="service-item d-flex flex-column justify-content-center text-center rounded">
+                                        <div class="service-icon btn-square">
+                                            <img src="img/index_images/sw_conslutancy.jpg" alt="Service Icon"
+                                                style="width: 50px; height: 50px;">
+                                        </div>
+                                        <h5 class="mb-3">TaskTrak Hub Manager
+                                        </h5>
+                                        <p>End-to-end solutions for sourcing, installing, testing, commissioning, and
+                                            maintaining refrigeration systems, ensuring efficiency and durability.</p>
+                                        <a class="btn px-3 mt-auto mx-auto" href="">Read More</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 pt-md-4">
+                            <div class="row g-4">
+                                <div class="col-12 wow fadeInDownBig" data-wow-delay="0.3s">
+                                    <div
+                                        class="service-item d-flex flex-column justify-content-center text-center rounded">
+                                        <div class="service-icon btn-square">
+                                            <img src="img/index_images/sw_implemention.jpg" alt="Service Icon"
+                                                style="width: 50px; height: 50px;">
+                                        </div>
+                                        <h5 class="mb-3">Odoo/Cloud Services</h5>
+                                        <p>Custom manufacturing of industrial cooling equipment, including process
+                                            chillers and condensing units, designed for optimal performance and
+                                            reliability.</p>
+                                        <a class="btn px-3 mt-auto mx-auto" href="">Read More</a>
+                                    </div>
+                                </div>
+                                <div class="col-12 wow fadeInDownBig" data-wow-delay="0.7s">
+                                    <div
+                                        class="service-item d-flex flex-column justify-content-center text-center rounded">
+                                        <div class="service-icon btn-square">
+                                            <img src="img/index_images/sw_training.jpg" alt="Service Icon"
+                                                style="width: 50px; height: 50px;">
+                                        </div>
+                                        <h5 class="mb-3">HVAC Task Manager</h5>
+                                        <p>Authorized service provider and integrator for Danfoss and Alfa Laval,
+                                            delivering expert refrigeration solutions and support across the west zone.
+                                        </p>
+                                        <a class="btn px-3 mt-auto mx-auto" href="">Read More</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Service End -->
+
+
+    <!-- Content Section -->
+    <div class="home-services-container bg-light">
+        <!-- Image -->
+        <div class="home-services-image flex-grow-1">
+            <img src="img/index_images/bg-client.jpg" alt="Business Analytics Strategy" class="img-fluid w-100">
+        </div>
+
+        <!-- Text Box -->
+        <div class="home-services-text">
+            <h2 class="fw-bold">Building a successful business analytics strategy</h2>
+            <p class="text-muted">Excepteur sint occaecat cupidatat non, sunt in culpa qui officia deserunt mollit anim
+                id est laborum.</p>
+            <p>Image by <a href="#" class="fw-bold text-decoration-none text-primary">Click Me!</a></p>
+            <a href="#" class="btn btn-dark home-services-btn">LEARN MORE.</a>
+        </div>
+    </div>
+    <!-- End Content Section -->
+
+
+    <!-- Feature Start -->
+    <div class="container-fluid bg-dark feature pt-5">
+        <div class="container pt-5">
+            <div class="row g-5">
+                <div class="col-lg-6 align-self-center mb-md-5 pb-md-5 wow fadeInLeftBig" data-wow-delay="0.3s">
+                    <!-- <div class="btn btn-sm border rounded-pill text-white px-3 mb-3">Why Choose Us</div> -->
+                    <h1 class="text-white mb-4">Why Choose Us<br> Leal Software Solution</h1>
+                    <p class="text-light mb-4">Leal Software Solution, we combine innovative design, precise execution,
+                        and top-quality maintenance to deliver exceptional refrigeration solutions. Our expertise,
+                        cost-effective approaches, and commitment to energy efficiency and sustainability set us apart.
+                        Choose us for reliable, tailored solutions that exceed industry standards and client
+                        expectations.</p>
+                    <div class="d-flex align-items-center text-white mb-3">
+                        <div class="btn-sm-square bg-white text-primary rounded-circle me-3">
+                            <i class="fa fa-check"></i>
+                        </div>
+                        <span>Customized Software Solutions for Optimal Performance</span>
+                    </div>
+                    <div class="d-flex align-items-center text-white mb-3">
+                        <div class="btn-sm-square bg-white text-primary rounded-circle me-3">
+                            <i class="fa fa-check"></i>
+                        </div>
+                        <span>Empowering Your Business with Cutting-Edge Software</span>
+                    </div>
+                    <div class="d-flex align-items-center text-white mb-3">
+                        <div class="btn-sm-square bg-white text-primary rounded-circle me-3">
+                            <i class="fa fa-check"></i>
+                        </div>
+                        <span>Delivering Excellence Through Innovative Software Solutions</span>
+                    </div>
+                    <div class="d-flex align-items-center text-white mb-3">
+                        <div class="btn-sm-square bg-white text-primary rounded-circle me-3">
+                            <i class="fa fa-check"></i>
+                        </div>
+                        <span>Experience Excellence with Our Bespoke Software Services</span>
+                    </div>
+                    <div class="row g-4 pt-3">
+                        <div class="col-sm-6">
+                            <div class="d-flex rounded p-3" style="background: rgba(256, 256, 256, 0.1);">
+                                <i class="fa fa-users fa-3x text-white"></i>
+                                <div class="ms-3">
+                                    <h2 class="text-white mb-0" data-toggle="counter-up">155</h2>
+                                    <p class="text-white mb-0">Happy Clients</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="d-flex rounded p-3" style="background: rgba(256, 256, 256, 0.1);">
+                                <i class="fa fa-check fa-3x text-white"></i>
+                                <div class="ms-3">
+                                    <h2 class="text-white mb-0" data-toggle="counter-up">70</h2>
+                                    <p class="text-white mb-0">Project Completed</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="d-flex rounded p-3" style="background: rgba(256, 256, 256, 0.1);">
+                                <i class="fa fa-user-tie fa-3x text-white"></i>
+                                <div class="ms-3">
+                                    <h2 class="text-white mb-0" data-toggle="counter-up">17</h2>
+                                    <p class="text-white mb-0">Employees</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="d-flex rounded p-3" style="background: rgba(256, 256, 256, 0.1);">
+                                <i class="fa fa-map-marker-alt fa-3x text-white"></i>
+                                <div class="ms-3">
+                                    <h2 class="text-white mb-0" data-toggle="counter-up">2</h2>
+                                    <p class="text-white mb-0">Location</p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-lg-6 pb-5">
+                    <!-- First Flex Column Div -->
+                    <div class="d-flex flex-column align-items-start justify-content-center p-4 mb-4 wow fadeInRightBig"
+                        data-wow-delay="0.5s" style="background-color: rgba(256, 256, 256, 0.1);">
+                        <div class="d-flex align-items-center">
+                            <img src="img/testimonial-3.jpg" alt="Client 4" class="me-3 rounded-circle mb-3"
+                                style="width: 70px; height: 70px;">
+                            <div class="px-3">
+                                <h4 class="text-white mb-3">Software Development Services</h4>
+                            </div>
+                        </div>
+                        <p class="text-white mb-4">We are dedicated to delivering high-quality refrigeration systems and
+                            services that meet the specific needs of our customers. Our team is committed to innovation
+                            and excellence, ensuring that every project is executed with precision and care.</p>
+                        <a href="#" class="btn btn-light text-primary">Learn More Services</a>
+                    </div>
+
+                    <!-- Second Flex Column Div -->
+                    <div class="d-flex flex-column align-items-start justify-content-center p-4 mb-4 wow fadeInRightBig"
+                        data-wow-delay="0.5s" style="background-color: rgba(256, 256, 256, 0.1);">
+                        <div class="d-flex align-items-center">
+                            <img src="img/testimonial-2.jpg" alt="Client 4" class="me-3 rounded-circle mb-3"
+                                style="width: 70px; height: 70px;">
+                            <div class="px-3">
+                                <h4 class="text-white mb-3">TaskTrak Hub Manager</h4>
+                            </div>
+                        </div>
+                        <p class="text-white mb-4">We believe in constantly evolving our processes to stay ahead of
+                            industry trends. Our innovative approach allows us to deliver cutting-edge refrigeration
+                            solutions that maximize efficiency and minimize costs.</p>
+                        <a href="#" class="btn btn-light text-primary">Learn More Services</a>
+                    </div>
+
+                    <!-- Third Flex Column Div -->
+                    <div class="d-flex flex-column align-items-start justify-content-center p-4 mb-4 wow fadeInRightBig"
+                        data-wow-delay="0.5s" style="background-color: rgba(256, 256, 256, 0.1);">
+                        <div class="d-flex align-items-center">
+                            <img src="img/testimonial-1.jpg" alt="Client 4" class="me-3 rounded-circle mb-3"
+                                style="width: 70px; height: 70px;">
+                            <div class="px-3">
+                                <h4 class="text-white mb-3">HVAC HeatLoad Calculator</h4>
+                            </div>
+                        </div>
+                        <p class="text-white mb-4">We believe in constantly evolving our processes to stay ahead of
+                            industry trends. Our innovative approach allows us to deliver cutting-edge refrigeration
+                            solutions that maximize efficiency and minimize costs.</p>
+                        <a href="#" class="btn btn-light text-primary">Learn More Services</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Feature End -->
+
+
+    <!--  -->
+    <section class="h-auto pb-5" style="background-color: rgb(239, 239, 240);">
+        <div class="container my-5">
+            <h2 class="text-center pt-5 pb-3">CLIENTS CONFIRM OUR QUALITY</h2>
+            <p class="text-center" style="font-weight: 500;">Our clients across the globe have nothing but good things
+                to say about our services
+                and cooperation. Don’t take our word for it, read our customer testimonials to learn more about our
+                partnerships.</p>
+
+            <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active bg-dark"></li>
+                    <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" class=" bg-dark"></li>
+                    <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" class=" bg-dark"></li>
+                </ol>
+                <div class="carousel-inner my-5">
+                    <!-- Slide 1 -->
+                    <div class="carousel-item active">
+                        <div class="row justify-content-center">
+                            <div class="col-md-6 testimonial-container">
+                                <div class="card p-4  testimonial text-center" style="border-radius: 0px; border: 0px;">
+                                    <div class="d-flex align-items-center">
+                                        <img src="img/md_leal.jpg" alt="Tomasz Stosio" class="me-3">
+                                        <div class="px-3">
+                                            <h5 class="mb-0 text-start">Mr. Subodh Murkewar</h5>
+                                            <p class="small text-start">Director of Payment and Currency Exchange
+                                                Department</p>
+                                        </div>
+                                    </div>
+                                    <p class="text-start" style="font-size: 13px;">The team’s expertise and dedication
+                                        are evident in their high-quality
+                                        deliverables and proactive support. They quickly understood our complex
+                                        requirements and delivered a tailored solution that exceeded our expectations.
+                                        Their innovative approach and reliable performance have made them a valuable
+                                        partner in our success. We highly recommend their services to anyone looking for
+                                        top-notch software solutions and exceptional customer support."</p>
+                                    <p><strong>Clutch: </strong><span class="text-primary">★★★★★</span></p>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6 testimonial-container">
+                                <div class="card p-4  testimonial text-center" style="border-radius: 0px; border: 0px;">
+                                    <div class="d-flex align-items-center">
+                                        <img src="img/testimonial-2.jpg" alt="Wiktor Grabarczyk" class="me-3">
+                                        <div class="px-3">
+                                            <h5 class="mb-0 text-start">Mr. Suraj Patil</h5>
+                                            <p class="small text-start">Director of Payment and Currency Exchange
+                                                Department</p>
+                                        </div>
+                                    </div>
+                                    <p class="text-start" style="font-size: 13px;">The team’s expertise and dedication
+                                        are evident in their high-quality
+                                        deliverables and proactive support. They quickly understood our complex
+                                        requirements and delivered a tailored solution that exceeded our expectations.
+                                        Their innovative approach and reliable performance have made them a valuable
+                                        partner in our success. We highly recommend their services to anyone looking for
+                                        top-notch software solutions and exceptional customer support."</p>
+                                    <p><strong>Clutch: </strong><span class="text-primary">★★★★★</span></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Slide 2 -->
+                    <div class="carousel-item">
+                        <div class="row justify-content-center">
+                            <div class="col-md-6 testimonial-container">
+                                <div class="card p-4  testimonial text-center" style="border-radius: 0px; border: 0px;">
+                                    <div class="d-flex align-items-center">
+                                        <img src="img/testimonial-2.jpg" alt="Client 3" class="me-3">
+                                        <div class="px-3">
+                                            <h5 class="mb-0 text-start">Mr. Aijnkya Dongare</h5>
+                                            <p class="small text-start">Director of Payment and Currency Exchange
+                                                Department</p>
+                                        </div>
+                                    </div>
+                                    <p class="text-start" style="font-size: 13px;">The team’s expertise and dedication
+                                        are evident in their high-quality
+                                        deliverables and proactive support. They quickly understood our complex
+                                        requirements and delivered a tailored solution that exceeded our expectations.
+                                        Their innovative approach and reliable performance have made them a valuable
+                                        partner in our success. We highly recommend their services to anyone looking for
+                                        top-notch software solutions and exceptional customer support."</p>
+                                    <p><strong>Clutch: </strong><span class="text-primary">★★★★★</span></p>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6 testimonial-container">
+                                <div class="card p-4  testimonial text-center" style="border-radius: 0px; border: 0px;">
+                                    <div class="d-flex align-items-center">
+                                        <img src="img/testimonial-3.jpg" alt="Client 4" class="me-3">
+                                        <div class="px-3">
+                                            <h5 class="mb-0 text-start">Mr. Sunil Jatkar</h5>
+                                            <p class="small text-start">Director of Payment and Currency Exchange
+                                                Department</p>
+                                        </div>
+                                    </div>
+                                    <p class="text-start" style="font-size: 13px;">The team’s expertise and dedication
+                                        are evident in their high-quality
+                                        deliverables and proactive support. They quickly understood our complex
+                                        requirements and delivered a tailored solution that exceeded our expectations.
+                                        Their innovative approach and reliable performance have made them a valuable
+                                        partner in our success. We highly recommend their services to anyone looking for
+                                        top-notch software solutions and exceptional customer support."</p>
+                                    <p><strong>Clutch: </strong><span class="text-primary">★★★★★</span></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Slide 3 -->
+                    <div class="carousel-item">
+                        <div class="row justify-content-center">
+                            <div class="col-md-6 testimonial-container">
+                                <div class="card p-4  testimonial text-center" style="border-radius: 0px; border: 0px;">
+                                    <div class="d-flex align-items-center">
+                                        <img src="img/testimonial-1.jpg" alt="Client 5" class="me-3">
+                                        <div class="px-3">
+                                            <h5 class="mb-0 text-start">Ms. Anjali Survase</h5>
+                                            <p class="small text-start">Director of Payment and Currency Exchange
+                                                Department</p>
+                                        </div>
+                                    </div>
+                                    <p class="text-start" style="font-size: 13px;">The team’s expertise and dedication
+                                        are evident in their high-quality
+                                        deliverables and proactive support. They quickly understood our complex
+                                        requirements and delivered a tailored solution that exceeded our expectations.
+                                        Their innovative approach and reliable performance have made them a valuable
+                                        partner in our success. We highly recommend their services to anyone looking for
+                                        top-notch software solutions and exceptional customer support."</p>
+                                    <p><strong>Clutch: </strong><span class="text-primary">★★★★★</span></p>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6 testimonial-container">
+                                <div class="card p-4  testimonial text-center" style="border-radius: 0px; border: 0px;">
+                                    <div class="d-flex align-items-center">
+                                        <img src="img/testimonial-1.jpg" alt="Client 5" class="me-3">
+                                        <div class="px-3">
+                                            <h5 class="mb-0 text-start">Ms. Anamika</h5>
+                                            <p class="small text-start">Director of Payment and Currency Exchange
+                                                Department</p>
+                                        </div>
+                                    </div>
+                                    <p class="text-start" style="font-size: 13px;">The team’s expertise and dedication
+                                        are evident in their high-quality
+                                        deliverables and proactive support. They quickly understood our complex
+                                        requirements and delivered a tailored solution that exceeded our expectations.
+                                        Their innovative approach and reliable performance have made them a valuable
+                                        partner in our success. We highly recommend their services to anyone looking for
+                                        top-notch software solutions and exceptional customer support."</p>
+                                    <p><strong>Clutch: </strong><span class="text-primary">★★★★★</span></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Controls -->
+                <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel"
+                    data-bs-slide="prev">
+                    <span aria-hidden="true" class="fw-bold"><- Privious</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel"
+                    data-bs-slide="next">
+                    <span aria-hidden="true" class="fw-bold">Next -></span>
+                </button>
+            </div>
+        </div>
+    </section>
+    <!--  -->
+
+
+    <!-- Contact Us Start -->
+    <section class="bg-light py-5">
+        <div class="container contact-section">
+            <div class="row">
+                <!-- Left Side: Contact Info -->
+                <div class="col-md-6">
+                    <h3 class="h3 fw-bold mb-4 text-dark">Contact us</h3>
+                    <div class="contact-info">
+                        <p class="mb-0 text-muted ">Green Life Society B-102 Pune, 74-100-16-111</p>
+                        <p class="mb-0 text-muted ">Mon - Fri: 9:00 am - 8:00 pm</p>
+                        <p class="mb-2 text-muted ">Sat - Sun: 9:00 am - 10 pm</p>
+                        <p class="text-primary fw-bold my-2">career@lealsolution.com</p>
+                        <p class="text-primary fw-bold">Phone: +91 7410016111/13/14</p>
+                    </div>
+
+                    <h4 class="mt-5 pt-3">Follow us</h4>
+                    <div class="follow-us-icons">
+                        <a href="#"><i class="bi bi-twitter"></i></a>
+                        <a href="#"><i class="bi bi-instagram"></i></a>
+                        <a href="#"><i class="bi bi-facebook"></i></a>
+                        <a href="#"><i class="bi bi-youtube"></i></a>
+                        <a href="#"><i class="bi bi-whatsapp"></i></a>
+                    </div>
+
+                    <p class="mt-4 text-muted text-dark">Copyright © 2024 www.lealsolution.com - All rights reserved</p>
+                </div>
+
+                <!-- Right Side: Contact Form -->
+                <div class="col-md-6">
+                    <h3 class="contact-title">Join Us</h3>
+                    <form>
+                        <div class="mb-3">
+                            <label for="productSelect" class="form-label">Product</label>
+                            <select class="form-select form-control" id="productSelect">
+                                <option selected>HVAC Heat Load Calculator</option>
+                                <option value="1">HLC Leal Bussiness Solution</option>
+                                <option value="2">HVAC GADraw</option>
+                                <option value="2">TaskTrak Hub Manager</option>
+                                <option value="2">Odoo ERP Cloud</option>
+
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <label for="nameInput" class="form-label">Enter your name:</label>
+                            <input type="text" class="form-control" id="nameInput" placeholder="Your name">
+                        </div>
+                        <div class="mb-3">
+                            <label for="emailInput" class="form-label">Enter your email:</label>
+                            <input type="email" class="form-control" id="emailInput" placeholder="Your email">
+                        </div>
+                        <div class="mb-3">
+                            <label for="messageInput" class="form-label">Enter your message:</label>
+                            <textarea class="form-control" id="messageInput" rows="3"
+                                placeholder="Your message"></textarea>
+                        </div>
+                        <!-- <button type="submit" class="btn submit-btn">SUBMIT</button> -->
+                        <button class="btn btn-primary w-100 fw-bold py-2 bg-primary"
+                            style=" border: none; border-radius: 5px; transition: background-color 0.3s;">
+                            Submit
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Contact Us End -->
+
+
+    <!-- Footer Start -->
+    <div class="container-fluid bg-dark text-white-50 footer pt-5">
+        <div class="container py-5">
+            <div class="row g-5">
+                <div class="col-md-6 col-lg-3 wow fadeInLeftBig" data-wow-delay="0.1s">
+                    <a href="index.html" class="d-inline-block mb-3">
+                        <h1 class="text-white text-white-nav">Leal Software Solution <span class="text-primary"></span>
+                        </h1>
+                    </a>
+                    <p class="mb-0">Leal Software Solution excels in delivering innovative, high-quality refrigeration
+                        solutions. With a focus on custom design, efficiency, and reliability, we provide tailored
+                        systems and exceptional service to meet diverse industry needs.</p>
+                </div>
+
+                <div class="col-md-6 col-lg-3 wow fadeInLeftBig" data-wow-delay="0.5s">
+                    <h5 class="text-white mb-4">Popular Link</h5>
+                    <a class="btn btn-link" href="about.html">About Us</a>
+                    <a class="btn btn-link" href="about.html">Projects</a>
+                    <a class="btn btn-link" href="service.html">Services</a>
+                    <a class="btn btn-link" href="contact.html">Contact Us</a>
+                    <a class="btn btn-link" href="">Privacy Policy</a>
+                    <a class="btn btn-link" href="">Terms & Condition</a>
+                </div>
+                <div class="col-md-6 col-lg-3 wow fadeIn" data-wow-delay="1.3s">
+                    <h5 class="text-white mb-4">Our Services</h5>
+                    <a class="btn btn-link" href="">Software Development</a>
+                    <a class="btn btn-link" href="">Mobile App Development</a>
+                    <a class="btn btn-link" href="">Web App Development</a>
+                    <a class="btn btn-link" href="">HVAC Heat Load Calculator</a>
+                    <a class="btn btn-link" href="">HLC Leal Bussiness Solution</a>
+                    <a class="btn btn-link" href="">Leal GADraw</a>
+                    <a class="btn btn-link" href="">Odoo ERP Cloud</a>
+                    <a class="btn btn-link" href="">TaskTrak Hub Manager</a>
+
+                </div>
+                <div class="col-md-6 col-lg-3 wow fadeIn" data-wow-delay="1.8s">
+                    <h5 class="text-white mb-4">Get In Touch</h5>
+                    <p><i class="fa fa-map-marker-alt me-3"></i>Flat No. B-102, Laxmi Chowk, Phase 1, Hinjawadi Rajiv
+                        Gandhi Infotech Park, Hinjawadi, Pimpri-Chinchwad, Maharashtra 411057</p>
+                    <p><i class="fa fa-phone-alt me-3"></i>0253 24651409</p>
+                    <p><i class="fa fa-phone-alt me-3"></i>+91 7410016111/13/14</p>
+                    <p><i class="fa fa-envelope me-3"></i>career@lealsolution.com</p>
+                    <div class="d-flex pt-2">
+                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-twitter"></i></a>
+                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-youtube"></i></a>
+                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-instagram"></i></a>
+                        <a class="btn btn-outline-light btn-social"
+                            href="https://in.linkedin.com/company/ashapuri-refrigeration-services" target="_blank"><i
+                                class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container wow fadeIn" data-wow-delay="0.1s">
+            <div class="copyright">
+                <div class="row">
+                    <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                        &copy; <a class="border-bottom" href="index.html">Leal Software Solution</a>, All Right
+                        Reserved.
+                        Designed By <a class="border-bottom" href="https://www.lealsolution.com/"
+                            target="_blank">Ajinkya Dongare</a>
+                    </div>
+                    <div class="col-md-6 text-center text-md-end">
+                        <div class="footer-menu">
+                            <a href="">Home</a>
+                            <a href="">Cookies</a>
+                            <a href="">Help</a>
+                            <a href="">FAQs</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top pt-2"><i class="bi bi-arrow-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
