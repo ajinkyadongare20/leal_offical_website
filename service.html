@@ -17,6 +17,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Ubuntu:wght@500;700&display=swap"
         rel="stylesheet">
 
+    <!-- Font Stylesheet Montserrat -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
+
     <!-- Icon Font Stylesheet -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
@@ -48,7 +51,7 @@
         <div class="container">
             <nav class="navbar navbar-expand-lg navbar-dark p-0">
                 <a href="index.html" class="navbar-brand">
-                    <h1 class="text-white">Logo<span class="text-dark">.</span></h1>
+                    <img src="img/index_images/leal-software-logo.jpg" alt="Button Image" class="animated slideInDown">
                 </a>
                 <button type="button" class="navbar-toggler ms-auto me-0" data-bs-toggle="collapse"
                     data-bs-target="#navbarCollapse">
@@ -56,14 +59,14 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarCollapse">
                     <div class="navbar-nav ms-auto">
-                        <a href="index.html" class="nav-item nav-link ">Home</a>
+                        <a href="index.html" class="nav-item nav-link">Home</a>
+                        <a href="about.html" class="nav-item nav-link">About</a>
                         <a href="service.html" class="nav-item nav-link active">Services</a>
                         <a href="product.html" class="nav-item nav-link">Product</a>
                         <a href="research.html" class="nav-item nav-link">Research</a>
-                        <a href="about.html" class="nav-item nav-link">About</a>
                         <a href="career.html" class="nav-item nav-link">Career</a>
                         <a href="blogs.html" class="nav-item nav-link">Blogs</a>
-                        <a href="contact.html" class="nav-item nav-link ">Contact US</a>
+                        <a href="contact.html" class="nav-item nav-link">Contact US</a>
                     </div>
                     <butaton type="button" class="btn text-white p-0 d-none d-lg-block" data-bs-toggle="modal"
                         data-bs-target="#searchModal"><i class="fa fa-search"></i></butaton>
@@ -79,16 +82,22 @@
         <div class="container pt-5">
             <div class="row g-5 pt-5">
                 <div class="col-lg-6 align-self-center text-center text-lg-start mb-lg-5">
-                    <h1 class="display-4 text-white mb-4 animated slideInRight">Our Services</h1>
+                    <h1 class="display-4 text-white mb-4 animated slideInRight">Services</h1>
                     <nav aria-label="breadcrumb">
                         <ol class="breadcrumb justify-content-center justify-content-lg-start mb-0">
                             <li class="breadcrumb-item"><a class="text-white" href="#">Home</a></li>
-                            <li class="breadcrumb-item text-white active" aria-current="page">Our Services</li>
+                            <li class="breadcrumb-item text-white active" aria-current="page">Services</li>
                         </ol>
                     </nav>
+                    <p class="text-white mb-4 pt-3 animated fadeInLeftBig">What’s revolutionary today can turn ordinary
+                        tomorrow. Therefore, brands must continuously evolve and transform for better customer
+                        experience, engagement, and profitability. Our software development services and capabilities
+                        are curated to help you create a positive and engaging brand image. You get extensive
+                        capabilities under one roof, from software product engineering and DevOps to quality engineering
+                        and AI/ML development.</p>
                 </div>
                 <div class="col-lg-6 align-self-end text-center text-lg-end">
-                    <img class="img-fluid w-100" src="img/coming-soon-banner.jpg" alt="" style="max-height: 300px;">
+                    <img class="img-fluid w-100" src="img/home-banner.png" alt="" style="object-fit: contain;">
                 </div>
             </div>
         </div>
@@ -96,94 +105,476 @@
     <!-- Hero End -->
 
 
-    <!-- Full Screen Search Start -->
-    <div class="modal fade" id="searchModal" tabindex="-1">
-        <div class="modal-dialog modal-fullscreen">
-            <div class="modal-content" style="background: rgba(20, 24, 62, 0.7);">
-                <div class="modal-header border-0">
-                    <button type="button" class="btn btn-square bg-white btn-close" data-bs-dismiss="modal"
-                        aria-label="Close"></button>
+    <!-- Start Services -->
+    <section class="container py-5">
+        <h2 class="text-center mb-4">Capabilities</h2>
+
+        <div class="row  wow fadeIn" data-wow-delay="0.5s">
+            <div class="col-12">
+                <p>Our software development capabilities encompass a vast range of modern technologies to ensure the
+                    creation of scalable, secure, and versatile software solutions as per business demand. We can meet
+                    all your enterprise needs, from AI/ML development to Cloud Enablement and Automation.</p>
+
+                <p>Our capabilities include delivering tailored software solutions across various industries. We
+                    specialize in building scalable web and mobile applications, cloud integration, and automation
+                    tools. Our focus is on enhancing business efficiency through robust security, data management, and
+                    innovative technologies, ensuring seamless operations and driving digital transformation.</p>
+
+            </div>
+        </div>
+
+        <div class="container my-5">
+            <!-- First Row -->
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="card shadow-sm rounded-0" style="border: none; background-color: #fff3e0;">
+                        <div class="d-flex p-3 pb-0 justify-content-start align-items-center">
+                            <img src="img/about_images/Software-Development.svg" class="service-icon"
+                                alt="Software Engineering">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title mt-3">Software Development</h5>
+                            <p class="card-text">Engineering next-gen products with next-gen technologies.</p>
+                            <a href="#" class="text-decoration-none" style="color: #ff9800;">Explore More &rarr;</a>
+                        </div>
+                    </div>
                 </div>
-                <div class="modal-body d-flex align-items-center justify-content-center">
-                    <div class="input-group" style="max-width: 600px;">
-                        <input type="text" class="form-control bg-transparent border-light p-3"
-                            placeholder="Type search keyword">
-                        <button class="btn btn-light px-4"><i class="bi bi-search"></i></button>
+                <div class="col-md-4 mb-4">
+                    <div class="card shadow-sm rounded-0" style="border: none; background-color: #e0f7fa;">
+                        <div class="d-flex p-3 pb-0 justify-content-start align-items-center">
+                            <img src="img/about_images/app-development.svg" class="card-img-top service-icon"
+                                alt="Mobile App Development">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title mt-3">Mobile App Development</h5>
+                            <p class="card-text">Elevating customer interactions with innovative eCommerce strategies.
+                            </p>
+                            <a href="#" class="text-decoration-none" style="color: #00bfa5;">Explore More &rarr;</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card shadow-sm rounded-0" style="border: none; background-color: #e8eaf6;">
+                        <div class="d-flex p-3 pb-0 justify-content-start align-items-center">
+                            <img src="img/about_images/Web-Application-Development-1.svg"
+                                class="card-img-top service-icon" alt="Web App Development">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title mt-3">Web App Development</h5>
+                            <p class="card-text">Streamlining software development and IT operations.</p>
+                            <a href="#" class="text-decoration-none" style="color: #536dfe;">Explore More &rarr;</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Second Row -->
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="card shadow-sm rounded-0" style="border: none; background-color: #fce4ec;">
+                        <div class="d-flex p-3 pb-0 justify-content-start align-items-center">
+                            <img src="img/about_images/Task-Trak.svg" class="card-img-top service-icon"
+                                alt="TaskTrak Hub Manager">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title mt-3">TaskTrak Hub Manager</h5>
+                            <p class="card-text">Maintaining quality standards for every product.</p>
+                            <a href="#" class="text-decoration-none" style="color: #ec407a;">Explore More &rarr;</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card shadow-sm rounded-0" style="border: none; background-color:#fff8e1;">
+                        <div class="d-flex p-3 pb-0 justify-content-start align-items-center">
+                            <img src="img/about_images/erp.svg" class="card-img-top service-icon"
+                                alt="Oddo ERP Services">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title mt-3">Oddo ERP Services</h5>
+                            <p class="card-text">Bringing flexibility and accessibility on the go.</p>
+                            <a href="#" class="text-decoration-none" style="color: #00b0ff;">Explore More &rarr;</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card shadow-sm rounded-0" style="border: none; background-color: #e1f5fe;">
+                        <div class="d-flex p-3 pb-0 justify-content-start align-items-center">
+                            <img src="img/about_images/HVAC.svg" class="card-img-top service-icon"
+                                alt="HVAC Task Manager">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title mt-3">HVAC Task Manager</h5>
+                            <p class="card-text">Adopting cutting-edge technologies for transformation.</p>
+                            <a href="#" class="text-decoration-none" style="color: #ffb300;">Explore More &rarr;</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Third Row -->
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="card shadow-sm rounded-0" style="border: none; background-color: #fce4ec;">
+                        <div class="d-flex p-3 pb-0 justify-content-start align-items-center">
+                            <img src="img/about_images/crm-services.svg" class="card-img-top service-icon"
+                                alt="CRM Task Manager">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title mt-3">CRM Task Manager</h5>
+                            <p class="card-text">Maintaining quality standards for every product.</p>
+                            <a href="#" class="text-decoration-none" style="color: #ec407a;">Explore More &rarr;</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card shadow-sm rounded-0" style="border: none; background-color: #e1f5fe;">
+                        <div class="d-flex p-3 pb-0 justify-content-start align-items-center">
+                            <img src="img/about_images/SEO-Development.svg" class="card-img-top service-icon"
+                                alt="SEO Optimization / Digital Marketing">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title mt-3">SEO Optimization / Digital Marketing</h5>
+                            <p class="card-text">Bringing flexibility and accessibility on the go.</p>
+                            <a href="#" class="text-decoration-none" style="color: #00b0ff;">Explore More &rarr;</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card shadow-sm rounded-0" style="border: none; background-color: #fff8e1;">
+                        <div class="d-flex p-3 pb-0 justify-content-start align-items-center">
+                            <img src="img/about_images/Quality-Engineering.svg" class="card-img-top service-icon"
+                                alt="Quality Engineering">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title mt-3">Quality Engineering</h5>
+                            <p class="card-text">Adopting cutting-edge technologies for transformation.</p>
+                            <a href="#" class="text-decoration-none" style="color: #ffb300;">Explore More &rarr;</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Service -->
+
+
+    <!--Services Feature Start -->
+    <div class="container-fluid bg-light feature pt-5">
+        <div class="container pt-5">
+            <div class="row g-5">
+                <div class="col-lg-6 align-self-start mb-md-5 pb-md-5 wow fadeInLeftBig" data-wow-delay="0.3s">
+                    <!-- <div class="btn btn-sm border rounded-pill text-white px-3 mb-3">Why Choose Us</div> -->
+                    <h1 class="text-dark mb-4">Build Next Gen Products With Our Software Product Engineering Services
+                    </h1>
+                    <p class="text-dark mb-4">We are not just a software development company. We are a team of 300+
+                        skilled developers, business analysts, strategy planners, creative designers, problem solvers,
+                        and engagement-boosting marketers who deliver transformational outcomes for a new digital world.
+                    </p>
+                    <p class="text-dark mb-4">We work with you and complement your digital product engineering efforts
+                        by adopting new-age technologies, providing competencies and talent, and leveraging product
+                        engineering best practices.</p>
+                    <p class="text-dark mb-4">Our services straddle the whole product engineering lifecycle, from the
+                        ideation phase to product design and development and from support to market growth.</p>
+                    <p class="text-dark mb-4">WOur digital product engineering services cover a whole spectrum of
+                        services, including product re-engineering to meet market demands in terms of cost, features,
+                        and performance.</p>
+                    <div class="d-flex align-items-center text-dark mb-3">
+                        <div class="btn-sm-square bg-primary text-white rounded-circle me-3">
+                            <i class="fa fa-check"></i>
+                        </div>
+                        <span>Customized Software Solutions for Optimal Performance</span>
+                    </div>
+                    <div class="d-flex align-items-center text-dark mb-3">
+                        <div class="btn-sm-square bg-primary text-white rounded-circle me-3">
+                            <i class="fa fa-check"></i>
+                        </div>
+                        <span>Empowering Your Business with Cutting-Edge Software</span>
+                    </div>
+                    <div class="d-flex align-items-center text-dark mb-3">
+                        <div class="btn-sm-square bg-primary text-white rounded-circle me-3">
+                            <i class="fa fa-check"></i>
+                        </div>
+                        <span>Delivering Excellence Through Innovative Software Solutions</span>
+                    </div>
+                    <div class="d-flex align-items-center text-dark mb-3">
+                        <div class="btn-sm-square bg-primary text-white rounded-circle me-3">
+                            <i class="fa fa-check"></i>
+                        </div>
+                        <span>Experience Excellence with Our Bespoke Software Services</span>
+                    </div>
+                </div>
+
+                <div class="col-lg-6 pb-5">
+                    <!-- First Flex Column Div -->
+                    <div class="d-flex flex-column align-items-start justify-content-center p-4 mb-4 wow fadeInRightBig"
+                        data-wow-delay="0.5s" style="background-color: rgba(256, 256, 256, 1);">
+                        <div class="d-flex align-items-center">
+                            <img src="img/testimonial-3.jpg" alt="Client 4" class="me-3 rounded-circle mb-3"
+                                style="width: 70px; height: 70px;">
+                            <div class="px-3">
+                                <h4 class="text-dark mb-3">Software Development Services</h4>
+                            </div>
+                        </div>
+                        <p class="text-dark mb-4">We are dedicated to delivering high-quality refrigeration systems and
+                            services that meet the specific needs of our customers. Our team is committed to innovation
+                            and excellence, ensuring that every project is executed with precision and care.</p>
+                        <a href="#" class="btn btn-light text-primary">Learn More Services</a>
+                    </div>
+
+                    <!-- Second Flex Column Div -->
+                    <div class="d-flex flex-column align-items-start justify-content-center p-4 mb-4 wow fadeInRightBig"
+                        data-wow-delay="0.5s" style="background-color: rgba(256, 256, 256, 1);">
+                        <div class="d-flex align-items-center">
+                            <img src="img/testimonial-2.jpg" alt="Client 4" class="me-3 rounded-circle mb-3"
+                                style="width: 70px; height: 70px;">
+                            <div class="px-3">
+                                <h4 class="text-dark mb-3">TaskTrak Hub Manager</h4>
+                            </div>
+                        </div>
+                        <p class="text-dark mb-4">We believe in constantly evolving our processes to stay ahead of
+                            industry trends. Our innovative approach allows us to deliver cutting-edge refrigeration
+                            solutions that maximize efficiency and minimize costs.</p>
+                        <a href="#" class="btn btn-light text-primary">Learn More Services</a>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <!-- Full Screen Search End -->
 
+    <div class="container my-5">
+        <h2 class="text-dark mb-4">Technology Stack</h2>
+        <p class="mb-5">
+            Our software development technology stack for creating a website focuses on a responsive and dynamic user
+            interface,
+            efficient server-side processing, and reliable database management. This ensures a seamless user experience,
+            quick load times, and robust data handling, resulting in a high-performance, scalable web application.
+        </p>
 
-    <div class="min-height" style="min-height: 700px;">
+        <!-- Tab Navigation -->
+        <ul class="nav nav-pills mb-3 justify-content-center" id="pills-tab" role="tablist">
+            <li class="nav-item" role="presentation">
+                <button class="nav-link active" id="pills-front-end-tab" data-bs-toggle="pill"
+                    data-bs-target="#pills-front-end" type="button" role="tab" aria-controls="pills-front-end"
+                    aria-selected="true">Front-End</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="pills-back-end-tab" data-bs-toggle="pill" data-bs-target="#pills-back-end"
+                    type="button" role="tab" aria-controls="pills-back-end" aria-selected="false">Back-End</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="pills-mobile-tab" data-bs-toggle="pill" data-bs-target="#pills-mobile"
+                    type="button" role="tab" aria-controls="pills-mobile" aria-selected="false">Mobile</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="pills-database-tab" data-bs-toggle="pill" data-bs-target="#pills-database"
+                    type="button" role="tab" aria-controls="pills-database" aria-selected="false">Database</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="pills-cloud-tab" data-bs-toggle="pill" data-bs-target="#pills-cloud"
+                    type="button" role="tab" aria-controls="pills-cloud" aria-selected="false">Cloud</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="pills-open-source-tab" data-bs-toggle="pill"
+                    data-bs-target="#pills-open-source" type="button" role="tab" aria-controls="pills-open-source"
+                    aria-selected="false">Open Source</button>
+            </li>
+        </ul>
 
-    </div>
-
-
-    <!-- Newsletter Start -->
-    <div class="container-fluid bg-primary newsletter py-5">
-        <div class="container">
-            <div class="row g-5 align-items-center">
-                <div class="col-md-5 ps-lg-0 pt-5 pt-md-0 text-start wow fadeIn" data-wow-delay="0.3s">
-                    <img class="img-fluid" src="img/newsletter.jpg" alt="">
-                </div>
-                <div class="col-md-7 py-5 newsletter-text wow fadeIn" data-wow-delay="0.5s">
-                    <div class="btn btn-sm border rounded-pill text-white px-3 mb-3">Newsletter</div>
-                    <h1 class="text-white mb-4">Let's subscribe the newsletter</h1>
-                    <div class="position-relative w-100 mt-3 mb-2">
-                        <input class="form-control border-0 rounded-pill w-100 ps-4 pe-5" type="text"
-                            placeholder="Enter Your Email" style="height: 48px;">
-                        <button type="button" class="btn shadow-none position-absolute top-0 end-0 mt-1 me-2"><i
-                                class="fa fa-paper-plane text-primary fs-4"></i></button>
+        <!-- Tab Content -->
+        <div class="tab-content" id="pills-tabContent">
+            <div class="tab-pane fade show active" id="pills-front-end" role="tabpanel"
+                aria-labelledby="pills-front-end-tab">
+                <div class="row text-center">
+                    <!-- Front-End Technologies -->
+                    <div class="col-md-3 mb-4">
+                        <div class="tech-card">
+                            <img src="https://angular.io/assets/images/logos/angular/angular.svg" alt="Angular"
+                                class="technology-logo">
+                            <h5>Angular</h5>
+                        </div>
                     </div>
-                    <small class="text-white-50">Diam sed sed dolor stet amet eirmod</small>
+                    <div class="col-md-3 mb-4">
+                        <div class="tech-card">
+                            <img src="https://reactjs.org/logo-og.png" alt="React-JS" class="technology-logo">
+                            <h5>React-JS</h5>
+                        </div>
+                    </div>
+                    <div class="col-md-3 mb-4">
+                        <div class="tech-card">
+                            <img src="https://getbootstrap.com/docs/5.3/assets/brand/bootstrap-logo.svg" alt="Bootstrap"
+                                class="technology-logo">
+                            <h5>Bootstrap</h5>
+                        </div>
+                    </div>
+                    <div class="col-md-3 mb-4">
+                        <div class="tech-card">
+                            <img src="https://vuejs.org/images/logo.png" alt="Vue-JS" class="technology-logo">
+                            <h5>Vue-JS</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Back-End Tab (similar structure) -->
+            <div class="tab-pane fade" id="pills-back-end" role="tabpanel" aria-labelledby="pills-back-end-tab">
+                <div class="row text-center">
+                    <!-- Front-End Technologies -->
+                    <div class="col-md-3 mb-4">
+                        <div class="tech-card">
+                            <img src="https://angular.io/assets/images/logos/angular/angular.svg" alt="Angular"
+                                class="technology-logo">
+                            <h5>Angular</h5>
+                        </div>
+                    </div>
+                    <div class="col-md-3 mb-4">
+                        <div class="tech-card">
+                            <img src="https://reactjs.org/logo-og.png" alt="React-JS" class="technology-logo">
+                            <h5>React-JS</h5>
+                        </div>
+                    </div>
+                    <div class="col-md-3 mb-4">
+                        <div class="tech-card">
+                            <img src="https://getbootstrap.com/docs/5.3/assets/brand/bootstrap-logo.svg" alt="Bootstrap"
+                                class="technology-logo">
+                            <h5>Bootstrap</h5>
+                        </div>
+                    </div>
+                    <div class="col-md-3 mb-4">
+                        <div class="tech-card">
+                            <img src="https://vuejs.org/images/logo.png" alt="Vue-JS" class="technology-logo">
+                            <h5>Vue-JS</h5>
+                        </div>
+                    </div>
+                </div>
+                    <!-- Add more back-end technologies here -->
+                </div>
+            </div>
+
+            <!-- Additional tabs for Mobile, Database, Cloud, Open Source (similar structure) -->
+        </div>
+    </div>
+    <!--Services Feature End -->
+
+
+    <!-- Contact Us Start -->
+    <section class="bg-light py-5">
+        <div class="container contact-section">
+            <div class="row">
+                <!-- Left Side: Contact Info -->
+                <div class="col-md-6">
+                    <h3 class="h3 fw-bold mb-4 text-dark">Contact us</h3>
+                    <div class="contact-info">
+                        <p class="mb-0 text-muted ">Green Life Society B-102 Pune, 74-100-16-111</p>
+                        <p class="mb-0 text-muted ">Mon - Fri: 9:00 am - 8:00 pm</p>
+                        <p class="mb-2 text-muted ">Sat - Sun: 9:00 am - 10 pm</p>
+                        <p class="text-primary fw-bold my-2">career@lealsolution.com</p>
+                        <p class="text-primary fw-bold">Phone: +91 7410016111/13/14</p>
+                    </div>
+
+                    <h4 class="mt-5 pt-3">Follow us</h4>
+                    <div class="follow-us-icons">
+                        <a href="#"><i class="bi bi-twitter"></i></a>
+                        <a href="#"><i class="bi bi-instagram"></i></a>
+                        <a href="#"><i class="bi bi-facebook"></i></a>
+                        <a href="#"><i class="bi bi-youtube"></i></a>
+                        <a href="#"><i class="bi bi-whatsapp"></i></a>
+                    </div>
+
+                    <p class="mt-4 text-muted text-dark">Copyright © 2024 www.lealsolution.com - All rights reserved</p>
+                </div>
+
+                <!-- Right Side: Contact Form -->
+                <div class="col-md-6">
+                    <h3 class="contact-title">Join Us</h3>
+                    <form>
+                        <div class="mb-3">
+                            <label for="productSelect" class="form-label">Product</label>
+                            <select class="form-select form-control" id="productSelect">
+                                <option selected>HVAC Heat Load Calculator</option>
+                                <option value="1">HLC Leal Bussiness Solution</option>
+                                <option value="2">HVAC GADraw</option>
+                                <option value="2">TaskTrak Hub Manager</option>
+                                <option value="2">Odoo ERP Cloud</option>
+
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <label for="nameInput" class="form-label">Enter your name:</label>
+                            <input type="text" class="form-control" id="nameInput" placeholder="Your name">
+                        </div>
+                        <div class="mb-3">
+                            <label for="emailInput" class="form-label">Enter your email:</label>
+                            <input type="email" class="form-control" id="emailInput" placeholder="Your email">
+                        </div>
+                        <div class="mb-3">
+                            <label for="messageInput" class="form-label">Enter your message:</label>
+                            <textarea class="form-control" id="messageInput" rows="3"
+                                placeholder="Your message"></textarea>
+                        </div>
+                        <!-- <button type="submit" class="btn submit-btn">SUBMIT</button> -->
+                        <button class="btn btn-primary w-100 fw-bold py-2 bg-primary"
+                            style=" border: none; border-radius: 5px; transition: background-color 0.3s;">
+                            Submit
+                        </button>
+                    </form>
                 </div>
             </div>
         </div>
-    </div>
-    <!-- Newsletter End -->
+    </section>
+    <!-- Contact Us End -->
 
 
     <!-- Footer Start -->
     <div class="container-fluid bg-dark text-white-50 footer pt-5">
         <div class="container py-5">
             <div class="row g-5">
-                <div class="col-md-6 col-lg-3 wow fadeIn" data-wow-delay="0.1s">
+                <div class="col-md-6 col-lg-3 wow fadeInLeftBig" data-wow-delay="0.1s">
                     <a href="index.html" class="d-inline-block mb-3">
-                        <h1 class="text-white">LOGO<span class="text-primary">.</span></h1>
+                        <h1 class="text-white text-white-nav">Leal Software Solution <span class="text-primary"></span>
+                        </h1>
                     </a>
-                    <p class="mb-0">Tempor erat elitr rebum at clita. Diam dolor diam ipsum et tempor sit. Aliqu diam
-                        amet diam et eos labore. Clita erat ipsum et lorem et sit, sed stet no labore lorem sit. Sanctus
-                        clita duo justo et tempor</p>
+                    <p class="mb-0">Leal Software Solution excels in delivering innovative, high-quality refrigeration
+                        solutions. With a focus on custom design, efficiency, and reliability, we provide tailored
+                        systems and exceptional service to meet diverse industry needs.</p>
                 </div>
-                <div class="col-md-6 col-lg-3 wow fadeIn" data-wow-delay="0.3s">
+
+                <div class="col-md-6 col-lg-3 wow fadeInLeftBig" data-wow-delay="0.5s">
+                    <h5 class="text-white mb-4">Popular Link</h5>
+                    <a class="btn btn-link" href="about.html">About Us</a>
+                    <a class="btn btn-link" href="about.html">Projects</a>
+                    <a class="btn btn-link" href="service.html">Services</a>
+                    <a class="btn btn-link" href="contact.html">Contact Us</a>
+                    <a class="btn btn-link" href="">Privacy Policy</a>
+                    <a class="btn btn-link" href="">Terms & Condition</a>
+                </div>
+                <div class="col-md-6 col-lg-3 wow fadeIn" data-wow-delay="1.3s">
+                    <h5 class="text-white mb-4">Our Services</h5>
+                    <a class="btn btn-link" href="">Software Development</a>
+                    <a class="btn btn-link" href="">Mobile Application <br> Development</a>
+                    <a class="btn btn-link" href="">Web App Development</a>
+                    <a class="btn btn-link" href="">HVAC Heat Load <br>Calculator</a>
+                    <a class="btn btn-link" href="">HLC Leal Bussiness Solution</a>
+                    <a class="btn btn-link" href="">Leal GADraw</a>
+                    <a class="btn btn-link" href="">Odoo ERP Cloud</a>
+                    <a class="btn btn-link" href="">TaskTrak Hub Manager</a>
+
+                </div>
+                <div class="col-md-6 col-lg-3 wow fadeIn" data-wow-delay="1.8s">
                     <h5 class="text-white mb-4">Get In Touch</h5>
-                    <p><i class="fa fa-map-marker-alt me-3"></i>123 Street, Pune, India</p>
-                    <p><i class="fa fa-phone-alt me-3"></i>+012 345 67890</p>
-                    <p><i class="fa fa-envelope me-3"></i>info@example.com</p>
+                    <p><i class="fa fa-map-marker-alt me-3"></i>Flat No. B-102, Laxmi Chowk, Phase 1, Hinjawadi Rajiv
+                        Gandhi Infotech Park, Hinjawadi, Pimpri-Chinchwad, Maharashtra 411057</p>
+                    <p><i class="fa fa-phone-alt me-3"></i>0253 24651409</p>
+                    <p><i class="fa fa-phone-alt me-3"></i>+91 7410016111/13/14</p>
+                    <p><i class="fa fa-envelope me-3"></i>career@lealsolution.com</p>
                     <div class="d-flex pt-2">
                         <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-twitter"></i></a>
                         <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-facebook-f"></i></a>
                         <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-youtube"></i></a>
                         <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-instagram"></i></a>
-                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-linkedin-in"></i></a>
+                        <a class="btn btn-outline-light btn-social"
+                            href="https://in.linkedin.com/company/ashapuri-refrigeration-services" target="_blank"><i
+                                class="fab fa-linkedin-in"></i></a>
                     </div>
-                </div>
-                <div class="col-md-6 col-lg-3 wow fadeIn" data-wow-delay="0.5s">
-                    <h5 class="text-white mb-4">Popular Link</h5>
-                    <a class="btn btn-link" href="about.html">About Us</a>
-                    <a class="btn btn-link" href="contact.html">Contact Us</a>
-                    <a class="btn btn-link" href="">Privacy Policy</a>
-                    <a class="btn btn-link" href="">Terms & Condition</a>
-                </div>
-                <div class="col-md-6 col-lg-3 wow fadeIn" data-wow-delay="0.7s">
-                    <h5 class="text-white mb-4">Our Services</h5>
-                    <a class="btn btn-link" href="">Service 1</a>
-                    <a class="btn btn-link" href="">Service 2</a>
-                    <a class="btn btn-link" href="">Service 3</a>
-                    <a class="btn btn-link" href="">Service 4</a>
                 </div>
             </div>
         </div>
@@ -191,10 +582,10 @@
             <div class="copyright">
                 <div class="row">
                     <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-                        &copy; <a class="border-bottom" href="#">Site Name</a>, All Right Reserved.
-
-
-                        Designed By <a class="border-bottom" href="#.">Harshad</a>
+                        &copy; <a class="border-bottom" href="index.html">Leal Software Solution</a>, All Right
+                        Reserved.
+                        Designed By <a class="border-bottom" href="https://www.lealsolution.com/"
+                            target="_blank">Ajinkya Dongare</a>
                     </div>
                     <div class="col-md-6 text-center text-md-end">
                         <div class="footer-menu">
