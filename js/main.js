@@ -10,8 +10,8 @@
         }, 1);
     };
     spinner();
-    
-    
+
+
     // Initiate the wowjs
     new WOW().init();
 
@@ -31,8 +31,8 @@
         delay: 10,
         time: 2000
     });
-    
-    
+
+
     // Back to top button
     $(window).scroll(function () {
         if ($(this).scrollTop() > 100) {
@@ -42,7 +42,7 @@
         }
     });
     $('.back-to-top').click(function () {
-        $('html, body').animate({scrollTop: 0}, 1500, 'easeInOutExpo');
+        $('html, body').animate({ scrollTop: 0 }, 1500, 'easeInOutExpo');
         return false;
     });
 
@@ -55,26 +55,96 @@
         dots: true,
         loop: true,
         nav: true,
-        navText : [
+        navText: [
             '<i class="bi bi-chevron-left"></i>',
             '<i class="bi bi-chevron-right"></i>'
         ]
     });
-    
+
 })(jQuery);
 
-        document.querySelectorAll('.strategy-box').forEach(box => {
-            box.addEventListener('click', function () {
-                // Toggle the expanded class
-                this.classList.toggle('expanded');
+document.querySelectorAll('.strategy-box').forEach(box => {
+    box.addEventListener('click', function () {
+        // Toggle the expanded class
+        this.classList.toggle('expanded');
 
-                // Collapse other boxes
-                document.querySelectorAll('.strategy-box').forEach(otherBox => {
-                    if (otherBox !== this) {
-                        otherBox.classList.remove('expanded');
-                    }
-                });
-            });
+        // Collapse other boxes
+        document.querySelectorAll('.strategy-box').forEach(otherBox => {
+            if (otherBox !== this) {
+                otherBox.classList.remove('expanded');
+            }
         });
+    });
+});
+
+
+// career job apply code 
+const careerJobListings = document.querySelectorAll('.job-listing');
+careerJobListings.forEach(listing => {
+    listing.addEventListener('click', function (event) {
+        // Toggle the form for the clicked job listing
+        const form = this.querySelector('.apply-form');
+
+        // Close any open forms and reset styles
+        careerJobListings.forEach(item => {
+            if (item !== listing) {
+                item.querySelector('.apply-form').style.display = 'none';
+                item.classList.remove('no-scale', 'form-open'); // Remove classes from other items
+            }
+        });
+
+        // Toggle the visibility of the form
+        if (form.style.display === 'block') {
+            form.style.display = 'none';
+            this.classList.remove('no-scale', 'form-open'); // Remove classes to restore hover effects
+        } else {
+            form.style.display = 'block';
+            this.classList.add('no-scale', 'form-open'); // Add classes to stop scaling and show left border
+        }
+
+        event.stopPropagation(); // Prevent further propagation of the current event
+    });
+
+    // Prevent click event from bubbling up when clicking inside the form
+    const form = listing.querySelector('.apply-form');
+    form.addEventListener('click', function (event) {
+        event.stopPropagation(); // Prevent clicks inside the form from closing it
+    });
+});
+
+
+
+
+
+// YouTube video URL
+const videoUrl = "https://www.youtube.com/embed/YOUR_VIDEO_ID"; // Replace with your YouTube video ID
+
+// jQuery to load the video URL when the modal opens
+$('#videoModal').on('show.bs.modal', function (event) {
+    const modal = $(this);
+    modal.find('#videoIframe').attr('src', videoUrl);
+});
+
+// Clear the video URL when the modal is closed
+$('#videoModal').on('hide.bs.modal', function (event) {
+    const modal = $(this);
+    modal.find('#videoIframe').attr('src', '');
+});
+
+//   
+
+function openVideo(videoUrl) {
+    const videoFrame = document.getElementById('videoFrame');
+    videoFrame.src = videoUrl;
+    var myModal = new bootstrap.Modal(document.getElementById('videoModal'));
+    myModal.show();
+}
+
+// Clear video frame on modal close
+document.getElementById('videoModal').addEventListener('hidden.bs.modal', function () {
+    const videoFrame = document.getElementById('videoFrame');
+    videoFrame.src = '';
+});
+
 
 

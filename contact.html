@@ -17,6 +17,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Ubuntu:wght@500;700&display=swap"
         rel="stylesheet">
 
+    <!-- Font Stylesheet Montserrat -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
+
     <!-- Icon Font Stylesheet -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
@@ -48,7 +51,7 @@
         <div class="container">
             <nav class="navbar navbar-expand-lg navbar-dark p-0">
                 <a href="index.html" class="navbar-brand">
-                    <h1 class="text-white">Logo<span class="text-dark">.</span></h1>
+                    <img src="img/index_images/leal-software-logo.jpg" alt="Button Image" class="animated slideInDown">
                 </a>
                 <button type="button" class="navbar-toggler ms-auto me-0" data-bs-toggle="collapse"
                     data-bs-target="#navbarCollapse">
@@ -56,15 +59,27 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarCollapse">
                     <div class="navbar-nav ms-auto">
-                        <a href="index.html" class="nav-item nav-link ">Home</a>
-                        <a href="service.html" class="nav-item nav-link">Services</a>
-                        <a href="product.html" class="nav-item nav-link">Product</a>
-                        <a href="research.html" class="nav-item nav-link">Research</a>
-                        <a href="about.html" class="nav-item nav-link">About</a>
-                        <a href="career.html" class="nav-item nav-link">Career</a>
-                        <a href="blogs.html" class="nav-item nav-link">Blogs</a>
-                        <a href="contact.html" class="nav-item nav-link active">Contact US</a>
+                        <a href="index.html" class="nav-item nav-link">HOME</a>
+                        <a href="about.html" class="nav-item nav-link">ABOUT</a>
+                        <a href="service.html" class="nav-item nav-link">SERVICES</a>
+
+                        <div class="dropdown nav-item nav-link">
+                            <button class="dropdown-toggle border-0 bg-primary" type="button" id="dropdownMenuButton"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
+                                style="color:rgba(255, 255, 255, .7);">
+                                PRODUCT </button>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                <a class="dropdown-item" href="odoo.html">Oddo/Cloud ERP</a>
+                                <a class="dropdown-item" href="#">Task-Trak Hub Manager</a>
+                                <a class="dropdown-item" href="#">HVAC Heat Load Calculator</a>
+                                <a class="dropdown-item" href="#">HVAC Leal GADraw</a>
+                            </div>
+                        </div>
+                        <a href="career.html" class="nav-item nav-link">CAREER</a>
+                        <a href="blogs.html" class="nav-item nav-link">BLOGS</a>
+                        <a href="contact.html" class="nav-item nav-link active">CONTACT US</a>
                     </div>
+
                     <butaton type="button" class="btn text-white p-0 d-none d-lg-block" data-bs-toggle="modal"
                         data-bs-target="#searchModal"><i class="fa fa-search"></i></butaton>
                 </div>
@@ -79,17 +94,22 @@
         <div class="container pt-5">
             <div class="row g-5 pt-5">
                 <div class="col-lg-6 align-self-center text-center text-lg-start mb-lg-5">
-                    <h1 class="display-4 text-white mb-4 animated slideInRight">Contact Us</h1>
+                    <h1 class="display-4 text-white mb-4 animated slideInRight">Services</h1>
                     <nav aria-label="breadcrumb">
                         <ol class="breadcrumb justify-content-center justify-content-lg-start mb-0">
                             <li class="breadcrumb-item"><a class="text-white" href="#">Home</a></li>
-                            <li class="breadcrumb-item text-white active" aria-current="page">Contact Us</li>
+                            <li class="breadcrumb-item text-white active" aria-current="page">Services</li>
                         </ol>
                     </nav>
+                    <p class="text-white mb-4 pt-3 animated fadeInLeftBig">What’s revolutionary today can turn ordinary
+                        tomorrow. Therefore, brands must continuously evolve and transform for better customer
+                        experience, engagement, and profitability. Our software development services and capabilities
+                        are curated to help you create a positive and engaging brand image. You get extensive
+                        capabilities under one roof, from software product engineering and DevOps to quality engineering
+                        and AI/ML development.</p>
                 </div>
                 <div class="col-lg-6 align-self-end text-center text-lg-end">
-                    <img class="img-fluid w-100" src="img/home-banner.png" alt=""
-                        style="max-height: 300px;object-fit: contain;">
+                    <img class="img-fluid w-100" src="img/home-banner.png" alt="" style="object-fit: contain;">
                 </div>
             </div>
         </div>
@@ -205,40 +225,53 @@
     <div class="container-fluid bg-dark text-white-50 footer pt-5">
         <div class="container py-5">
             <div class="row g-5">
-                <div class="col-md-6 col-lg-3 wow fadeIn" data-wow-delay="0.1s">
+                <div class="col-md-6 col-lg-3 wow fadeInLeftBig" data-wow-delay="0.1s">
                     <a href="index.html" class="d-inline-block mb-3">
-                        <h1 class="text-white">LOGO<span class="text-primary">.</span></h1>
+                        <h1 class="text-white text-white-nav">Leal Software Solution <span class="text-primary"></span>
+                        </h1>
                     </a>
-                    <p class="mb-0">Tempor erat elitr rebum at clita. Diam dolor diam ipsum et tempor sit. Aliqu diam
-                        amet diam et eos labore. Clita erat ipsum et lorem et sit, sed stet no labore lorem sit. Sanctus
-                        clita duo justo et tempor</p>
+                    <p class="mb-0">Leal Software Solution excels in delivering innovative, high-quality refrigeration
+                        solutions. With a focus on custom design, efficiency, and reliability, we provide tailored
+                        systems and exceptional service to meet diverse industry needs.</p>
                 </div>
-                <div class="col-md-6 col-lg-3 wow fadeIn" data-wow-delay="0.3s">
+
+                <div class="col-md-6 col-lg-3 wow fadeInLeftBig" data-wow-delay="0.5s">
+                    <h5 class="text-white mb-4">Popular Link</h5>
+                    <a class="btn btn-link" href="about.html">About Us</a>
+                    <a class="btn btn-link" href="about.html">Projects</a>
+                    <a class="btn btn-link" href="service.html">Services</a>
+                    <a class="btn btn-link" href="contact.html">Contact Us</a>
+                    <a class="btn btn-link" href="">Privacy Policy</a>
+                    <a class="btn btn-link" href="">Terms & Condition</a>
+                </div>
+                <div class="col-md-6 col-lg-3 wow fadeIn" data-wow-delay="1.3s">
+                    <h5 class="text-white mb-4">Our Services</h5>
+                    <a class="btn btn-link" href="">Software Development</a>
+                    <a class="btn btn-link" href="">Mobile Application <br> Development</a>
+                    <a class="btn btn-link" href="">Web App Development</a>
+                    <a class="btn btn-link" href="">HVAC Heat Load <br>Calculator</a>
+                    <a class="btn btn-link" href="">HLC Leal Bussiness Solution</a>
+                    <a class="btn btn-link" href="">Leal GADraw</a>
+                    <a class="btn btn-link" href="">Odoo ERP Cloud</a>
+                    <a class="btn btn-link" href="">TaskTrak Hub Manager</a>
+
+                </div>
+                <div class="col-md-6 col-lg-3 wow fadeIn" data-wow-delay="1.8s">
                     <h5 class="text-white mb-4">Get In Touch</h5>
-                    <p><i class="fa fa-map-marker-alt me-3"></i>123 Street, Pune, India</p>
-                    <p><i class="fa fa-phone-alt me-3"></i>+012 345 67890</p>
-                    <p><i class="fa fa-envelope me-3"></i>info@example.com</p>
+                    <p><i class="fa fa-map-marker-alt me-3"></i>Flat No. B-102, Laxmi Chowk, Phase 1, Hinjawadi Rajiv
+                        Gandhi Infotech Park, Hinjawadi, Pimpri-Chinchwad, Maharashtra 411057</p>
+                    <p><i class="fa fa-phone-alt me-3"></i>0253 24651409</p>
+                    <p><i class="fa fa-phone-alt me-3"></i>+91 7410016111/13/14</p>
+                    <p><i class="fa fa-envelope me-3"></i>career@lealsolution.com</p>
                     <div class="d-flex pt-2">
                         <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-twitter"></i></a>
                         <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-facebook-f"></i></a>
                         <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-youtube"></i></a>
                         <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-instagram"></i></a>
-                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-linkedin-in"></i></a>
+                        <a class="btn btn-outline-light btn-social"
+                            href="https://in.linkedin.com/company/ashapuri-refrigeration-services" target="_blank"><i
+                                class="fab fa-linkedin-in"></i></a>
                     </div>
-                </div>
-                <div class="col-md-6 col-lg-3 wow fadeIn" data-wow-delay="0.5s">
-                    <h5 class="text-white mb-4">Popular Link</h5>
-                    <a class="btn btn-link" href="about.html">About Us</a>
-                    <a class="btn btn-link" href="contact.html">Contact Us</a>
-                    <a class="btn btn-link" href="">Privacy Policy</a>
-                    <a class="btn btn-link" href="">Terms & Condition</a>
-                </div>
-                <div class="col-md-6 col-lg-3 wow fadeIn" data-wow-delay="0.7s">
-                    <h5 class="text-white mb-4">Our Services</h5>
-                    <a class="btn btn-link" href="">Service 1</a>
-                    <a class="btn btn-link" href="">Service 2</a>
-                    <a class="btn btn-link" href="">Service 3</a>
-                    <a class="btn btn-link" href="">Service 4</a>
                 </div>
             </div>
         </div>
@@ -246,10 +279,10 @@
             <div class="copyright">
                 <div class="row">
                     <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-                        &copy; <a class="border-bottom" href="#">Site Name</a>, All Right Reserved.
-
-
-                        Designed By <a class="border-bottom" href="#.">Harshad</a>
+                        &copy; <a class="border-bottom" href="index.html">Leal Software Solution</a>, All Right
+                        Reserved.
+                        Designed By <a class="border-bottom" href="https://www.lealsolution.com/"
+                            target="_blank">Ajinkya Dongare</a>
                     </div>
                     <div class="col-md-6 text-center text-md-end">
                         <div class="footer-menu">

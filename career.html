@@ -17,6 +17,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Ubuntu:wght@500;700&display=swap"
         rel="stylesheet">
 
+    <!-- Font Stylesheet Montserrat -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
+
     <!-- Icon Font Stylesheet -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
@@ -48,7 +51,7 @@
         <div class="container">
             <nav class="navbar navbar-expand-lg navbar-dark p-0">
                 <a href="index.html" class="navbar-brand">
-                    <h1 class="text-white">Logo<span class="text-dark">.</span></h1>
+                    <img src="img/index_images/leal-software-logo.jpg" alt="Button Image" class="animated slideInDown">
                 </a>
                 <button type="button" class="navbar-toggler ms-auto me-0" data-bs-toggle="collapse"
                     data-bs-target="#navbarCollapse">
@@ -56,15 +59,27 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarCollapse">
                     <div class="navbar-nav ms-auto">
-                        <a href="index.html" class="nav-item nav-link ">Home</a>
-                        <a href="service.html" class="nav-item nav-link">Services</a>
-                        <a href="product.html" class="nav-item nav-link">Product</a>
-                        <a href="research.html" class="nav-item nav-link">Research</a>
-                        <a href="about.html" class="nav-item nav-link">About</a>
-                        <a href="career.html" class="nav-item nav-link active">Career</a>
-                        <a href="blogs.html" class="nav-item nav-link">Blogs</a>
-                        <a href="contact.html" class="nav-item nav-link ">Contact US</a>
+                        <a href="index.html" class="nav-item nav-link">HOME</a>
+                        <a href="about.html" class="nav-item nav-link">ABOUT</a>
+                        <a href="service.html" class="nav-item nav-link">SERVICES</a>
+
+                        <div class="dropdown nav-item nav-link">
+                            <button class="dropdown-toggle border-0 bg-primary" type="button" id="dropdownMenuButton"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
+                                style="color:rgba(255, 255, 255, .7);">
+                                PRODUCT </button>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                <a class="dropdown-item" href="odoo.html">Oddo/Cloud ERP</a>
+                                <a class="dropdown-item" href="#">Task-Trak Hub Manager</a>
+                                <a class="dropdown-item" href="#">HVAC Heat Load Calculator</a>
+                                <a class="dropdown-item" href="#">HVAC Leal GADraw</a>
+                            </div>
+                        </div>
+                        <a href="career.html" class="nav-item nav-link active">CAREER</a>
+                        <a href="blogs.html" class="nav-item nav-link">BLOGS</a>
+                        <a href="contact.html" class="nav-item nav-link">CONTACT US</a>
                     </div>
+
                     <butaton type="button" class="btn text-white p-0 d-none d-lg-block" data-bs-toggle="modal"
                         data-bs-target="#searchModal"><i class="fa fa-search"></i></butaton>
                 </div>
@@ -79,16 +94,21 @@
         <div class="container pt-5">
             <div class="row g-5 pt-5">
                 <div class="col-lg-6 align-self-center text-center text-lg-start mb-lg-5">
-                    <h1 class="display-4 text-white mb-4 animated slideInRight">Our Projects</h1>
+                    <h1 class="display-4 text-white mb-4 animated slideInRight">Career</h1>
                     <nav aria-label="breadcrumb">
                         <ol class="breadcrumb justify-content-center justify-content-lg-start mb-0">
                             <li class="breadcrumb-item"><a class="text-white" href="#">Home</a></li>
-                            <li class="breadcrumb-item text-white active" aria-current="page">Our Projects</li>
+                            <li class="breadcrumb-item text-white active" aria-current="page">Career</li>
                         </ol>
                     </nav>
+                    <p class="text-white mb-4 animated fadeInLeftBig">Leal Software Solution is a trusted software
+                        company, dedicated to delivering cutting-edge technology solutions tailored to your business
+                        needs. Our expertise spans various industries, enabling businesses to optimize their processes,
+                        boost productivity, and drive innovation. Partner with us to transform your operations and
+                        achieve long-term success through reliable software solutions.</p>
                 </div>
                 <div class="col-lg-6 align-self-end text-center text-lg-end">
-                    <img class="img-fluid w-100" src="img/coming-soon-banner.jpg" alt="" style="max-height: 300px;">
+                    <img class="img-fluid w-100" src="img/home-banner.png" alt="" style="object-fit: contain;">
                 </div>
             </div>
         </div>
@@ -117,76 +137,251 @@
     <!-- Full Screen Search End -->
 
 
-    <div class="min-height" style="min-height: 700px;">
-
-    </div>
-
-
-
-
-
-    <!-- Newsletter Start -->
-    <div class="container-fluid bg-primary newsletter py-5">
+    <section>
         <div class="container">
-            <div class="row g-5 align-items-center">
-                <div class="col-md-5 ps-lg-0 pt-5 pt-md-0 text-start wow fadeIn" data-wow-delay="0.3s">
-                    <img class="img-fluid" src="img/newsletter.jpg" alt="">
-                </div>
-                <div class="col-md-7 py-5 newsletter-text wow fadeIn" data-wow-delay="0.5s">
-                    <div class="btn btn-sm border rounded-pill text-white px-3 mb-3">Newsletter</div>
-                    <h1 class="text-white mb-4">Let's subscribe the newsletter</h1>
-                    <div class="position-relative w-100 mt-3 mb-2">
-                        <input class="form-control border-0 rounded-pill w-100 ps-4 pe-5" type="text"
-                            placeholder="Enter Your Email" style="height: 48px;">
-                        <button type="button" class="btn shadow-none position-absolute top-0 end-0 mt-1 me-2"><i
-                                class="fa fa-paper-plane text-primary fs-4"></i></button>
+            <h2 class="text-center p-4">Apply to Leal Software Solution Jobs</h2>
+            <!-- Job Listings -->
+            <div class="row">
+                <!-- Job Listing 1 -->
+                <div class="col-12 col-md-12">
+                    <div class="job-listing card p-3 my-4">
+                        <h5 class="mb-0 text-start">Junior Software Engineer</h5>
+                        <p class="small text-start">Pune, Maharashtra, India</p>
+                        <p class="small text-start">08/23/2024</p>
+
+                        <!-- Application Form -->
+                        <div class="apply-form card p-3">
+                            <h3>Apply for Junior Software Engineer</h3>
+                            <div class="badge bg-secondary rounded-0 mb-2 p-2">EXPERIENCE - 7 TO 8 YEARS</div>
+                            <ul class="list-unstyled">
+                                <li class="py-1">Coordination with other departments for process input/output data</li>
+                                <li class="py-1">Co-ordination with vendors</li>
+                                <li class="py-1">Preparation of Process flow diagrams based on block flow diagrams, Heat
+                                    & Mass balance</li>
+                                <li class="py-1">Preparation of P&IDs</li>
+                                <li class="py-1">Performing process calculations like line sizing, pump hydraulics,
+                                    Relief valve sizing, Heat exchanger design</li>
+                                <li class="py-1">Preparation of Process datasheets for different process equipment</li>
+                                <li class="py-1">Preparation of different lists like line list, Equipment list, Utility
+                                    summary list, SM list & Tie-in list</li>
+                                <li class="py-1">Preparation of calculation reports etc.</li>
+                            </ul>
+                            <div class="form-grid">
+                                <input type="text" class="form-control mb-2" placeholder="Your Name" required>
+                                <input type="email" class="form-control mb-2" placeholder="Your Email" required>
+                                <input type="text" class="form-control mb-2" placeholder="Experience (in years)"
+                                    required>
+                                <input type="text" class="form-control mb-2" placeholder="Mobile Number" required>
+                                <input type="file" class="form-control mb-2" required>
+                                <textarea class="form-control mb-2" placeholder="Message (optional)"></textarea>
+                                <button type="button" class="btn btn-primary">Submit Application</button>
+                            </div>
+                        </div>
                     </div>
-                    <small class="text-white-50">Diam sed sed dolor stet amet eirmod</small>
+                </div>
+
+                <!-- Job Listing 2 -->
+                <div class="col-12 col-md-12">
+                    <div class="job-listing card p-3 my-4">
+                        <h5 class="mb-0 text-start">Software Engineer</h5>
+                        <p class="small text-start">Pune, Maharashtra, India</p>
+                        <p class="small text-start">08/23/2024</p>
+
+                        <!-- Application Form -->
+                        <div class="apply-form card p-3">
+                            <h3>Apply for Software Engineer</h3>
+                            <div class="badge bg-secondary rounded-0 mb-2 p-2">EXPERIENCE - 7 TO 8 YEARS</div>
+                            <ul class="list-unstyled">
+                                <li class="py-1">Coordination with other departments for process input/output data</li>
+                                <li class="py-1">Co-ordination with vendors</li>
+                                <li class="py-1">Preparation of Process flow diagrams based on block flow diagrams, Heat
+                                    & Mass balance</li>
+                                <li class="py-1">Preparation of P&IDs</li>
+                                <li class="py-1">Performing process calculations like line sizing, pump hydraulics,
+                                    Relief valve sizing, Heat exchanger design</li>
+                                <li class="py-1">Preparation of Process datasheets for different process equipment</li>
+                                <li class="py-1">Preparation of different lists like line list, Equipment list, Utility
+                                    summary list, SM list & Tie-in list</li>
+                                <li class="py-1">Preparation of calculation reports etc.</li>
+                            </ul>
+                            <div class="form-grid">
+                                <input type="text" class="form-control mb-2" placeholder="Your Name" required>
+                                <input type="email" class="form-control mb-2" placeholder="Your Email" required>
+                                <input type="text" class="form-control mb-2" placeholder="Experience (in years)"
+                                    required>
+                                <input type="text" class="form-control mb-2" placeholder="Mobile Number" required>
+                                <input type="file" class="form-control mb-2" required>
+                                <textarea class="form-control mb-2" placeholder="Message (optional)"></textarea>
+                                <button type="button" class="btn btn-primary">Submit Application</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Job Listing 3 -->
+                <div class="col-12 col-md-12">
+                    <div class="job-listing card p-3 my-4">
+                        <h5 class="mb-0 text-start">Senior Software Engineer</h5>
+                        <p class="small text-start">Pune, Maharashtra, India</p>
+                        <p class="small text-start">08/23/2024</p>
+
+                        <!-- Application Form -->
+                        <div class="apply-form card p-3">
+                            <h3>Apply for Senior Software Engineer</h3>
+                            <div class="badge bg-secondary rounded-0 mb-2 p-2">EXPERIENCE - 7 TO 8 YEARS</div>
+                            <ul class="list-unstyled">
+                                <li class="py-1">Coordination with other departments for process input/output data</li>
+                                <li class="py-1">Co-ordination with vendors</li>
+                                <li class="py-1">Preparation of Process flow diagrams based on block flow diagrams, Heat
+                                    & Mass balance</li>
+                                <li class="py-1">Preparation of P&IDs</li>
+                                <li class="py-1">Performing process calculations like line sizing, pump hydraulics,
+                                    Relief valve sizing, Heat exchanger design</li>
+                                <li class="py-1">Preparation of Process datasheets for different process equipment</li>
+                                <li class="py-1">Preparation of different lists like line list, Equipment list, Utility
+                                    summary list, SM list & Tie-in list</li>
+                                <li class="py-1">Preparation of calculation reports etc.</li>
+                            </ul>
+                            <div class="form-grid">
+                                <input type="text" class="form-control mb-2" placeholder="Your Name" required>
+                                <input type="email" class="form-control mb-2" placeholder="Your Email" required>
+                                <input type="text" class="form-control mb-2" placeholder="Experience (in years)"
+                                    required>
+                                <input type="text" class="form-control mb-2" placeholder="Mobile Number" required>
+                                <input type="file" class="form-control mb-2" required>
+                                <textarea class="form-control mb-2" placeholder="Message (optional)"></textarea>
+                                <button type="button" class="btn btn-primary">Submit Application</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Job Listing 4 -->
+                <div class="col-12 col-md-12">
+                    <div class="job-listing card p-3 my-4">
+                        <h5 class="mb-0 text-start">HVAC Engineer</h5>
+                        <p class="small text-start">Pune, Maharashtra, India</p>
+                        <p class="small text-start">08/23/2024</p>
+
+                        <!-- Application Form -->
+                        <div class="apply-form card p-3">
+                            <h3>Apply for Process Design Engineer - 002</h3>
+                            <div class="badge bg-secondary rounded-0 mb-2 p-2">EXPERIENCE - 7 TO 8 YEARS</div>
+                            <ul class="list-unstyled">
+                                <li class="py-1">Coordination with other departments for process input/output data</li>
+                                <li class="py-1">Co-ordination with vendors</li>
+                                <li class="py-1">Preparation of Process flow diagrams based on block flow diagrams, Heat
+                                    & Mass balance</li>
+                                <li class="py-1">Preparation of P&IDs</li>
+                                <li class="py-1">Performing process calculations like line sizing, pump hydraulics,
+                                    Relief valve sizing, Heat exchanger design</li>
+                                <li class="py-1">Preparation of Process datasheets for different process equipment</li>
+                                <li class="py-1">Preparation of different lists like line list, Equipment list, Utility
+                                    summary list, SM list & Tie-in list</li>
+                                <li class="py-1">Preparation of calculation reports etc.</li>
+                            </ul>
+                            <div class="form-grid">
+                                <input type="text" class="form-control mb-2" placeholder="Your Name" required>
+                                <input type="email" class="form-control mb-2" placeholder="Your Email" required>
+                                <input type="text" class="form-control mb-2" placeholder="Experience (in years)"
+                                    required>
+                                <input type="text" class="form-control mb-2" placeholder="Mobile Number" required>
+                                <input type="file" class="form-control mb-2" required>
+                                <textarea class="form-control mb-2" placeholder="Message (optional)"></textarea>
+                                <button type="button" class="btn btn-primary">Submit Application</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Job Listing 5 -->
+                <div class="col-12 col-md-12">
+                    <div class="job-listing card p-3 my-4">
+                        <h5 class="mb-0 text-start">Sales/Marketing Engineer</h5>
+                        <p class="small text-start pt-2">Pune, Maharashtra, India</p>
+                        <p class="small text-start">08/23/2024</p>
+
+                        <!-- Application Form -->
+                        <div class="apply-form card p-3">
+                            <h3>Apply for HVAC Systems Manager</h3>
+                            <div class="badge bg-secondary rounded-0 mb-2 p-2">EXPERIENCE - 5 TO 7 YEARS</div>
+                            <ul class="list-unstyled">
+                                <li class="py-1">Managing HVAC installation and maintenance projects</li>
+                                <li class="py-1">Leading a team of HVAC technicians</li>
+                                <li class="py-1">Ensuring compliance with safety and building regulations</li>
+                                <li class="py-1">Developing HVAC maintenance plans</li>
+                                <li class="py-1">Budget management and cost estimation for HVAC projects</li>
+                            </ul>
+                            <div class="form-grid">
+                                <input type="text" class="form-control mb-2" placeholder="Your Name" required>
+                                <input type="email" class="form-control mb-2" placeholder="Your Email" required>
+                                <input type="text" class="form-control mb-2" placeholder="Experience (in years)"
+                                    required>
+                                <input type="text" class="form-control mb-2" placeholder="Mobile Number" required>
+                                <input type="file" class="form-control mb-2" required>
+                                <textarea class="form-control mb-2" placeholder="Message (optional)"></textarea>
+                                <button type="button" class="btn btn-primary">Submit Application</button>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-    <!-- Newsletter End -->
+    </section>
+    <!-- End Section -->
 
 
     <!-- Footer Start -->
     <div class="container-fluid bg-dark text-white-50 footer pt-5">
         <div class="container py-5">
             <div class="row g-5">
-                <div class="col-md-6 col-lg-3 wow fadeIn" data-wow-delay="0.1s">
+                <div class="col-md-6 col-lg-3 wow fadeInLeftBig" data-wow-delay="0.1s">
                     <a href="index.html" class="d-inline-block mb-3">
-                        <h1 class="text-white">LOGO<span class="text-primary">.</span></h1>
+                        <h1 class="text-white text-white-nav">Leal Software Solution <span class="text-primary"></span>
+                        </h1>
                     </a>
-                    <p class="mb-0">Tempor erat elitr rebum at clita. Diam dolor diam ipsum et tempor sit. Aliqu diam
-                        amet diam et eos labore. Clita erat ipsum et lorem et sit, sed stet no labore lorem sit. Sanctus
-                        clita duo justo et tempor</p>
+                    <p class="mb-0">Leal Software Solution excels in delivering innovative, high-quality refrigeration
+                        solutions. With a focus on custom design, efficiency, and reliability, we provide tailored
+                        systems and exceptional service to meet diverse industry needs.</p>
                 </div>
-                <div class="col-md-6 col-lg-3 wow fadeIn" data-wow-delay="0.3s">
+
+                <div class="col-md-6 col-lg-3 wow fadeInLeftBig" data-wow-delay="0.5s">
+                    <h5 class="text-white mb-4">Popular Link</h5>
+                    <a class="btn btn-link" href="about.html">About Us</a>
+                    <a class="btn btn-link" href="about.html">Projects</a>
+                    <a class="btn btn-link" href="service.html">Services</a>
+                    <a class="btn btn-link" href="contact.html">Contact Us</a>
+                    <a class="btn btn-link" href="">Privacy Policy</a>
+                    <a class="btn btn-link" href="">Terms & Condition</a>
+                </div>
+                <div class="col-md-6 col-lg-3 wow fadeIn" data-wow-delay="1.3s">
+                    <h5 class="text-white mb-4">Our Services</h5>
+                    <a class="btn btn-link" href="">Software Development</a>
+                    <a class="btn btn-link" href="">Mobile Application <br> Development</a>
+                    <a class="btn btn-link" href="">Web App Development</a>
+                    <a class="btn btn-link" href="">HVAC Heat Load <br>Calculator</a>
+                    <a class="btn btn-link" href="">HLC Leal Bussiness Solution</a>
+                    <a class="btn btn-link" href="">Leal GADraw</a>
+                    <a class="btn btn-link" href="">Odoo ERP Cloud</a>
+                    <a class="btn btn-link" href="">TaskTrak Hub Manager</a>
+
+                </div>
+                <div class="col-md-6 col-lg-3 wow fadeIn" data-wow-delay="1.8s">
                     <h5 class="text-white mb-4">Get In Touch</h5>
-                    <p><i class="fa fa-map-marker-alt me-3"></i>123 Street, Pune, India</p>
-                    <p><i class="fa fa-phone-alt me-3"></i>+012 345 67890</p>
-                    <p><i class="fa fa-envelope me-3"></i>info@example.com</p>
+                    <p><i class="fa fa-map-marker-alt me-3"></i>Flat No. B-102, Laxmi Chowk, Phase 1, Hinjawadi Rajiv
+                        Gandhi Infotech Park, Hinjawadi, Pimpri-Chinchwad, Maharashtra 411057</p>
+                    <p><i class="fa fa-phone-alt me-3"></i>0253 24651409</p>
+                    <p><i class="fa fa-phone-alt me-3"></i>+91 7410016111/13/14</p>
+                    <p><i class="fa fa-envelope me-3"></i>career@lealsolution.com</p>
                     <div class="d-flex pt-2">
                         <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-twitter"></i></a>
                         <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-facebook-f"></i></a>
                         <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-youtube"></i></a>
                         <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-instagram"></i></a>
-                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-linkedin-in"></i></a>
+                        <a class="btn btn-outline-light btn-social"
+                            href="https://in.linkedin.com/company/ashapuri-refrigeration-services" target="_blank"><i
+                                class="fab fa-linkedin-in"></i></a>
                     </div>
-                </div>
-                <div class="col-md-6 col-lg-3 wow fadeIn" data-wow-delay="0.5s">
-                    <h5 class="text-white mb-4">Popular Link</h5>
-                    <a class="btn btn-link" href="about.html">About Us</a>
-                    <a class="btn btn-link" href="contact.html">Contact Us</a>
-                    <a class="btn btn-link" href="">Privacy Policy</a>
-                    <a class="btn btn-link" href="">Terms & Condition</a>
-                </div>
-                <div class="col-md-6 col-lg-3 wow fadeIn" data-wow-delay="0.7s">
-                    <h5 class="text-white mb-4">Our Services</h5>
-                    <a class="btn btn-link" href="">Service 1</a>
-                    <a class="btn btn-link" href="">Service 2</a>
-                    <a class="btn btn-link" href="">Service 3</a>
-                    <a class="btn btn-link" href="">Service 4</a>
                 </div>
             </div>
         </div>
@@ -194,10 +389,10 @@
             <div class="copyright">
                 <div class="row">
                     <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-                        &copy; <a class="border-bottom" href="#">Site Name</a>, All Right Reserved.
-
-
-                        Designed By <a class="border-bottom" href="#.">Harshad</a>
+                        &copy; <a class="border-bottom" href="index.html">Leal Software Solution</a>, All Right
+                        Reserved.
+                        Designed By <a class="border-bottom" href="https://www.lealsolution.com/"
+                            target="_blank">Ajinkya Dongare</a>
                     </div>
                     <div class="col-md-6 text-center text-md-end">
                         <div class="footer-menu">
