@@ -33,6 +33,8 @@
 
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
 </head>
 
 <body>
@@ -63,16 +65,26 @@
                         <a href="about.html" class="nav-item nav-link">ABOUT</a>
                         <a href="service.html" class="nav-item nav-link">SERVICES</a>
 
-                        <div class="dropdown nav-item nav-link">
-                            <button class="dropdown-toggle border-0 bg-primary" type="button" id="dropdownMenuButton"
-                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
-                                style="color:rgba(255, 255, 255, .7);">
-                                PRODUCT </button>
-                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                <a class="dropdown-item" href="odoo.html">Oddo/Cloud ERP</a>
-                                <a class="dropdown-item" href="#">Task-Trak Hub Manager</a>
-                                <a class="dropdown-item" href="#">HVAC Heat Load Calculator</a>
-                                <a class="dropdown-item" href="#">HVAC Leal GADraw</a>
+                        <div class="dropdown nav-item">
+                            <button class="dropdown-toggle nav-link border-0 bg-primary  ps-0 rounded" type="button"
+                                id="dropdownMenuButton" data-bs-toggle="dropdown" aria-haspopup="true"
+                                aria-expanded="false" style="color: rgba(255, 255, 255, 0.9);">
+                                PRODUCT
+                            </button>
+                            <div class="dropdown-menu dropdown-menu-end shadow-lg rounded border-0 mt-2"
+                                aria-labelledby="dropdownMenuButton" style="background-color: #f8f9fa;">
+                                <a class="dropdown-item py-3 px-4 text-dark" href="odoo.html">
+                                    <i class="fas fa-cloud me-2"></i> Odoo/Cloud ERP
+                                </a>
+                                <a class="dropdown-item py-3 px-4 text-dark" href="#">
+                                    <i class="fas fa-tasks me-2"></i> Task-Trak Hub Manager
+                                </a>
+                                <a class="dropdown-item py-3 px-4 text-dark" href="hvac.html">
+                                    <i class="fas fa-wind me-2"></i> HVAC Heat Load Calculator
+                                </a>
+                                <a class="dropdown-item py-3 px-4 text-dark" href="#">
+                                    <i class="fas fa-drafting-compass me-2"></i> HVAC Leal GADraw
+                                </a>
                             </div>
                         </div>
                         <a href="career.html" class="nav-item nav-link">CAREER</a>
@@ -94,20 +106,15 @@
         <div class="container pt-5">
             <div class="row g-5 pt-5">
                 <div class="col-lg-6 align-self-center text-center text-lg-start mb-lg-5">
-                    <!-- <div class="btn btn-sm border rounded-pill text-white px-3 mb-3 animated fadeInLeftBig">Banner</div> -->
-                    <h1 class="display-4 text-white mb-4 animated fadeInLeftBig">Leal Software Solution</h1>
+                    <h1 class="display-4 text-white mb-4 animated slideInRight">Leal Software Solution</h1>
                     <p class="text-white mb-4 animated fadeInLeftBig">Leal Software Solution Offers Straightforward
                         Industrial Refrigeration Solutions Tailored For Efficiency And Reliability. We Streamline
                         Complex Systems, Ensuring Seamless Performance And Minimal Downtime. Trust Us To Simplify Your
                         Refrigeration Needs With Innovative Technology And Expert Support For Optimal Cooling And Energy
                         Savings.</p>
-                    <a href="" class="btn btn-light py-sm-3 px-sm-5 rounded-pill me-3 animated fadeInLeftBig">Read
-                        More</a>
-                    <a href="" class="btn btn-outline-light py-sm-3 px-sm-5 rounded-pill animated fadeInLeftBig">About
-                        More</a>
                 </div>
-                <div class="col-lg-6 align-self-end text-center text-lg-end wow fadeInRightBig">
-                    <img class="img-fluid" src="img/home-banner.png" alt="">
+                <div class="col-lg-6 align-self-end text-center text-lg-end">
+                    <img class="img-fluid w-100" src="img/home-banner.png" alt="" style="object-fit: contain;">
                 </div>
             </div>
         </div>
@@ -142,7 +149,7 @@
             <div class="row text-center">
                 <!-- Our Mission Box -->
                 <div class="col-lg-3 col-md-6 mb-4 wow fadeIn" data-wow-delay="0.5s">
-                    <div class="section-box">
+                    <div class="section-box text-start text-lg-center">
                         <h3 class="fw-bold">Our Mission</h3>
                         <div class="section-line"></div>
                         <p>Our mission is to empower businesses with innovative software solutions that enhance
@@ -155,7 +162,7 @@
 
                 <!-- Our Values Box -->
                 <div class="col-lg-3 col-md-6 mb-4 wow fadeIn" data-wow-delay="0.7s">
-                    <div class="section-box">
+                    <div class="section-box text-start text-lg-center">
                         <h3 class="fw-bold">Our Values</h3>
                         <div class="section-line"></div>
                         <p>Our values are innovation, integrity, customer-centricity, collaboration, and excellence. We
@@ -169,30 +176,27 @@
 
                 <!-- Consulting Box -->
                 <div class="col-lg-3 col-md-6 mb-4 wow fadeIn" data-wow-delay="0.9s">
-                    <div class="section-box">
+                    <div class="section-box text-start text-lg-center">
                         <h3 class="fw-bold">Consulting</h3>
                         <div class="section-line"></div>
                         <p>Our consulting services focus on providing expert guidance and tailored strategies to help
                             businesses
                             optimize their operations, embrace digital transformation, and achieve their goals with
-                            confidence and
-                            efficiency.
+                            confidence and efficiency.
                         </p>
                     </div>
                 </div>
 
                 <!-- Business Goals Box -->
                 <div class="col-lg-3 col-md-6 mb-4 wow fadeIn" data-wow-delay="1s">
-                    <div class="section-box">
+                    <div class="section-box text-start text-lg-center">
                         <h3 class="fw-bold">Business Goals</h3>
                         <div class="section-line"></div>
                         <p>Our business goals are to drive technological innovation, foster long-term client
                             partnerships,
                             expand
                             our global presence, and continuously improve our services to deliver maximum value and
-                            impact
-                            for
-                            our clients.
+                            impact for our clients.
                         </p>
                     </div>
                 </div>
@@ -210,97 +214,149 @@
                     style="color: #007bff;;">business growth
                     strategy</span>?</h1>
 
-            <p class="strategy-desc">
+            <p class="strategy-desc px-3 text-start text-lg-center">
                 The result of our company branding process is a comprehensive brand guideline that can be used to design
-                a
-                Marketing Website and other design assets like brand illustrations that reflect the new brand.
+                a Marketing Website and other design assets like brand illustrations that reflect the new brand.
             </p>
         </div>
-        <div class="container">
-            <div class="row justify-content-center py-5">
-                <!-- Box 1 -->
-                <div class="col-md-4 my-3 wow fadeInDownBig" data-wow-delay="0.5s">
-                    <div class="strategy-box bg-lightdark text-dark m-0" data-id="box-1">
-                        <div class="strategy-info">
+        <div class="container py-5">
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-4">
+                <!-- Card 1 -->
+                <div class="col">
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <i class="fas icon-cdn">01</i>
+                                <i class="fas fa-laptop-code icon-cdn-no"></i>
+                                <div>
+                                    <h3>Software Development</h3>
+                                    <p>Expert software development services tailored to your business needs, delivering
+                                        innovative solutions with cutting-edge technology. Achieve operational
+                                        efficiency and seamless user experiences through customized, scalable software
+                                        solutions.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="flip-card-back">
+                                <img src="img/index_images/developer-solution.jpg" alt="Avatar">
+                            </div>
                         </div>
-                        <img src="img/team-1.jpg" alt="Software Development Image">
-                        <h4>Software Development</h4>
-                        <p>Our team specializes in creating custom applications that drive efficiency and growth...
-                            Software Development: Our team creates custom applications to drive efficiency and growth.
-                            From concept to deployment, we deliver scalable, high-performance software tailored to your
-                            needs.</p>
                     </div>
                 </div>
 
-                <!-- Box 2 -->
-                <div class="col-md-4 my-3 wow fadeInDownBig" data-wow-delay="0.7s">
-                    <div class="strategy-box bg-danger-custom m-0" data-id="box-2">
-                        <div class="strategy-info">
+                <!-- Card 2 -->
+                <div class="col">
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <i class="fas icon-cdn">02</i>
+                                <i class="fas fa-mobile-alt icon-cdn-no"></i>
+                                <div>
+                                    <h3>Application Development</h3>
+                                    <p>Custom application development that transforms ideas into powerful, user-friendly
+                                        apps. Our expertise ensures seamless functionality, performance optimization,
+                                        and intuitive design for mobile, web, and enterprise applications across various
+                                        platforms.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="flip-card-back">
+                                <img src="img/index_images/software_ab_development.jpg" alt="Avatar">
+                            </div>
                         </div>
-                        <img src="img/team-2.jpg" alt="App Development Image">
-                        <h4>App Development</h4>
-                        <p>Our team specializes in creating custom applications that drive efficiency and growth...
-                            Software Development: Our team creates custom applications to drive efficiency and growth.
-                            From concept to deployment, we deliver scalable, high-performance software tailored to your
-                            needs.</p>
                     </div>
                 </div>
 
-                <!-- Box 3 -->
-                <div class="col-md-4 my-3 wow fadeInDownBig" data-wow-delay="0.9s">
-                    <div class="strategy-box bg-lightdark text-dark m-0" data-id="box-3">
-                        <div class="strategy-info">
+                <!-- Card 3 -->
+                <div class="col">
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <i class="fas icon-cdn">03</i>
+                                <i class="fas fa-globe icon-cdn-no"></i>
+                                <div>
+                                    <h3>Website Development</h3>
+                                    <p>Professional web development services creating responsive, visually appealing
+                                        websites. We deliver high-performance, SEO-friendly websites that enhance user
+                                        engagement, drive conversions, and support your business growth with modern,
+                                        scalable solutions.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="flip-card-back">
+                                <img src="img/index_images/developer-solution.jpg" alt="Avatar">
+                            </div>
                         </div>
-                        <img src="img/team-1.jpg" alt="Mobility Services Image">
-                        <h4>Mobility Services</h4>
-                        <p>Our team specializes in creating custom applications that drive efficiency and growth...
-                            Software Development: Our team creates custom applications to drive efficiency and growth.
-                            From concept to deployment, we deliver scalable, high-performance software tailored to your
-                            needs.</p>
                     </div>
                 </div>
 
-                <!-- Box 4 -->
-                <div class="col-md-4 my-3 wow fadeInUpBig" data-wow-delay="0.5s">
-                    <div class="strategy-box bg-danger-custom m-0" data-id="box-4">
-                        <div class="strategy-info">
+                <!-- Card 4 -->
+                <div class="col">
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <i class="fas icon-cdn">04</i>
+                                <i class="fas fa-mobile icon-cdn-no"></i>
+                                <div>
+                                    <h3>Mobility Services</h3>
+                                    <p>Comprehensive mobility app services, developing high-performance, user-centric
+                                        mobile apps for iOS and Android. Empower your business with seamless,
+                                        cross-platform solutions that enhance accessibility, productivity, and customer
+                                        engagement.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="flip-card-back">
+                                <img src="img/index_images/mobile_dev.jpg" alt="Avatar">
+                            </div>
                         </div>
-                        <img src="img/team-4.jpg" alt="Web Development Image">
-                        <h4>Web Development</h4>
-                        <p>Our team specializes in creating custom applications that drive efficiency and growth...
-                            Software Development: Our team creates custom applications to drive efficiency and growth.
-                            From concept to deployment, we deliver scalable, high-performance software tailored to your
-                            needs.</p>
                     </div>
                 </div>
 
-                <!-- Box 5 -->
-                <div class="col-md-4 my-3 wow fadeInUpBig" data-wow-delay="0.7s">
-                    <div class="strategy-box bg-lightdark text-dark m-0" data-id="box-5">
-                        <div class="strategy-info">
+                <!-- Card 5 -->
+                <div class="col">
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <i class="fas icon-cdn">05</i>
+                                <i class="fas fa-cloud icon-cdn-no"></i>
+                                <div>
+                                    <h3>Odoo Development</h3>
+                                    <p>Transform your business with Odoo ERP and cloud solutions. Automate processes,
+                                        optimize workflows, and scale effortlessly with flexible, cloud-based ERP
+                                        services designed to fit your business's evolving demands.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="flip-card-back">
+                                <img src="img/index_images/cloud_services.jpg" alt="Avatar">
+                            </div>
                         </div>
-                        <img src="img/team-3.jpg" alt="Cloud Services Image">
-                        <h4>Cloud Services</h4>
-                        <p>Our team specializes in creating custom applications that drive efficiency and growth...
-                            Software Development: Our team creates custom applications to drive efficiency and growth.
-                            From concept to deployment, we deliver scalable, high-performance software tailored to your
-                            needs.</p>
                     </div>
                 </div>
 
-                <!-- Box 6 -->
-                <div class="col-md-4 my-3 wow fadeInUpBig" data-wow-delay="0.9s">
-                    <div class="strategy-box bg-danger-custom m-0" data-id="box-6">
-                        <div class="strategy-info">
+                <!-- Card 6 -->
+                <div class="col">
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <i class="fas icon-cdn">06</i>
+                                <i class="fas fa-bullhorn icon-cdn-no"></i>
+                                <div>
+                                    <h3>Digital Marketing</h3>
+                                    <p>Elevate your brand's visibility with tailored digital marketing solutions. Our
+                                        innovative strategies encompass SEO, content marketing, and social media,
+                                        driving engagement and conversion while crafting compelling narratives that
+                                        resonate.</p>
+                                </div>
+                            </div>
+                            <div class="flip-card-back">
+                                <img src="img/index_images/mobile_dev.jpg" alt="Avatar">
+                            </div>
                         </div>
-                        <img src="img/team-2.jpg" alt="Consulting Services Image">
-                        <h4>Consulting Services</h4>
-                        <p>Our team specializes in creating custom applications that drive efficiency and growth...
-                            Software Development: Our team creates custom applications to drive efficiency and growth.
-                            From concept to deployment, we deliver scalable, high-performance software tailored to your
-                            needs.</p>
                     </div>
                 </div>
+
             </div>
         </div>
     </section>
@@ -312,7 +368,6 @@
         <div class="container py-5">
             <div class="row g-5 align-items-center">
                 <div class="col-lg-5 wow fadeInLeftBig" data-wow-delay="0.1s">
-                    <!-- <div class="btn btn-sm border rounded-pill text-primary px-3 mb-3">Our Services</div> -->
                     <h1 class="mb-4">What is our Service</h1>
                     <p class="mb-4">Leal Software Solution services focus on delivering high-performance, scalable,
                         and tailored solutions designed to meet your business needs. Whether you're looking to
@@ -327,7 +382,7 @@
                         enterprise software, we build platforms that drive business growth, improve efficiency, and give
                         you a competitive edge. Let us help you turn your ideas into a reality with our comprehensive
                         Software Development services.</p>
-                    <a class="btn btn-primary rounded-pill px-4" href="">Read More</a>
+                    <a class="btn btn-primary rounded-pill px-4" href="service.html#services-leal">Read More</a>
                 </div>
                 <div class="col-lg-7">
                     <div class="row g-4">
@@ -411,12 +466,14 @@
         </div>
 
         <!-- Text Box -->
-        <div class="home-services-text">
-            <h2 class="fw-bold">Building a successful business analytics strategy</h2>
-            <p class="text-muted">Excepteur sint occaecat cupidatat non, sunt in culpa qui officia deserunt mollit anim
-                id est laborum.</p>
-            <p>Process by <a href="#" class="fw-bold text-decoration-none text-primary">Click Me!</a></p>
-            <a href="#" class="btn btn-primary rounded-pill px-4">LEARN MORE.</a>
+        <div class="home-services-text text-start text-lg-center">
+            <h2 class="fw-bold text-start">Building a successful business analytics strategy</h2>
+            <p class="text-muted text-start">
+                Leal Software Solution is a dynamic software company specializing in delivering tailored ERP solutions
+                and business automation. With a focus on efficiency, scalability, and innovation, Leal helps businesses
+                streamline operations through cutting-edge technologies.</p>
+            <p class="text-start">Process by <a href="#" class="fw-bold text-decoration-none text-primary ">Click
+                    Me!</a></p>
         </div>
     </div>
     <!-- End Content Section -->
@@ -463,7 +520,7 @@
                             <div class="d-flex rounded p-3" style="background: rgba(256, 256, 256, 0.1);">
                                 <i class="fa fa-users fa-3x text-white"></i>
                                 <div class="ms-3">
-                                    <h2 class="text-white mb-0" data-toggle="counter-up">155</h2>
+                                    <h2 class="text-white mb-0" data-toggle="counter-up">200</h2>
                                     <p class="text-white mb-0">Happy Clients</p>
                                 </div>
                             </div>
@@ -472,7 +529,7 @@
                             <div class="d-flex rounded p-3" style="background: rgba(256, 256, 256, 0.1);">
                                 <i class="fa fa-check fa-3x text-white"></i>
                                 <div class="ms-3">
-                                    <h2 class="text-white mb-0" data-toggle="counter-up">70</h2>
+                                    <h2 class="text-white mb-0" data-toggle="counter-up">50</h2>
                                     <p class="text-white mb-0">Project Completed</p>
                                 </div>
                             </div>
@@ -481,7 +538,7 @@
                             <div class="d-flex rounded p-3" style="background: rgba(256, 256, 256, 0.1);">
                                 <i class="fa fa-user-tie fa-3x text-white"></i>
                                 <div class="ms-3">
-                                    <h2 class="text-white mb-0" data-toggle="counter-up">17</h2>
+                                    <h2 class="text-white mb-0" data-toggle="counter-up">12</h2>
                                     <p class="text-white mb-0">Employees</p>
                                 </div>
                             </div>
@@ -500,51 +557,66 @@
                 </div>
                 <div class="col-lg-6 pb-5">
                     <!-- First Flex Column Div -->
-                    <div class="d-flex flex-column align-items-start justify-content-center p-4 mb-4 wow fadeInRightBig"
+                    <div class="d-flex flex-column align-items-start justify-content-center px-4 pt-4 mb-4 wow fadeInRightBig"
                         data-wow-delay="0.5s" style="background-color: rgba(256, 256, 256, 0.1);">
                         <div class="d-flex align-items-center">
-                            <img src="img/testimonial-3.jpg" alt="Client 4" class="me-3 rounded-circle mb-3"
+                            <img src="img/index_images/coding.jpg" alt="Client 4" class="me-3 mb-3"
                                 style="width: 70px; height: 70px;">
                             <div class="px-3">
-                                <h4 class="text-white mb-3">Software Development Services</h4>
+                                <h4 class="text-white mb-3">Software Development</h4>
                             </div>
                         </div>
                         <p class="text-white mb-4">We are dedicated to delivering high-quality refrigeration systems and
                             services that meet the specific needs of our customers. Our team is committed to innovation
                             and excellence, ensuring that every project is executed with precision and care.</p>
-                        <a href="#" class="btn btn-light rounded-pill px-4">Learn More</a>
+                        <!-- <a href="#" class="btn btn-light rounded-pill px-4">Learn More</a> -->
                     </div>
 
                     <!-- Second Flex Column Div -->
-                    <div class="d-flex flex-column align-items-start justify-content-center p-4 mb-4 wow fadeInRightBig"
+                    <div class="d-flex flex-column align-items-start justify-content-center px-4 pt-4 mb-4 wow fadeInRightBig"
                         data-wow-delay="0.5s" style="background-color: rgba(256, 256, 256, 0.1);">
                         <div class="d-flex align-items-center">
-                            <img src="img/testimonial-2.jpg" alt="Client 4" class="me-3 rounded-circle mb-3"
+                            <img src="img/index_images/app-development.jpg" alt="Client 4" class="me-3 mb-3"
                                 style="width: 70px; height: 70px;">
                             <div class="px-3">
-                                <h4 class="text-white mb-3">TaskTrak Hub Manager</h4>
+                                <h4 class="text-white mb-3">Application Development</h4>
                             </div>
                         </div>
                         <p class="text-white mb-4">We believe in constantly evolving our processes to stay ahead of
                             industry trends. Our innovative approach allows us to deliver cutting-edge refrigeration
                             solutions that maximize efficiency and minimize costs.</p>
-                        <a href="#" class="btn btn-light rounded-pill px-4">Learn More</a>
+                        <!-- <a href="#" class="btn btn-light rounded-pill px-4">Learn More</a> -->
+                    </div>
+
+                    <div class="d-flex flex-column align-items-start justify-content-center px-4 pt-4 mb-4 wow fadeInRightBig"
+                        data-wow-delay="0.5s" style="background-color: rgba(256, 256, 256, 0.1);">
+                        <div class="d-flex align-items-center">
+                            <img src="img/index_images/sw_development.jpg" alt="Client 4" class="me-3 mb-3"
+                                style="width: 70px; height: 70px;">
+                            <div class="px-3">
+                                <h4 class="text-white mb-3">Website Development</h4>
+                            </div>
+                        </div>
+                        <p class="text-white mb-4">We believe in constantly evolving our processes to stay ahead of
+                            industry trends. Our innovative approach allows us to deliver cutting-edge refrigeration
+                            solutions that maximize efficiency and minimize costs.</p>
+                        <!-- <a href="#" class="btn btn-light rounded-pill px-4">Learn More</a> -->
                     </div>
 
                     <!-- Third Flex Column Div -->
-                    <div class="d-flex flex-column align-items-start justify-content-center p-4 mb-4 wow fadeInRightBig"
+                    <div class="d-flex flex-column align-items-start justify-content-center px-4 pt-4 mb-4 wow fadeInRightBig"
                         data-wow-delay="0.5s" style="background-color: rgba(256, 256, 256, 0.1);">
                         <div class="d-flex align-items-center">
-                            <img src="img/testimonial-1.jpg" alt="Client 4" class="me-3 rounded-circle mb-3"
+                            <img src="img/index_images/digital-marketing.jpg" alt="Client 4" class="me-3 mb-3"
                                 style="width: 70px; height: 70px;">
                             <div class="px-3">
-                                <h4 class="text-white mb-3">HVAC HeatLoad Calculator</h4>
+                                <h4 class="text-white mb-3">Digital Marketing</h4>
                             </div>
                         </div>
                         <p class="text-white mb-4">We believe in constantly evolving our processes to stay ahead of
                             industry trends. Our innovative approach allows us to deliver cutting-edge refrigeration
                             solutions that maximize efficiency and minimize costs.</p>
-                        <a href="#" class="btn btn-light rounded-pill px-4">Learn More</a>
+                        <!-- <a href="#" class="btn btn-light rounded-pill px-4">Learn More</a> -->
                     </div>
                 </div>
             </div>
@@ -552,12 +624,119 @@
     </div>
     <!-- Feature End -->
 
+    <!--  -->
+    <div class="myhome-container">
+        <div class="opacity">
+            <div class="container text-center">
+                <h6 class="text-warning fw-bold text-uppercase text-start text-lg-center">Cerate A System That Grows
+                    With You </h6>
+                <h2 class="section-heading fs-3 fw-medium my-3 text-start text-lg-center">How we stand out - Our
+                    significant proposition</h2>
+                <p class="text-white text-start">We are focused on providing cost-effective services with an emphasis on
+                    Customer
+                    First. We excel in creating innovative software solutions that are user-friendly & cross- browser
+                    compatible. We, as the best professional custom software development company in Pune, provides you
+                    the full service from consulting, Integrating software development consultancy into your business
+                    and then, custom financial software development to software integration with third-party CRM, and,
+                    then software maintenance and support
+                    <br><br>
+
+                    We are focused on providing cost-effective services with an emphasis on Customer First. We excel in
+                    creating innovative software solutions that are user-friendly & cross- browser compatible. We, as
+                    the best professional custom software development company in Pune, provides you the full service
+                    from consulting, Integrating software development consultancy into your business and then, custom
+                    financial software development to software integration with third-party CRM, and, then software
+                    maintenance and support
+                </p>
+
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="wcu-box">
+                                <img src="https://mplussoft.com/images/New-Images/homepage/why-choo-us/software-white.png"
+                                    alt="Software" width="45">
+                                <p class="text-white fs-6 pt-3">We deliver the best software in the industry</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="wcu-box">
+                                <img src="https://mplussoft.com/images/New-Images/homepage/why-choo-us/clock-white.png"
+                                    alt="E-Commerce" width="45">
+                                <p class="text-white fs-6 pt-3">We love meeting deadlines for timely delivery</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="wcu-box">
+                                <img src="https://mplussoft.com/images/New-Images/homepage/why-choo-us/cost-white.png"
+                                    alt="Cost Efficiency" width="45">
+                                <p class="text-white fs-6 pt-3">Cost-efficiency and competitive pricing is our USP</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="wcu-box">
+                                <img src="https://mplussoft.com/images/New-Images/homepage/why-choo-us/secure-white.png"
+                                    alt="Security" width="45">
+                                <p class="text-white fs-6 pt-3">Our software is highly secure, portable, and responsive
+                                </p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="wcu-box">
+                                <img src="https://mplussoft.com/images/New-Images/homepage/why-choo-us/team-white.png"
+                                    alt="Team" width="45">
+                                <p class="text-white fs-6 pt-3">Our team excels in flawless communication</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="wcu-box">
+                                <img src="https://mplussoft.com/images/New-Images/homepage/why-choo-us/software-white.png"
+                                    alt="Software" width="45">
+                                <p class="text-white fs-6 pt-3">We deliver the best software in the industry</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="wcu-box">
+                                <img src="https://mplussoft.com/images/New-Images/homepage/why-choo-us/software-white.png"
+                                    alt="Software" width="45">
+                                <p class="text-white fs-6 pt-3">We deliver the best software in the industry</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="wcu-box">
+                                <img src="https://mplussoft.com/images/New-Images/homepage/why-choo-us/software-white.png"
+                                    alt="Software" width="45">
+                                <p class="text-white fs-6 pt-3">We deliver the best software in the industry</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="wcu-box">
+                                <img src="https://mplussoft.com/images/New-Images/homepage/why-choo-us/software-white.png"
+                                    alt="Software" width="45">
+                                <p class="text-white fs-6 pt-3">We deliver the best software in the industry</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="wcu-box">
+                                <img src="https://mplussoft.com/images/New-Images/homepage/why-choo-us/software-white.png"
+                                    alt="Software" width="45">
+                                <p class="text-white fs-6 pt-3">We deliver the best software in the industry</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--  -->
+
 
     <!--  -->
     <section class="h-auto pb-5 bg-light">
         <div class="container">
-            <h2 class="text-center pt-5 pb-3">CLIENTS CONFIRM OUR QUALITY</h2>
-            <p class="text-center" style="font-weight: 500;">Our clients across the globe have nothing but good things
+            <h2 class="text-start text-lg-center pt-5 pb-3">CLIENTS CONFIRM OUR QUALITY</h2>
+            <p class="text-start text-lg-center" style="font-weight: 500;">Our clients across the globe have nothing but
+                good things
                 to say about our services
                 and cooperation. Don’t take our word for it, read our customer testimonials to learn more about our
                 partnerships.</p>
@@ -822,11 +1001,11 @@
                     <a class="btn btn-link" href="">Software Development</a>
                     <a class="btn btn-link" href="">Mobile Application <br> Development</a>
                     <a class="btn btn-link" href="">Web App Development</a>
-                    <a class="btn btn-link" href="">HVAC Heat Load <br>Calculator</a>
-                    <a class="btn btn-link" href="">HLC Leal Bussiness Solution</a>
-                    <a class="btn btn-link" href="">Leal GADraw</a>
                     <a class="btn btn-link" href="">Odoo ERP Cloud</a>
                     <a class="btn btn-link" href="">TaskTrak Hub Manager</a>
+                    <a class="btn btn-link" href="">Leal GADraw</a>
+                    <a class="btn btn-link" href="">HVAC Heat Load <br>Calculator</a>
+                    <a class="btn btn-link" href="">HLC Leal Bussiness Solution</a>
 
                 </div>
                 <div class="col-md-6 col-lg-3 wow fadeIn" data-wow-delay="1.8s">
@@ -879,6 +1058,8 @@
     <!-- JavaScript Libraries -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="lib/wow/wow.min.js"></script>
     <script src="lib/easing/easing.min.js"></script>
     <script src="lib/waypoints/waypoints.min.js"></script>

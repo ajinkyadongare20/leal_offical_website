@@ -63,19 +63,40 @@
 
 })(jQuery);
 
-document.querySelectorAll('.strategy-box').forEach(box => {
-    box.addEventListener('click', function () {
-        // Toggle the expanded class
-        this.classList.toggle('expanded');
 
-        // Collapse other boxes
-        document.querySelectorAll('.strategy-box').forEach(otherBox => {
-            if (otherBox !== this) {
-                otherBox.classList.remove('expanded');
-            }
-        });
-    });
+// in index page 
+var swiper = new Swiper(".mySwiper", {
+    slidesPerView: 3, // Default slides visible at once (for large screens)
+    spaceBetween: 30, // Space between slides
+    direction: 'horizontal',
+    loop: false,
+    pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+    },
+    autoplay: {
+        delay: 3000,
+        disableOnInteraction: true,
+    },
+    breakpoints: {
+        // Mobile view (max-width: 576px) - 1 slide at a time, 100% width
+        0: {
+            slidesPerView: 1,
+            spaceBetween: 0, // Remove space between slides for full width
+        },
+        // Tablet view (min-width: 577px and max-width: 991px) - 2 slides at a time
+        576: {
+            slidesPerView: 2,
+            spaceBetween: 20,
+        },
+        // Large screens (min-width: 992px) - 3 slides at a time
+        992: {
+            slidesPerView: 3,
+            spaceBetween: 30,
+        }
+    }
 });
+
 
 
 // career job apply code 
