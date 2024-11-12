@@ -33,6 +33,8 @@
 
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
 </head>
 
 <body>
@@ -60,11 +62,11 @@
                 <div class="collapse navbar-collapse" id="navbarCollapse">
                     <div class="navbar-nav ms-auto">
                         <a href="index.html" class="nav-item nav-link">HOME</a>
-                        <a href="about.html" class="nav-item nav-link">ABOUT</a>
+                        <a href="about.html" class="nav-item nav-link active">ABOUT</a>
                         <a href="service.html" class="nav-item nav-link">SERVICES</a>
 
                         <div class="dropdown nav-item">
-                            <button class="dropdown-toggle border-0 bg-primary pe-4 rounded" type="button"
+                            <button class="dropdown-toggle border-0 bg-transparent pe-4 rounded" type="button"
                                 id="dropdownMenuButton" data-bs-toggle="dropdown" aria-haspopup="true"
                                 aria-expanded="false" style="color: rgba(255, 255, 255, 0.9);">
                                 PRODUCT
@@ -74,7 +76,7 @@
                                 <a class="dropdown-item py-3 px-4 text-dark" href="odoo.html">
                                     <i class="fas fa-cloud me-2"></i> Odoo/Cloud ERP
                                 </a>
-                                <a class="dropdown-item py-3 px-4 text-dark" href="#">
+                                <a class="dropdown-item py-3 px-4 text-dark" href="tasktrak.html">
                                     <i class="fas fa-tasks me-2"></i> Task-Trak Hub Manager
                                 </a>
                                 <a class="dropdown-item py-3 px-4 text-dark" href="hvac.html">
@@ -100,7 +102,7 @@
 
 
     <!-- Hero Start -->
-    <div class="container-fluid pt-5 bg-primary hero-header">
+    <div class="container-fluid pt-5 bg-primary hero-header" style="height: 100vh;">
         <div class="container pt-5">
             <div class="row g-5 pt-5">
                 <div class="col-lg-6 align-self-center text-center text-lg-start mb-lg-5">
@@ -111,14 +113,11 @@
                             <li class="breadcrumb-item text-white active" aria-current="page">About Us</li>
                         </ol>
                     </nav>
-                    <p class="text-white mb-4 animated fadeInLeftBig">Leal Software Solution is a trusted software
+                    <p class="text-white my-4 animated fadeInLeftBig">Leal Software Solution is a trusted software
                         company, dedicated to delivering cutting-edge technology solutions tailored to your business
                         needs. Our expertise spans various industries, enabling businesses to optimize their processes,
                         boost productivity, and drive innovation. Partner with us to transform your operations and
                         achieve long-term success through reliable software solutions.</p>
-                </div>
-                <div class="col-lg-6 align-self-end text-center text-lg-end">
-                    <img class="img-fluid w-100" src="img/home-banner.png" alt="" style="object-fit: contain;">
                 </div>
             </div>
         </div>
@@ -460,31 +459,27 @@
 
 
     <!-- About Process -->
-    <div class="container-fluid bg-light p-5">
+    <div class="container-fluid bg-light p-3">
         <div class="col-lg-12">
             <div class="d-flex flex-wrap justify-content-between">
                 <!-- Service Item 1 -->
-
-                <div class="service-item d-flex flex-column justify-content-center text-center rounded m-2 pt-0"
-                    style="flex: 0 1 23%; padding: 20px; min-height: 350px;">
-
+                <div
+                    class="service-item d-flex flex-column justify-content-center text-center rounded m-2 pt-0 services-about">
                     <div class="service-icon btn-square py-3">
-                        <img src="img/about_images/sw_development.png" alt="Service Icon"
-                        style="width: 60px;" height="60px">
+                        <img src="img/about_images/sw_development.png" alt="Service Icon" style="width: 60px;"
+                            height="60px">
                     </div>
                     <h5 class="mb-3">Software Development</h5>
-                    <div class="section-line"></div>
-                    <p>Software development involves designing, creating, testing, and maintaining
-                        applications or systems tailored to meet specific business needs. It combines coding,
-                        problem-solving, and innovation to deliver efficient, scalable, and high-quality software
-                        solutions.</p>
+                    <p>Software development involves designing, creating, testing, and maintaining applications or
+                        systems tailored to meet specific business needs. It combines coding, problem-solving, and
+                        innovation to deliver efficient, scalable, and high-quality software solutions.</p>
                 </div>
 
                 <!-- Service Item 2 -->
-                <div class="service-item d-flex flex-column justify-content-center text-center rounded m-2 pt-0"
-                    style="flex: 0 1 23%; padding: 20px; min-height: 350px;">
+                <div
+                    class="service-item d-flex flex-column justify-content-center text-center rounded m-2 pt-0 services-about">
                     <div class="service-icon btn-square py-3">
-                        <img src="img/about_images/erp.png" alt="Service Icon"  style="width: 60px;" height="60px">
+                        <img src="img/about_images/erp.png" alt="Service Icon" style="width: 60px;" height="60px">
                     </div>
                     <h5 class="mb-3">Odoo ERP Development</h5>
                     <p>Odoo’s open-source platform is designed to streamline business operations. It enhances workflows,
@@ -494,35 +489,32 @@
                 </div>
 
                 <!-- Service Item 3 -->
-                <div class="service-item d-flex flex-column justify-content-center text-center rounded m-2 pt-0"
-                    style="flex: 0 1 23%; padding: 20px; min-height: 350px;">
+                <div
+                    class="service-item d-flex flex-column justify-content-center text-center rounded m-2 pt-0 services-about">
                     <div class="service-icon btn-square py-3">
-                        <img src="img/about_images/task.png" alt="Service Icon"  style="width: 60px;" height="60px">
+                        <img src="img/about_images/task.png" alt="Service Icon" style="width: 60px;" height="60px">
                     </div>
                     <h5 class="mb-3">TaskTrak Hub Manager</h5>
-                    <p>TaskTrak Hub Manager is a comprehensive task management system designed to
-                        streamline project workflows, enhance team collaboration, and boost productivity. It offers
-                        real-time tracking, task prioritization, and customizable dashboards to keep projects on track
-                        efficiently.</p>
+                    <p>TaskTrak Hub Manager is a comprehensive task management system designed to streamline project
+                        workflows, enhance team collaboration, and boost productivity. It offers real-time tracking,
+                        task prioritization, and customizable dashboards to keep projects on track efficiently.</p>
                 </div>
 
                 <!-- Service Item 4 -->
-                <div class="service-item d-flex flex-column justify-content-center text-center rounded m-2 pt-0"
-                    style="flex: 0 1 23%; padding: 20px; min-height: 350px;">
+                <div
+                    class="service-item d-flex flex-column justify-content-center text-center rounded m-2 pt-0 services-about">
                     <div class="service-icon btn-square py-3">
-                        <img src="img/about_images/hvac.png" alt="Service Icon"  style="width: 60px;" height="60px">
+                        <img src="img/about_images/hvac.png" alt="Service Icon" style="width: 60px;" height="60px">
                     </div>
                     <h5 class="mb-3">HVAC HeatLoad Application</h5>
-                    <p>The HVAC HeatLoad Application simplifies the calculation of heat load requirements
-                        for buildings. It helps HVAC professionals accurately determine cooling and heating needs,
-                        ensuring
+                    <p>The HVAC HeatLoad Application simplifies the calculation of heat load requirements for buildings.
+                        It helps HVAC professionals accurately determine cooling and heating needs, ensuring
                         energy-efficient system design and optimal climate control solutions.</p>
                 </div>
             </div>
         </div>
     </div>
-
-    <!-- End Process  -->
+    <!-- End Process -->
 
 
     <!-- Start Mission, Vision & Values -->
@@ -532,9 +524,8 @@
             <!-- Mission Card 1-->
             <div class="card-vision wow fadeIn" data-wow-delay="0.5s" style="width: 100% !important;">
                 <div class="card-vision-header">
-                    <img src="img/about_images/Product-Re-engineering.jpg" alt="Mission Icon" class="card-vision-icon">
-                    <h5 class="mb-0">Our Mission <div class="section-line"></div>
-                    </h5>
+                    <img src="img/about_images/mission.png" alt="Mission Icon" class="card-vision-icon">
+                    <h5 class="mb-0">Our Mission</h5>
                 </div>
                 <div class="card-vision-content">
                     <p class="card-text">
@@ -554,9 +545,8 @@
             <!-- Vision Card 2-->
             <div class="card-vision wow fadeIn" data-wow-delay="1s" style="width: 100% !important;">
                 <div class="card-vision-header">
-                    <img src="img/about_images/Maintenance-Services.jpg" alt="Vision Icon" class="card-vision-icon">
-                    <h5 class="card-title mb-0">Our Vision <div class="section-line"></div>
-                    </h5>
+                    <img src="img/about_images/visionary.png" alt="Vision Icon" class="card-vision-icon">
+                    <h5 class="card-title mb-0">Our Vision</h5>
                 </div>
                 <div class="card-vision-content">
                     <p class="card-text">
@@ -576,10 +566,8 @@
             <!-- Values Card 3-->
             <div class="card-vision wow fadeIn" data-wow-delay="1.5s" style="width: 100% !important;">
                 <div class="card-vision-header">
-                    <img src="img/about_images/Product-Testing-Maintenance.jpg" alt="Values Icon"
-                        class="card-vision-icon">
-                    <h5 class="card-title mb-0">Our Values <div class="section-line"></div>
-                    </h5>
+                    <img src="img/about_images/values.png" alt="Values Icon" class="card-vision-icon">
+                    <h5 class="card-title mb-0">Our Values</h5>
                 </div>
                 <div class="card-vision-content">
                     <p class="card-text">
@@ -602,6 +590,7 @@
     <!-- Start Mission, Vision & Values -->
     <div class="py-3">
         <h2 class="text-center">ABOUT Leal Software Solution</h2>
+        <div class="section-line"></div>
         <div class="highlight-container">
             <div class="highlight-box  wow fadeIn" data-wow-delay="0.5s">
                 <h3>12+ Years</h3>
@@ -618,65 +607,50 @@
         </div>
     </div>
 
-
     <!-- Start Client Company -->
-    <div class="container client-container" style="padding: 20px 0;">
+    <div class="container client-container p-2 mx-auto">
         <h2 class="text-center">Our Top Clients</h2>
         <div class="section-line"></div>
 
-        <div class="client-row">
-            <!-- First row (5 logos) -->
-            <div class="client-item">
-                <img src="img/about_images/Client Gallery/AESlogofinal.jpg" alt="Capgemini" class="client-logo wow fadeIn"
-                    data-wow-delay="0.5s">
+        <!-- Swiper Container -->
+        <div class="swiper-container py-2">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="img/about_images/Client Gallery/AESlogofinal.jpg" alt="Capgemini"
+                        class="client-logo"></div>
+                <div class="swiper-slide"><img src="img/about_images/Client Gallery/Air-Miracle.jpg" alt="Cognizant"
+                        class="client-logo"></div>
+                <div class="swiper-slide"><img src="img/about_images/Client Gallery/BottomGrass.jpg" alt="Deloitte"
+                        class="client-logo"></div>
+                <div class="swiper-slide"><img src="img/about_images/Client Gallery/CoolWell.jpg" alt="Darwinbox"
+                        class="client-logo"></div>
+                <div class="swiper-slide"><img src="img/about_images/Client Gallery/evercrest.jpg" alt="Bajaj-finserv"
+                        class="client-logo"></div>
+                <div class="swiper-slide"><img src="img/about_images/Client Gallery/icetonair.jpg" alt="HCL"
+                        class="client-logo"></div>
+                <div class="swiper-slide"><img src="img/about_images/Client Gallery/lotus.jpg" alt="Hexaware"
+                        class="client-logo"></div>
+                <div class="swiper-slide"><img src="img/about_images/Client Gallery/RadicalGrooming.jpg"
+                        alt="Persistent" class="client-logo"></div>
+                <div class="swiper-slide"><img src="img/about_images/Client Gallery/TransTech.jpg" alt="Powersoft"
+                        class="client-logo"></div>
+                <div class="swiper-slide"><img src="img/about_images/Client Gallery/asfrev_1.jpg" alt="Liberty"
+                        class="client-logo"></div>
             </div>
-            <div class="client-item">
-                <img src="img/about_images/Client Gallery/Air-Miracle.jpg" alt="Cognizant" class="client-logo wow fadeIn"
-                    data-wow-delay="0.7s">
-            </div>
-            <div class="client-item">
-                <img src="img/about_images/Client Gallery/BottomGrass.jpg" alt="Deloitte" class="client-logo wow fadeIn"
-                    data-wow-delay="0.9s">
-            </div>
-            <div class="client-item">
-                <img src="img/about_images/Client Gallery/CoolWell.jpg" alt="Darwinbox" class="client-logo wow fadeIn"
-                    data-wow-delay="1.2s">
-            </div>
-            <div class="client-item">
-                <img src="img/about_images/Client Gallery/evercrest.jpg" alt="Bajaj-finserv" class="client-logo wow fadeIn"
-                    data-wow-delay="1.5s">
-            </div>
-            <!-- Second row (5 logos) -->
-            <div class="client-item">
-                <img src="img/about_images/Client Gallery/icetonair.jpg" alt="HCL" class="client-logo wow fadeIn" data-wow-delay="1.7s">
-            </div>
-            <div class="client-item">
-                <img src="img/about_images/Client Gallery/lotus.jpg"  alt="Hexaware" class="client-logo wow fadeIn"
-                    data-wow-delay="1.9s">
-            </div>
-            <div class="client-item">
-                <img src="img/about_images/Client Gallery/RadicalGrooming.jpg" alt="Persistent" class="client-logo wow fadeIn"
-                    data-wow-delay="2.1s">
-            </div>
-            <div class="client-item">
-                <img src="img/about_images/Client Gallery/TransTech.jpg" alt="Powersoft" class="client-logo wow fadeIn"
-                    data-wow-delay="2.2s">
-            </div>
-            <div class="client-item">
-                <img src="img/about_images/Client Gallery/RadicalGrooming.jpg" alt="liberty" class="client-logo wow fadeIn"
-                    data-wow-delay="2.3s">
-            </div>
+
+            <!-- Swiper Pagination -->
+            <div class="swiper-pagination"></div>
         </div>
     </div>
-    <!-- End Client Company  -->
+    <!-- End Client Company -->
+
+
 
 
     <!-- Team Start -->
-    <div class="container-fluid bg-light pt-5" id="about-history-team">
+    <!-- <div class="container-fluid bg-light pt-5" id="about-history-team">
         <div class="container py-5">
             <div class="row g-5 align-items-center">
                 <div class="col-lg-12 wow fadeIn" data-wow-delay="0.5s">
-                    <!-- <div class="btn btn-sm border rounded-pill text-primary px-3 mb-3">Our Team</div> -->
                     <h1 class="mb-4">Meet Our Experienced Team Members</h1>
                     <p class="mb-4">Discover the expertise behind our success—meet our skilled team members who
                         bring
@@ -689,10 +663,8 @@
                 <div class="container mt-5">
                     <div class="col-lg-12">
                         <div class="row g-4">
-                            <!-- Ensure content takes full width on smaller screens -->
                             <div class="col-md-12">
                                 <div class="row g-4">
-                                    <!-- Team Member 1 -->
                                     <div class="col-12 col-sm-6 col-md-3 wow fadeIn" data-wow-delay="0.1s">
                                         <div class="team-item bg-white text-center rounded p-4 pt-0">
                                             <img class="img-fluid rounded-circle p-4" src="img/team-1.jpg" alt="">
@@ -704,7 +676,6 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <!-- Team Member 2 -->
                                     <div class="col-12 col-sm-6 col-md-3 wow fadeIn" data-wow-delay="0.5s">
                                         <div class="team-item bg-white text-center rounded p-4 pt-0">
                                             <img class="img-fluid rounded-circle p-4" src="img/team-2.jpg" alt="">
@@ -717,7 +688,6 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <!-- Team Member 3 -->
                                     <div class="col-12 col-sm-6 col-md-3 wow fadeIn" data-wow-delay="0.3s">
                                         <div class="team-item bg-white text-center rounded p-4 pt-0">
                                             <img class="img-fluid rounded-circle p-4" src="img/team-3.jpg" alt="">
@@ -729,7 +699,6 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <!-- Team Member 4 -->
                                     <div class="col-12 col-sm-6 col-md-3 wow fadeIn" data-wow-delay="0.7s">
                                         <div class="team-item bg-white text-center rounded p-4 pt-0">
                                             <img class="img-fluid rounded-circle p-4" src="img/team-4.jpg" alt="">
@@ -744,10 +713,8 @@
                                     </div>
                                 </div>
                             </div>
-                            <!-- Second Row if needed -->
                             <div class="col-md-6 pt-md-4">
                                 <div class="row g-4">
-                                    <!-- Add more content here if needed -->
                                 </div>
                             </div>
                         </div>
@@ -755,9 +722,8 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
     <!-- Team End -->
-
 
 
     <!-- Contact Us Start -->
@@ -777,11 +743,15 @@
 
                     <h4 class="mt-5 pt-3">Follow us</h4>
                     <div class="follow-us-icons">
-                        <a href="#"><i class="bi bi-twitter"></i></a>
-                        <a href="#"><i class="bi bi-instagram"></i></a>
-                        <a href="#"><i class="bi bi-facebook"></i></a>
-                        <a href="#"><i class="bi bi-youtube"></i></a>
-                        <a href="#"><i class="bi bi-whatsapp"></i></a>
+                        <a href="https://www.linkedin.com/company/leal-software-solution/" target="_blank"><i
+                                class="bi bi-linkedin"></i></a>
+                        <a href="https://www.instagram.com/smurkewar/" target="_blank"><i
+                                class="bi bi-instagram"></i></a>
+                        <a href="https://www.facebook.com/LealSoftwareSolution" target="_blank"><i
+                                class="bi bi-facebook"></i></a>
+                        <a href="https://www.youtube.com/@lealsoftwaresolutionpvtltd8833" target="_blank"><i
+                                class="bi bi-youtube"></i></a>
+                        <a href="https://wa.me/7410016111" target="_blank"><i class="bi bi-whatsapp"></i></a>
                     </div>
 
                     <p class="mt-4 text-muted text-dark">Copyright © 2024 www.lealsolution.com - All rights reserved
@@ -874,13 +844,25 @@
                     <p><i class="fa fa-phone-alt me-3"></i>+91 7410016111/13/14</p>
                     <p><i class="fa fa-envelope me-3"></i>career@lealsolution.com</p>
                     <div class="d-flex pt-2">
-                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-twitter"></i></a>
-                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-facebook-f"></i></a>
-                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-youtube"></i></a>
-                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-instagram"></i></a>
                         <a class="btn btn-outline-light btn-social"
-                            href="https://in.linkedin.com/company/ashapuri-refrigeration-services" target="_blank"><i
-                                class="fab fa-linkedin-in"></i></a>
+                            href="https://www.linkedin.com/company/leal-software-solution/" target="_blank">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a class="btn btn-outline-light btn-social" href="https://www.facebook.com/LealSoftwareSolution"
+                            target="_blank">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a class="btn btn-outline-light btn-social"
+                            href="https://www.youtube.com/@lealsoftwaresolutionpvtltd8833" target="_blank">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                        <a class="btn btn-outline-light btn-social" href="https://www.instagram.com/smurkewar/"
+                            target="_blank">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a class="btn btn-outline-light btn-social" href="https://wa.me/7410016111" target="_blank">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -889,10 +871,9 @@
             <div class="copyright">
                 <div class="row">
                     <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-                        &copy; <a class="border-bottom" href="index.html">Leal Software Solution</a>, All Right
-                        Reserved.
-                        Designed By <a class="border-bottom" href="https://www.lealsolution.com/"
-                            target="_blank">Ajinkya Dongare</a>
+                        &copy; <a class="border-bottom" href="index.html">Leal Software Solution Pvt Ltd © 2024</a>
+                        | All Rights Reserved.<a class="border-bottom" href="https://www.lealsolution.com/"
+                            target="_blank"></a>
                     </div>
                     <div class="col-md-6 text-center text-md-end">
                         <div class="footer-menu">
@@ -914,6 +895,7 @@
 
 
     <!-- JavaScript Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="lib/wow/wow.min.js"></script>
@@ -922,8 +904,32 @@
     <script src="lib/counterup/counterup.min.js"></script>
     <script src="lib/owlcarousel/owl.carousel.min.js"></script>
 
+    
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            var swiper = new Swiper('.swiper-container', {
+                slidesPerView: 3,       // Number of logos to show at a time
+                spaceBetween: 20,       // Space between slides
+                loop: true,             // Loop through slides
+                autoplay: {
+                    delay: 2000,        // Delay between slides (in ms)
+                    disableOnInteraction: false, // Keep autoplay active after interaction
+                },
+                pagination: {
+                    el: '.swiper-pagination',
+                    clickable: true,
+                },
+                breakpoints: {
+                    320: { slidesPerView: 1 },   // 1 logo per view on small screens
+                    768: { slidesPerView: 2 },   // 2 logos per view on medium screens
+                    1024: { slidesPerView: 5 }   // 3 logos per view on large screens
+                }
+            });
+        });
+    </script>
 </body>
 
 </html>

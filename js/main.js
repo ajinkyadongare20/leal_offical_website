@@ -100,43 +100,43 @@ var swiper = new Swiper(".mySwiper", {
 
 
 // career job apply code 
-const careerJobListings = document.querySelectorAll('.job-listing');
-careerJobListings.forEach(listing => {
-    listing.addEventListener('click', function (event) {
-        // Toggle the form for the clicked job listing
-        const form = this.querySelector('.apply-form');
+document.addEventListener("DOMContentLoaded", function () {
+    const careerJobListings = document.querySelectorAll('.job-listing');
+    careerJobListings.forEach(listing => {
+        listing.addEventListener('click', function (event) {
+            const form = this.querySelector('.apply-form');
 
-        // Close any open forms and reset styles
-        careerJobListings.forEach(item => {
-            if (item !== listing) {
-                item.querySelector('.apply-form').style.display = 'none';
-                item.classList.remove('no-scale', 'form-open'); // Remove classes from other items
+            // Close any open forms and reset styles
+            careerJobListings.forEach(item => {
+                if (item !== listing) {
+                    item.querySelector('.apply-form').style.display = 'none';
+                    item.classList.remove('no-scale', 'form-open');
+                }
+            });
+
+            // Toggle the visibility of the form
+            if (form.style.display === 'block') {
+                form.style.display = 'none';
+                this.classList.remove('no-scale', 'form-open');
+            } else {
+                form.style.display = 'block';
+                this.classList.add('no-scale', 'form-open');
             }
+
+            event.stopPropagation();
         });
 
-        // Toggle the visibility of the form
-        if (form.style.display === 'block') {
-            form.style.display = 'none';
-            this.classList.remove('no-scale', 'form-open'); // Remove classes to restore hover effects
-        } else {
-            form.style.display = 'block';
-            this.classList.add('no-scale', 'form-open'); // Add classes to stop scaling and show left border
+        const form = listing.querySelector('.apply-form');
+        if (form) {
+            form.addEventListener('click', function (event) {
+                event.stopPropagation();
+            });
         }
-
-        event.stopPropagation(); // Prevent further propagation of the current event
-    });
-
-    // Prevent click event from bubbling up when clicking inside the form
-    const form = listing.querySelector('.apply-form');
-    form.addEventListener('click', function (event) {
-        event.stopPropagation(); // Prevent clicks inside the form from closing it
     });
 });
 
 
-
-
-
+// ****  Code in Products Page- HVAC heat load calculator   ****
 // YouTube video URL
 const videoUrl = "https://www.youtube.com/embed/YOUR_VIDEO_ID"; // Replace with your YouTube video ID
 
@@ -153,7 +153,6 @@ $('#videoModal').on('hide.bs.modal', function (event) {
 });
 
 //   
-
 function openVideo(videoUrl) {
     const videoFrame = document.getElementById('videoFrame');
     videoFrame.src = videoUrl;
@@ -168,4 +167,24 @@ document.getElementById('videoModal').addEventListener('hidden.bs.modal', functi
 });
 
 
-
+// code for about page clinet company sliders.
+document.addEventListener("DOMContentLoaded", function () {
+    var swiper = new Swiper('.swiper-container', {
+        slidesPerView: 3,       // Number of logos to show at a time
+        spaceBetween: 20,       // Space between slides
+        loop: true,             // Loop through slides
+        autoplay: {
+            delay: 2000,        // Delay between slides (in ms)
+            disableOnInteraction: false, // Keep autoplay active after interaction
+        },
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+        },
+        breakpoints: {
+            320: { slidesPerView: 1 },   // 1 logo per view on small screens
+            768: { slidesPerView: 2 },   // 2 logos per view on medium screens
+            1024: { slidesPerView: 5 }   // 3 logos per view on large screens
+        }
+    });
+});

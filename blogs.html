@@ -64,7 +64,7 @@
                         <a href="service.html" class="nav-item nav-link">SERVICES</a>
 
                         <div class="dropdown nav-item">
-                            <button class="dropdown-toggle border-0 bg-primary pe-4 rounded" type="button" id="dropdownMenuButton"
+                            <button class="dropdown-toggle border-0 bg-transparent pe-4 rounded" type="button" id="dropdownMenuButton"
                                 data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
                                 style="color: rgba(255, 255, 255, 0.9);">
                                 PRODUCT
@@ -74,7 +74,7 @@
                                 <a class="dropdown-item py-3 px-4 text-dark" href="odoo.html">
                                     <i class="fas fa-cloud me-2"></i> Odoo/Cloud ERP
                                 </a>
-                                <a class="dropdown-item py-3 px-4 text-dark" href="#">
+                                <a class="dropdown-item py-3 px-4 text-dark" href="tasktrak.html">
                                     <i class="fas fa-tasks me-2"></i> Task-Trak Hub Manager
                                 </a>
                                 <a class="dropdown-item py-3 px-4 text-dark" href="hvac.html">
@@ -100,7 +100,7 @@
 
 
     <!-- Hero Start -->
-    <div class="container-fluid pt-5 bg-primary hero-header">
+    <div class="container-fluid pt-5 bg-primary hero-header" style="height: 100vh;">
         <div class="container pt-5">
             <div class="row g-5 pt-5">
                 <div class="col-lg-6 align-self-center text-center text-lg-start mb-lg-5">
@@ -117,9 +117,6 @@
                         are curated to help you create a positive and engaging brand image. You get extensive
                         capabilities under one roof, from software product engineering and DevOps to quality engineering
                         and AI/ML development.</p>
-                </div>
-                <div class="col-lg-6 align-self-end text-center text-lg-end">
-                    <img class="img-fluid w-100" src="img/home-banner.png" alt="" style="object-fit: contain;">
                 </div>
             </div>
         </div>
@@ -390,6 +387,78 @@
     <!--  -->
 
 
+     <!-- Contact Us Start -->
+     <section class="bg-lightdark py-5">
+        <div class="container contact-section">
+            <div class="row">
+                <!-- Left Side: Contact Info -->
+                <div class="col-md-6">
+                    <h3 class="h3 fw-bold mb-4 text-dark">Contact us</h3>
+                    <div class="contact-info">
+                        <p class="mb-0 text-muted ">Green Life Society B-102 Pune, 74-100-16-111</p>
+                        <p class="mb-0 text-muted ">Mon - Fri: 9:00 am - 8:00 pm</p>
+                        <p class="mb-2 text-muted ">Sat - Sun: 9:00 am - 10 pm</p>
+                        <p class="text-primary fw-bold my-2">career@lealsolution.com</p>
+                        <p class="text-primary fw-bold">Phone: +91 7410016111/13/14</p>
+                    </div>
+
+                    <h4 class="mt-5 pt-3">Follow us</h4>
+                    <div class="follow-us-icons">
+                        <a href="https://www.linkedin.com/company/leal-software-solution/" target="_blank"><i
+                                class="bi bi-linkedin"></i></a>
+                        <a href="https://www.instagram.com/smurkewar/" target="_blank"><i
+                                class="bi bi-instagram"></i></a>
+                        <a href="https://www.facebook.com/LealSoftwareSolution" target="_blank"><i
+                                class="bi bi-facebook"></i></a>
+                        <a href="https://www.youtube.com/@lealsoftwaresolutionpvtltd8833" target="_blank"><i
+                                class="bi bi-youtube"></i></a>
+                        <a href="https://wa.me/7410016111" target="_blank"><i class="bi bi-whatsapp"></i></a>
+                    </div>
+
+                    <p class="mt-4 text-muted text-dark">Copyright © 2024 www.lealsolution.com - All rights reserved</p>
+                </div>
+
+                <!-- Right Side: Contact Form -->
+                <div class="col-md-6">
+                    <h3 class="contact-title">Join Us</h3>
+                    <form>
+                        <div class="mb-3">
+                            <label for="productSelect" class="form-label">Product</label>
+                            <select class="form-select form-control" id="productSelect">
+                                <option selected>HVAC Heat Load Calculator</option>
+                                <option value="1">HLC Leal Bussiness Solution</option>
+                                <option value="2">HVAC GADraw</option>
+                                <option value="2">TaskTrak Hub Manager</option>
+                                <option value="2">Odoo ERP Cloud</option>
+
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <label for="nameInput" class="form-label">Enter your name:</label>
+                            <input type="text" class="form-control" id="nameInput" placeholder="Your name">
+                        </div>
+                        <div class="mb-3">
+                            <label for="emailInput" class="form-label">Enter your email:</label>
+                            <input type="email" class="form-control" id="emailInput" placeholder="Your email">
+                        </div>
+                        <div class="mb-3">
+                            <label for="messageInput" class="form-label">Enter your message:</label>
+                            <textarea class="form-control" id="messageInput" rows="3"
+                                placeholder="Your message"></textarea>
+                        </div>
+                        <!-- <button type="submit" class="btn submit-btn">SUBMIT</button> -->
+                        <button class="btn btn-primary w-100 fw-bold py-2 bg-primary"
+                            style=" border: none; border-radius: 5px; transition: background-color 0.3s;">
+                            Submit
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Contact Us End -->
+
+
     <!-- Footer Start -->
     <div class="container-fluid bg-dark text-white-50 footer pt-5">
         <div class="container py-5">
@@ -433,13 +502,25 @@
                     <p><i class="fa fa-phone-alt me-3"></i>+91 7410016111/13/14</p>
                     <p><i class="fa fa-envelope me-3"></i>career@lealsolution.com</p>
                     <div class="d-flex pt-2">
-                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-twitter"></i></a>
-                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-facebook-f"></i></a>
-                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-youtube"></i></a>
-                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-instagram"></i></a>
                         <a class="btn btn-outline-light btn-social"
-                            href="https://in.linkedin.com/company/ashapuri-refrigeration-services" target="_blank"><i
-                                class="fab fa-linkedin-in"></i></a>
+                            href="https://www.linkedin.com/company/leal-software-solution/" target="_blank">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a class="btn btn-outline-light btn-social" href="https://www.facebook.com/LealSoftwareSolution"
+                            target="_blank">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a class="btn btn-outline-light btn-social"
+                            href="https://www.youtube.com/@lealsoftwaresolutionpvtltd8833" target="_blank">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                        <a class="btn btn-outline-light btn-social" href="https://www.instagram.com/smurkewar/"
+                            target="_blank">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a class="btn btn-outline-light btn-social" href="https://wa.me/7410016111" target="_blank">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -448,10 +529,9 @@
             <div class="copyright">
                 <div class="row">
                     <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-                        &copy; <a class="border-bottom" href="index.html">Leal Software Solution</a>, All Right
-                        Reserved.
-                        Designed By <a class="border-bottom" href="https://www.lealsolution.com/"
-                            target="_blank">Ajinkya Dongare</a>
+                        &copy; <a class="border-bottom" href="index.html">Leal Software Solution Pvt Ltd © 2024</a>
+                        | All Rights Reserved.<a class="border-bottom" href="https://www.lealsolution.com/"
+                            target="_blank"></a>
                     </div>
                     <div class="col-md-6 text-center text-md-end">
                         <div class="footer-menu">

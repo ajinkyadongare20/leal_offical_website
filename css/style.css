@@ -187,7 +187,8 @@ h6,
 /*** Hero Header ***/
 .hero-header {
     margin-top: -75px;
-    background: url(../img/bg-hero.png) center center no-repeat;
+    background: linear-gradient(rgba(19, 99, 198, 0.5), rgba(19, 99, 198, 0.5)),
+        url(../img/test/ecosystem-spotlight-banner.jpg) center center no-repeat;
     background-size: cover;
 }
 
@@ -202,7 +203,12 @@ h6,
 }
 
 .carousel-inner {
-    transition: transform 0.5s ease-in-out; /* Faster transition between slides */
+    transition: transform 0.5s ease-in-out;
+    /* Faster transition between slides */
+}
+
+.img-hero-banner {
+    display: none;
 }
 
 
@@ -300,14 +306,15 @@ h6,
 .icon-cdn-no {
     position: absolute;
     bottom: 0px;
-    right:  0px;
+    right: 0px;
     font-size: 90px;
     color: rgba(131, 147, 236, 0.3);
 }
+
 .icon-cdn {
     position: absolute;
     top: 0px;
-    left:  0px;
+    left: 0px;
     font-size: 90px;
     color: rgba(131, 147, 236, 0.3);
 }
@@ -355,11 +362,14 @@ h6,
     object-fit: contain;
 }
 
-img.me-3.mb-3 {
+img.me-3.mb-3,
+img.me-3.mb-0 {
     filter: sepia(1) hue-rotate(180deg) saturate(2) brightness(0) invert(1);
     cursor: pointer;
 }
-img.me-3.mb-3:hover {
+
+img.me-3.mb-3:hover,
+img.me-3.mb-0:hover {
     filter: brightness(0) invert(0);
     cursor: pointer;
 }
@@ -393,7 +403,7 @@ img.me-3.mb-3:hover {
     min-height: 150px;
     box-shadow: 0 3px 8px rgba(0, 0, 0, 0.24);
     text-align: center;
-    height: 170px !important;
+    height: 190px !important;
 }
 
 .swiper-slide {
@@ -541,6 +551,11 @@ img.me-3.mb-3:hover {
     .carousel-indicators {
         position: absolute;
         top: 970px;
+    }
+
+    .img-hero-banner {
+        display: block;
+        object-fit: contain;
     }
 }
 
@@ -694,6 +709,14 @@ img.me-3.mb-3:hover {
     width: 100%;
 }
 
+.services-about {
+    flex: 0 1 23%;
+    padding: 30px 10px !important;
+    min-height: 350px;
+    background-color: #fff;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
 @media (max-width: 420px) {
     .highlight-box {
         width: 100%;
@@ -708,6 +731,26 @@ img.me-3.mb-3:hover {
         width: 100%
     }
 
+    .services-about {
+        flex: 1 1 100%;
+        padding: 20px !important;
+        min-height: 200px;
+    }
+
+}
+
+@media (max-width: 992px) {
+    .services-about {
+        flex: 0 1 48%;
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .services-about {
+        flex: 0 1 100%;
+        margin-bottom: 20px;
+    }
 }
 
 
@@ -742,39 +785,38 @@ img.me-3.mb-3:hover {
     }
 }
 
-.client-row {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+.client-container {
+    max-width: 1200px;
+    overflow: hidden;
 }
 
-.client-item {
-    flex: 1 1 20%;
-    max-width: 20%;
-    padding: 18px;
-    box-sizing: border-box;
+.swiper-container {
+    width: 100%;
+    overflow: hidden;
+}
+
+.swiper-wrapper {
+    display: flex;
 }
 
 .client-logo {
-    width: 100%;
+    width: 90%;
     height: 85px;
     object-fit: contain;
+    border-radius: 10px;
     border: 1px solid rgb(110, 109, 109);
     transition: filter 0.3s ease-in-out;
 }
 
-@media (max-width: 768px) {
-    .client-item {
-        flex: 1 1 33.33%;
-        max-width: 33.33%;
-    }
+.swiper-pagination {
+    margin-top: 20px;
 }
 
-@media (max-width: 576px) {
-    .client-item {
-        flex: 1 1 50%;
-        max-width: 50%;
-    }
+.section-line {
+    width: 100px;
+    height: 4px;
+    background-color: #007bff;
+    margin: 10px auto 30px;
 }
 
 
