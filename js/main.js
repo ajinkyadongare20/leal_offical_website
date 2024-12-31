@@ -102,38 +102,55 @@ var swiper = new Swiper(".mySwiper", {
 // career job apply code 
 document.addEventListener("DOMContentLoaded", function () {
     const careerJobListings = document.querySelectorAll('.job-listing');
+
     careerJobListings.forEach(listing => {
-        listing.addEventListener('click', function (event) {
-            const form = this.querySelector('.apply-form');
-
-            // Close any open forms and reset styles
-            careerJobListings.forEach(item => {
-                if (item !== listing) {
-                    item.querySelector('.apply-form').style.display = 'none';
-                    item.classList.remove('no-scale', 'form-open');
-                }
-            });
-
-            // Toggle the visibility of the form
-            if (form.style.display === 'block') {
-                form.style.display = 'none';
-                this.classList.remove('no-scale', 'form-open');
-            } else {
-                form.style.display = 'block';
-                this.classList.add('no-scale', 'form-open');
-            }
-
-            event.stopPropagation();
-        });
-
+       
+        const applyButton = listing.querySelector('.btn-apply-job');
         const form = listing.querySelector('.apply-form');
+
+       
+        if (applyButton) {
+            applyButton.addEventListener('click', function (event) {
+              
+                careerJobListings.forEach(item => {
+                    const otherForm = item.querySelector('.apply-form');
+                    if (item !== listing && otherForm) {
+                        otherForm.style.display = 'none';
+                        item.classList.remove('form-open');
+                    }
+                });
+
+                if (form.style.display === 'block') {
+                    form.style.display = 'none';
+                    listing.classList.remove('form-open');
+                } else {
+                    form.style.display = 'block';
+                    listing.classList.add('form-open');
+                }
+
+                event.stopPropagation();
+            });
+        }
+
         if (form) {
             form.addEventListener('click', function (event) {
                 event.stopPropagation();
             });
         }
     });
+
+    // Close all forms when clicking anywhere outside the job listing
+    document.addEventListener('click', function () {
+        careerJobListings.forEach(listing => {
+            const form = listing.querySelector('.apply-form');
+            if (form) {
+                form.style.display = 'none';
+                listing.classList.remove('form-open');
+            }
+        });
+    });
 });
+
 
 
 // ****  Code in Products Page- HVAC heat load calculator   ****
@@ -188,3 +205,10 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     });
 });
+
+document.querySelectorAll('.app-store-btn, .google-play-btn').forEach(button => {
+    button.addEventListener('click', function () {
+        alert('Redirecting to the app download page on our website...');
+    });
+});
+

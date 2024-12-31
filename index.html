@@ -10,6 +10,7 @@
 
     <!-- Favicon -->
     <link href="img/favicon.ico" rel="icon">
+    <link rel="icon" href="img/Leal_Logo.jpg" type="image/x-icon">
 
     <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -63,10 +64,25 @@
                     <div class="navbar-nav ms-auto">
                         <a href="index.html" class="nav-item nav-link active">HOME</a>
                         <a href="about.html" class="nav-item nav-link">ABOUT</a>
-                        <a href="service.html" class="nav-item nav-link">SERVICES</a>
+                        <div class="dropdown nav-item">
+                            <button class="dropdown-toggle border-0 bg-transparent pe-4 rounded py-2 py-lg-0 px-0"
+                                type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-haspopup="true"
+                                aria-expanded="false" style="color: rgba(255, 255, 255, 0.9);">
+                                SERVICES
+                            </button>
+                            <div class="dropdown-menu dropdown-menu-end shadow-lg rounded border-0 mt-2"
+                                aria-labelledby="dropdownMenuButton" style="background-color: #f8f9fa;">
+                                <a class="dropdown-item py-3 px-4 text-dark" href="service.html">
+                                    <i class="fas fa-drafting-compass me-2"></i> SOFTWARE SERVICES
+                                </a>
+                                <a class="dropdown-item py-3 px-4 text-dark" href="service1.html">
+                                    <i class="fas fa-tasks me-2"></i> OTHER SERVICES
+                                </a>
+                            </div>
+                        </div>
 
                         <div class="dropdown nav-item">
-                            <button class="dropdown-toggle nav-link border-0 bg-transparent   ps-0 rounded"
+                            <button class="dropdown-toggle border-0 bg-transparent pe-4 rounded py-2 py-lg-0 px-0"
                                 type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-haspopup="true"
                                 aria-expanded="false" style="color: rgba(255, 255, 255, 0.9);">
                                 PRODUCT
@@ -74,21 +90,37 @@
                             <div class="dropdown-menu dropdown-menu-end shadow-lg rounded border-0 mt-2"
                                 aria-labelledby="dropdownMenuButton" style="background-color: #f8f9fa;">
                                 <a class="dropdown-item py-3 px-4 text-dark" href="odoo.html">
-                                    <i class="fas fa-cloud me-2"></i> Odoo/Cloud ERP
+                                    <i class="fas fa-cloud me-2"></i> ODOO/CLOUD ERP
                                 </a>
                                 <a class="dropdown-item py-3 px-4 text-dark" href="tasktrak.html">
-                                    <i class="fas fa-tasks me-2"></i> Task-Trak Hub Manager
+                                    <i class="fas fa-tasks me-2"></i> TASK-TRAK HUB MANAGER
                                 </a>
                                 <a class="dropdown-item py-3 px-4 text-dark" href="hvac.html">
-                                    <i class="fas fa-wind me-2"></i> HVAC Heat Load Calculator
+                                    <i class="fas fa-wind me-2"></i> HVAC HEAT LOAD CALCULATOR
                                 </a>
                                 <a class="dropdown-item py-3 px-4 text-dark" href="#">
-                                    <i class="fas fa-drafting-compass me-2"></i> HVAC Leal GADraw
+                                    <i class="fas fa-drafting-compass me-2"></i> HVAC LEAL GADraw
                                 </a>
                             </div>
                         </div>
                         <a href="career.html" class="nav-item nav-link">CAREER</a>
-                        <a href="blogs.html" class="nav-item nav-link">BLOGS</a>
+                        <!-- <a href="blogs.html" class="nav-item nav-link">BLOGS</a> -->
+                        <div class="dropdown nav-item">
+                            <button class="dropdown-toggle border-0 bg-transparent pe-4 rounded py-2 py-lg-0 px-0"
+                                type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-haspopup="true"
+                                aria-expanded="false" style="color: rgba(255, 255, 255, 0.9);">
+                                INSIGHTS
+                            </button>
+                            <div class="dropdown-menu dropdown-menu-end shadow-lg rounded border-0 mt-2"
+                                aria-labelledby="dropdownMenuButton" style="background-color: #f8f9fa;">
+                                <a class="dropdown-item py-3 px-4 text-dark" href="blogs.html">
+                                    <i class="fas fa-drafting-compass me-2"></i> BLOGS
+                                </a>
+                                <a class="dropdown-item py-3 px-4 text-dark" href="case_study1.html">
+                                    <i class="fas fa-tasks me-2"></i> CASE STUDY
+                                </a>
+                            </div>
+                        </div>
                         <a href="contact.html" class="nav-item nav-link">CONTACT US</a>
                     </div>
 
@@ -102,7 +134,7 @@
 
 
     <!-- Hero Start -->
-    <div class="container-fluid pt-5 bg-primary hero-header" style="height: 100vh;">
+    <div class="container-fluid pt-5 bg-primary hero-header">
         <div class="container pt-5">
             <div class="row g-5 pt-5">
                 <div class="col-lg-6 align-self-center text-start mb-lg-5">
@@ -117,35 +149,101 @@
                     <!-- <img class="img-hero-banner img-fluid w-100 shadow-lg" src="img/test/ecosystem-spotlight-banner.jpg" alt=""> -->
 
                     <!-- Bootstrap Carousel Slider -->
-                    <div id="imageCarousel" class="carousel slide img-hero-banner" data-bs-ride="carousel"
-                        data-bs-interval="2000">
-                        <div class="carousel-inner">
-                            <div class="carousel-item active">
-                                <img src="img/test/ecosystem-spotlight-banner.jpg" alt="main Image">
+                    <div class="swiper mySwiper d-block d-md-none">
+                        <div class="swiper-wrapper">
+                            <!-- Slide 1 -->
+                            <div class="swiper-slide">
+                                <div class="wcu-box">
+                                    <img src="img/index_images/software-developer.png" alt="Slide 1"
+                                        style="width: 70px; height: 70px; filter: sepia(1) hue-rotate(180deg) saturate(2);">
+                                    <p class="text-white fs-6 pt-3">We deliver top-notch, innovative software solutions
+                                    </p>
+                                </div>
                             </div>
-                            <div class="carousel-item">
-                                <img src="img/test/ai-banner.jpg" alt="First Image">
+                            <!-- Slide 2 -->
+                            <div class="swiper-slide">
+                                <div class="wcu-box">
+                                    <img src="img/index_images/professional-success.png" alt="Slide 2"
+                                        style="width: 70px; height: 70px;">
+                                    <p class="text-white fs-6 pt-3">We’re dedicated to meeting deadlines and client
+                                        expectations</p>
+                                </div>
                             </div>
-                            <div class="carousel-item">
-                                <img src="img/test/financial-services-forum-europe-spotlight.jpg" alt="Second Image">
+                            <!-- Slide 3 -->
+                            <div class="swiper-slide">
+                                <div class="wcu-box">
+                                    <img src="img/index_images/save-time.png" alt="Slide 3"
+                                        style="width: 70px; height: 70px;">
+                                    <p class="text-white fs-6 pt-3">Our competitive pricing ensures cost-effective
+                                        solutions</p>
+                                </div>
                             </div>
-                            <div class="carousel-item">
-                                <img src="img/test/iconnect-spotlight-banner.jpg" alt="Fourth Image">
+                            <!-- Slide 4 -->
+                            <div class="swiper-slide">
+                                <div class="wcu-box">
+                                    <img src="img/index_images/coding.jpg" alt="Slide 4"
+                                        style="width: 70px; height: 70px;">
+                                    <p class="text-white fs-6 pt-3">Our software is highly secure, portable, and
+                                        responsive</p>
+                                </div>
                             </div>
-                            <div class="carousel-item">
-                                <img src="img/test/modern-platform-spotlight.jpg" alt="Fifth Image">
+                            <!-- Slide 5 -->
+                            <div class="swiper-slide">
+                                <div class="wcu-box">
+                                    <img src="img/index_images/sw_implemention.jpg" alt="Slide 5"
+                                        style="width: 70px; height: 70px;">
+                                    <p class="text-white fs-6 pt-3">We provide flawless communication and project
+                                        management</p>
+                                </div>
+                            </div>
+                            <!-- Slide 6 -->
+                            <div class="swiper-slide">
+                                <div class="wcu-box">
+                                    <img src="img/index_images/badge.png" alt="Slide 6"
+                                        style="width: 70px; height: 70px;">
+                                    <p class="text-white fs-6 pt-3">Our quality assurance is backed by industry
+                                        certifications</p>
+                                </div>
+                            </div>
+                            <!-- Slide 7 -->
+                            <div class="swiper-slide">
+                                <div class="wcu-box">
+                                    <img src="img/index_images/app-development.jpg" alt="Slide 7"
+                                        style="width: 70px; height: 70px;">
+                                    <p class="text-white fs-6 pt-3">Custom app development to meet your business needs
+                                    </p>
+                                </div>
+                            </div>
+                            <!-- Slide 8 -->
+                            <div class="swiper-slide">
+                                <div class="wcu-box">
+                                    <img src="img/index_images/coding (1).png" alt="Slide 8"
+                                        style="width: 70px; height: 70px;">
+                                    <p class="text-white fs-6 pt-3">Advanced coding techniques for seamless user
+                                        experience</p>
+                                </div>
+                            </div>
+                            <!-- Slide 9 -->
+                            <div class="swiper-slide">
+                                <div class="wcu-box">
+                                    <img src="img/index_images/sw_conslutancy.jpg" alt="Slide 9"
+                                        style="width: 70px; height: 70px;">
+                                    <p class="text-white fs-6 pt-3">Expert consultancy to guide your software journey
+                                    </p>
+                                </div>
+                            </div>
+                            <!-- Slide 10 -->
+                            <div class="swiper-slide">
+                                <div class="wcu-box">
+                                    <img src="img/index_images/sw_training.jpg" alt="Slide 10"
+                                        style="width: 70px; height: 70px;">
+                                    <p class="text-white fs-6 pt-3">Hands-on training to ensure effective software
+                                        adoption</p>
+                                </div>
                             </div>
                         </div>
-                        <button class="carousel-control-prev" type="button" data-bs-target="#imageCarousel"
-                            data-bs-slide="prev">
-                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Previous</span>
-                        </button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#imageCarousel"
-                            data-bs-slide="next">
-                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Next</span>
-                        </button>
+                        <!-- Swiper Pagination -->
+                        <!-- <div class="swiper-pagination"></div> -->
                     </div>
                 </div>
             </div>
@@ -176,7 +274,7 @@
 
 
     <!-- About Start -->
-    <section class="bg-light py-4">
+    <section class="bg-light pt-4">
         <div class="container my-5">
             <div class="row text-center">
                 <!-- Our Mission Box -->
@@ -239,9 +337,9 @@
 
 
     <!--  -->
-    <section class="strategy-section">
+    <section class="py-0 py-lg-4">
         <div class="wow fadeIn" data-wow-delay="0.5s">
-            <h1 class="strategy-heading" style="font-size: 2.5rem; color: rgb(63, 63, 63);">What <span
+            <h1 class="strategy-heading text-center" style="font-size: 2.5rem; color: rgb(63, 63, 63);">What <span
                     class="highlight-red" style="color: rgb(197, 81, 81);">are</span> <span class="highlight-blue"
                     style="color: #007bff;;">our sevrvices</span>?</h1>
 
@@ -396,7 +494,7 @@
 
     <!-- Service Start -->
     <div class="container-fluid bg-light mt-5 py-5">
-        <div class="container py-5">
+        <div class="container py-0 py-lg-5">
             <div class="row g-5 align-items-center">
                 <div class="col-lg-5 wow fadeInLeftBig" data-wow-delay="0.1s">
                     <h1 class="mb-4">What are our Products</h1>
@@ -490,6 +588,106 @@
     <!-- Service End -->
 
 
+    <!--Key Features  -->
+    <section class="bg-primary myhome-container">
+        <div class="opacity">
+            <div class="container pb-3 pb-lg-5">
+                <div class="text-center mb-5">
+                    <h2 class="text-white">Key Features Of Leal Software Solution</h2>
+                    <p class="text-white">Empowering businesses with innovative software solutions and exceptional
+                        services.</p>
+                </div>
+                <div class="row g-4">
+                    <div class="col-lg-6">
+                        <div class="d-flex align-items-start p-3 border key-rounded shadow-sm"
+                            style="background-color: #f8fbff;">
+                            <div class="me-3 index-key-feature">
+                                <img src="img/services/services_main/software-development.png" alt="Service Icon"
+                                    style="width: 40px; height: 40px;">
+                            </div>
+                            <div>
+                                <h5 class="mb-2">Custom Software Development</h5>
+                                <p>Deliver tailored software solutions designed to meet your unique
+                                    business needs, ensuring enhanced efficiency, scalability, and seamless integration.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="d-flex align-items-start p-3 border key-rounded shadow-sm"
+                            style="background-color: #f8fbff;">
+                            <div class="me-3 index-key-feature">
+                                <img src="img/services/services_main/app-dev.png" alt="Service Icon"
+                                    style="width: 40px; height: 40px;">
+                            </div>
+                            <div>
+                                <h5 class="mb-2">Software Consultancy</h5>
+                                <p>Expert guidance to optimize your software strategy, ensuring the right
+                                    solutions align with your business goals for maximum efficiency and growth.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="d-flex align-items-start p-3 border key-rounded shadow-sm"
+                            style="background-color: #f8fbff;">
+                            <div class="me-3 index-key-feature">
+                                <img src="img/services/services_main/native.png" alt="Service Icon"
+                                    style="width: 40px; height: 40px;">
+                            </div>
+                            <div>
+                                <h5 class="mb-2">Web & Mobile App Development</h5>
+                                <p>Build dynamic, user-friendly web and mobile applications tailored to
+                                    your business needs, ensuring seamless performance across all devices.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="d-flex align-items-start p-3 border key-rounded shadow-sm"
+                            style="background-color: #f8fbff;">
+                            <div class="me-3 index-key-feature"> <img src="img/services/services_main/erp_odoo.png"
+                                    alt="Service Icon" style="width: 40px; height: 40px;">
+                            </div>
+                            <div>
+                                <h5 class="mb-2">ERP Integration</h5>
+                                <p class="mb-2">Streamline your business processes with ERP integration, enabling
+                                    seamless data flow, improved efficiency, and centralized management.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="d-flex align-items-start p-3 border key-rounded shadow-sm"
+                            style="background-color: #f8fbff;">
+                            <div class="me-3 index-key-feature"> <img
+                                    src="img/services/services_main/sw_conslutancy.jpg" alt="Service Icon"
+                                    style="width: 40px; height: 40px;">
+                            </div>
+                            <div>
+                                <h5 class="mb-2">Cloud Integration</h5>
+                                <p>Enable secure and efficient cloud integration to enhance scalability,
+                                    streamline operations, and ensure seamless access to data anytime, anywhere.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="d-flex align-items-start p-3 border key-rounded shadow-sm"
+                            style="background-color: #f8fbff;">
+                            <div class="me-3 index-key-feature"> <img src="img/services/services_main/seo.png"
+                                    alt="Service Icon" style="width: 40px; height: 40px;">
+                            </div>
+                            <div>
+                                <h5 class="mb-2">SEO Optimization</h5>
+                                <p>Boost your online visibility with SEO optimization, driving higher
+                                    search rankings, increased traffic, and improved engagement for your business.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Key Featured -->
+
+
     <!-- Content Section -->
     <div class="home-services-container bg-light">
         <!-- Image -->
@@ -504,7 +702,8 @@
                 Leal Software Solution is a dynamic software company specializing in delivering tailored ERP solutions
                 and business automation. With a focus on efficiency, scalability, and innovation, Leal helps businesses
                 streamline operations through cutting-edge technologies.</p>
-            <p class="text-start">Process by <a href="service.html" class="fw-bold text-decoration-none text-primary ">Click
+            <p class="text-start">Process by <a href="service.html"
+                    class="fw-bold text-decoration-none text-primary ">Click
                     Me!</a></p>
         </div>
     </div>
@@ -513,7 +712,7 @@
 
     <!-- Feature Start -->
     <div class="container-fluid bg-dark feature pt-5">
-        <div class="container pt-5">
+        <div class="container pt-0 pt-lg-5 ">
             <div class="row g-5">
                 <div class="col-lg-6 align-self-center mb-md-5 pb-md-5 wow fadeInLeftBig" data-wow-delay="0.3s">
                     <!-- <div class="btn btn-sm border rounded-pill text-white px-3 mb-3">Why Choose Us</div> -->
@@ -655,6 +854,66 @@
     <!-- Feature End -->
 
 
+    <!-- Case Study  -->
+    <section class="py-5 text-center bg-light">
+        <div class="container">
+            <h2 class="pb-5 fw-bold text-dark">Case Studies</h2>
+            <div class="row g-4">
+                <!-- Success Story 1 -->
+                <div class="col-12 col-md-4">
+                    <div class="success-card"
+                        style="background-image: url('img/blogs_images/blogs2_group-developers-men-women-working-together.jpg');">
+                        <div class="success-card-content">
+                            <h6 class="bg-dark text-white px-2 py-1 d-inline-block rounded-pill mb-2">Case 1</h6>
+                            <p class="mb-3"><strong>Healthcare Data Integration</strong>A healthcare provider sought a
+                                solution to centralize patient records from multiple sources.</p>
+                            <a href="case_study1.html"
+                                class="btn btn-outline-light rounded-circle d-flex align-items-center justify-content-center"
+                                style="width: 10%; aspect-ratio: 1; margin-left: 140px;">
+                                <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Success Story 2 -->
+                <div class="col-12 col-md-4">
+                    <div class="success-card"
+                        style="background-image: url('img/blogs_images/blogs4_side-view-man-working-office.jpg');">
+                        <div class="success-card-content">
+                            <h6 class="bg-dark text-white px-2 py-1 d-inline-block rounded-pill mb-2">Case 2</h6>
+                            <p class="mb-3"><strong>E-commerce Platform</strong>Our team partnered with a
+                                growing e-commerce business to revamp its outdated platform.</p>
+                            <a href="case_study2.html"
+                                class="btn btn-outline-light rounded-circle d-flex align-items-center justify-content-center"
+                                style="width: 10%; aspect-ratio: 1; margin-left: 140px;">
+                                <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Success Story 3 -->
+                <div class="col-12 col-md-4">
+                    <div class="success-card"
+                        style="background-image: url('img/blogs_images/blogs1_software_industry.jpg');">
+                        <div class="success-card-content">
+                            <h6 class="bg-dark text-white px-2 py-1 d-inline-block rounded-pill mb-2">Case 3</h6>
+                            <p class="mb-3"><strong>TaskTrak</strong> global logistics firm upgraded its tracking
+                                system.
+                                Our end-to-end solution provided real-time tracking.</p>
+                            <a href="case_study3.html"
+                                class="btn btn-outline-light rounded-circle d-flex align-items-center justify-content-center"
+                                style="width: 10%; aspect-ratio: 1; margin-left: 140px;">
+                                <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Case Study  -->
+
+
     <!--  -->
     <div class="myhome-container">
         <div class="opacity">
@@ -768,8 +1027,149 @@
     <!--  -->
 
 
+    <!-- FAQs Start -->
+    <div class="container-fluid py-0 py-lg-5">
+        <div class="container">
+            <div class="mx-auto text-center wow fadeIn" data-wow-delay="0.1s" style="max-width: 500px;">
+                <h1 class="mb-4">Frequently Asked Questions</h1>
+            </div>
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="accordion" id="accordionFAQ1">
+                        <div class="accordion-item wow fadeIn" data-wow-delay="0.1s">
+                            <h2 class="accordion-header" id="headingOne">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                                    What is software development?
+                                </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
+                                data-bs-parent="#accordionFAQ1">
+                                <div class="accordion-body">
+                                    Software development is the process of designing, creating, testing, and maintaining
+                                    applications, frameworks, or other software components.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item wow fadeIn" data-wow-delay="0.2s">
+                            <h2 class="accordion-header" id="headingTwo">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    What programming languages do you use?
+                                </button>
+                            </h2>
+                            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                                data-bs-parent="#accordionFAQ1">
+                                <div class="accordion-body">
+                                    We use a variety of programming languages including Java, Python, JavaScript, C#,
+                                    and PHP, depending on the project's requirements.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item wow fadeIn" data-wow-delay="0.3s">
+                            <h2 class="accordion-header" id="headingThree">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    How long does it take to develop software?
+                                </button>
+                            </h2>
+                            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                                data-bs-parent="#accordionFAQ1">
+                                <div class="accordion-body">
+                                    Development timelines depend on project complexity, but typical projects take
+                                    anywhere from a few weeks to several months.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item wow fadeIn" data-wow-delay="0.4s">
+                            <h2 class="accordion-header" id="headingFour">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
+                                    Do you provide software maintenance services?
+                                </button>
+                            </h2>
+                            <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+                                data-bs-parent="#accordionFAQ1">
+                                <div class="accordion-body">
+                                    Yes, we offer ongoing maintenance to ensure the software remains secure, updated,
+                                    and functional.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="accordion" id="accordionFAQ2">
+                        <div class="accordion-item wow fadeIn" data-wow-delay="0.5s">
+                            <h2 class="accordion-header" id="headingFive">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                    Can you integrate third-party tools with the software?
+                                </button>
+                            </h2>
+                            <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive"
+                                data-bs-parent="#accordionFAQ2">
+                                <div class="accordion-body">
+                                    Yes, we specialize in integrating third-party APIs, plugins, and tools to enhance
+                                    functionality.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item wow fadeIn" data-wow-delay="0.6s">
+                            <h2 class="accordion-header" id="headingSix">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                                    How do you ensure the quality of the software?
+                                </button>
+                            </h2>
+                            <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix"
+                                data-bs-parent="#accordionFAQ2">
+                                <div class="accordion-body">
+                                    We follow strict quality assurance practices, including automated and manual
+                                    testing, to ensure the software meets all standards.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item wow fadeIn" data-wow-delay="0.7s">
+                            <h2 class="accordion-header" id="headingSeven">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                                    Do you provide custom software development?
+                                </button>
+                            </h2>
+                            <div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="headingSeven"
+                                data-bs-parent="#accordionFAQ2">
+                                <div class="accordion-body">
+                                    Absolutely. We specialize in creating tailored software solutions that address
+                                    unique business needs.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item wow fadeIn" data-wow-delay="0.8s">
+                            <h2 class="accordion-header" id="headingEight">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
+                                    What industries do you work with?
+                                </button>
+                            </h2>
+                            <div id="collapseEight" class="accordion-collapse collapse" aria-labelledby="headingEight"
+                                data-bs-parent="#accordionFAQ2">
+                                <div class="accordion-body">
+                                    We serve a wide range of industries, including healthcare, finance, retail,
+                                    logistics, and education.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- FAQs Start -->
+
+
     <!--  -->
-    <!-- <section class="h-auto pb-5 bg-light">
+     <!-- <section class="h-auto pb-5 bg-light">
         <div class="container">
             <h2 class="text-start text-lg-center pt-5 pb-3">CLIENTS CONFIRM OUR QUALITY</h2>
             <p class="text-start text-lg-center" style="font-weight: 500;">Our clients across the globe have nothing but
@@ -938,12 +1338,12 @@
                 </button>
             </div>
         </div>
-    </section> -->
+    </section>   -->
     <!--  -->
 
 
     <!-- Contact Us Start -->
-    <section class="bg-lightdark py-5">
+    <section class="bg-light py-5">
         <div class="container contact-section">
             <div class="row">
                 <!-- Left Side: Contact Info -->
@@ -1016,20 +1416,22 @@
 
     <!-- Footer Start -->
     <div class="container-fluid bg-dark text-white-50 footer pt-5">
-        <div class="container py-5">
+        <div class="container py-3 py-lg-5">
             <div class="row g-5">
                 <div class="col-md-6 col-lg-3 wow fadeInLeftBig" data-wow-delay="0.1s">
                     <a href="index.html" class="d-inline-block mb-3">
-                        <h1 class="text-white text-white-nav">Leal Software Solution <span class="text-primary"></span>
+                        <h1 class="text-white text-white-nav">Leal Software Solution Pvt Ltd <span
+                                class="text-primary"></span>
                         </h1>
                     </a>
-                    <p class="mb-0">Leal Software Solution excels in delivering innovative, high-quality refrigeration
+                    <p class="mb-0">Leal Software Solution excels in delivering innovative, high-quality
+                        refrigeration
                         solutions. With a focus on custom design, efficiency, and reliability, we provide tailored
                         systems and exceptional service to meet diverse industry needs.</p>
                 </div>
 
-                <div class="col-md-6 col-lg-3 wow fadeInLeftBig" data-wow-delay="0.5s">
-                    <h5 class="text-white mb-4">Popular Link</h5>
+                <div class="col-md-6 col-lg-2 wow fadeInLeftBig" data-wow-delay="0.5s">
+                    <h5 class="text-white mb-3">Popular Link</h5>
                     <a class="btn btn-link" href="about.html">About Us</a>
                     <a class="btn btn-link" href="about.html">Projects</a>
                     <a class="btn btn-link" href="service.html">Services</a>
@@ -1037,21 +1439,22 @@
                     <a class="btn btn-link" href="">Privacy Policy</a>
                     <a class="btn btn-link" href="">Terms & Condition</a>
                 </div>
-                <div class="col-md-6 col-lg-3 wow fadeIn" data-wow-delay="1.3s">
+                <div class="col-md-6 col-lg-4 pe-0 wow fadeIn" data-wow-delay="1.3s">
                     <h5 class="text-white mb-4">Our Services</h5>
                     <a class="btn btn-link" href="">Software Development</a>
-                    <a class="btn btn-link" href="">Mobile Application <br> Development</a>
+                    <a class="btn btn-link" href="">Mobile Application Development</a>
                     <a class="btn btn-link" href="">Web App Development</a>
+                    <a class="btn btn-link" href="">HVAC Heat Load Calculator</a>
+                    <a class="btn btn-link" href="">HLC Leal Bussiness Solution</a>
+                    <a class="btn btn-link" href="">Leal GADraw</a>
                     <a class="btn btn-link" href="">Odoo ERP Cloud</a>
                     <a class="btn btn-link" href="">TaskTrak Hub Manager</a>
-                    <a class="btn btn-link" href="">Leal GADraw</a>
-                    <a class="btn btn-link" href="">HVAC Heat Load <br>Calculator</a>
-                    <a class="btn btn-link" href="">HLC Leal Bussiness Solution</a>
 
                 </div>
                 <div class="col-md-6 col-lg-3 wow fadeIn" data-wow-delay="1.8s">
                     <h5 class="text-white mb-4">Get In Touch</h5>
-                    <p><i class="fa fa-map-marker-alt me-3"></i>Flat No. B-102, Laxmi Chowk, Phase 1, Hinjawadi Rajiv
+                    <p><i class="fa fa-map-marker-alt me-3"></i>Flat No. B-102, Laxmi Chowk, Phase 1, Hinjawadi
+                        Rajiv
                         Gandhi Infotech Park, Hinjawadi, Pimpri-Chinchwad, Maharashtra 411057</p>
                     <p><i class="fa fa-phone-alt me-3"></i>0253 24651409</p>
                     <p><i class="fa fa-phone-alt me-3"></i>+91 7410016111/13/14</p>
@@ -1088,7 +1491,6 @@
                         | All Rights Reserved.<a class="border-bottom" href="https://www.lealsolution.com/"
                             target="_blank"></a>
                     </div>
-
                     <div class="col-md-6 text-center text-md-end">
                         <div class="footer-menu">
                             <a href="">Home</a>

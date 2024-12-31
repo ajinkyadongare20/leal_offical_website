@@ -1,0 +1,1174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Project Leal</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+    <link rel="icon" href="img/Leal_Logo.jpg" type="image/x-icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Ubuntu:wght@500;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Stylesheet Montserrat -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+</head>
+
+<body>
+    <!-- Spinner Start -->
+    <div id="spinner"
+        class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-grow text-primary" style="width: 3rem; height: 3rem;" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+    </div>
+    <!-- Spinner End -->
+
+
+    <!-- Navbar Start -->
+    <div class="container-fluid sticky-top">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-dark p-0">
+                <a href="index.html" class="navbar-brand">
+                    <img src="img/index_images/leal-software-logo.jpg" alt="Button Image" class="animated slideInDown">
+                </a>
+                <button type="button" class="navbar-toggler ms-auto me-0" data-bs-toggle="collapse"
+                    data-bs-target="#navbarCollapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <div class="navbar-nav ms-auto">
+                        <a href="index.html" class="nav-item nav-link">HOME</a>
+                        <a href="about.html" class="nav-item nav-link active">ABOUT</a>
+                        <div class="dropdown nav-item">
+                            <button class="dropdown-toggle border-0 bg-transparent pe-4 rounded py-2 py-lg-0 px-0"
+                                type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-haspopup="true"
+                                aria-expanded="false" style="color: rgba(255, 255, 255, 0.9);">
+                                SERVICES
+                            </button>
+                            <div class="dropdown-menu dropdown-menu-end shadow-lg rounded border-0 mt-2"
+                                aria-labelledby="dropdownMenuButton">
+                                <a class="dropdown-item py-3 px-4 text-dark" href="service.html">
+                                    <i class="fas fa-drafting-compass me-2"></i> SOFTWARE SERVICES
+                                </a>
+                                <a class="dropdown-item py-3 px-4 text-dark" href="service1.html">
+                                    <i class="fas fa-tasks me-2"></i> OTHER SERVICES
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="dropdown nav-item">
+                            <button class="dropdown-toggle border-0 bg-transparent pe-4 rounded py-2 py-lg-0 px-0"
+                                type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-haspopup="true"
+                                aria-expanded="false" style="color: rgba(255, 255, 255, 0.9);">
+                                PRODUCT
+                            </button>
+                            <div class="dropdown-menu dropdown-menu-end shadow-lg rounded border-0 mt-2"
+                                aria-labelledby="dropdownMenuButton">
+                                <a class="dropdown-item py-3 px-4 text-dark" href="odoo.html">
+                                    <i class="fas fa-cloud me-2"></i> ODOO/CLOUD ERP
+                                </a>
+                                <a class="dropdown-item py-3 px-4 text-dark" href="tasktrak.html">
+                                    <i class="fas fa-tasks me-2"></i> TASK-TRAK HUB MANAGER
+                                </a>
+                                <a class="dropdown-item py-3 px-4 text-dark" href="hvac.html">
+                                    <i class="fas fa-wind me-2"></i> HVAC HEAT LOAD CALCULATOR
+                                </a>
+                                <a class="dropdown-item py-3 px-4 text-dark" href="#">
+                                    <i class="fas fa-drafting-compass me-2"></i> HVAC LEAL GADraw
+                                </a>
+                            </div>
+                        </div>
+                        <a href="career.html" class="nav-item nav-link">CAREER</a>
+                        <!-- <a href="blogs.html" class="nav-item nav-link">BLOGS</a> -->
+                        <div class="dropdown nav-item">
+                            <button class="dropdown-toggle border-0 bg-transparent pe-4 rounded py-2 py-lg-0 px-0"
+                                type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-haspopup="true"
+                                aria-expanded="false" style="color: rgba(255, 255, 255, 0.9);">
+                                INSIGHTS
+                            </button>
+                            <div class="dropdown-menu dropdown-menu-end shadow-lg rounded border-0 mt-2"
+                                aria-labelledby="dropdownMenuButton">
+                                <a class="dropdown-item py-3 px-4 text-dark" href="blogs.html">
+                                    <i class="fas fa-drafting-compass me-2"></i> BLOGS
+                                </a>
+                                <a class="dropdown-item py-3 px-4 text-dark" href="case_study1.html">
+                                    <i class="fas fa-tasks me-2"></i> CASE STUDY
+                                </a>
+                            </div>
+                        </div>
+                        <a href="contact.html" class="nav-item nav-link">CONTACT US</a>
+                    </div>
+
+                    <butaton type="button" class="btn text-white p-0 d-none d-lg-block" data-bs-toggle="modal"
+                        data-bs-target="#searchModal"><i class="fa fa-search"></i></butaton>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <!-- Navbar End -->
+
+
+    <!-- Hero Start -->
+    <div class="container-fluid pt-5 bg-primary hero-header">
+        <div class="container pt-5">
+            <div class="row g-5 pt-5">
+                <div class="col-lg-6 align-self-center text-start mb-lg-5">
+                    <h1 class="display-4 text-white mb-4 animated slideInRight">Wordpress Development</h1>
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb justify-content-start justify-content-lg-start mb-0">
+                            <li class="breadcrumb-item"><a class="text-white" href="#">Home</a></li>
+                            <li class="breadcrumb-item text-white active" aria-current="page">Wordpress Development
+                            </li>
+                        </ol>
+                    </nav>
+                    <p class="text-white mb-4 pt-3 animated fadeInLeftBig">Leal Software Solution is a trusted software
+                        company, dedicated to delivering cutting-edge technology solutions tailored to your business
+                        needs. Our expertise spans various industries, enabling businesses to optimize their processes,
+                        boost productivity, and drive innovation. Partner with us to transform your operations and
+                        achieve long-term success through reliable software solutions.</p>
+                </div>
+                <div class="col-lg-6 align-self-end text-center text-lg-end mt-0 pb-4">
+                    <!-- <img class="img-hero-banner img-fluid w-100 shadow-lg" src="img/test/ecosystem-spotlight-banner.jpg" alt=""> -->
+
+                    <!-- Bootstrap Carousel Slider -->
+                    <div class="swiper mySwiper d-block d-md-none">
+                        <div class="swiper-wrapper">
+                            <!-- Slide 1 -->
+                            <div class="swiper-slide">
+                                <div class="wcu-box">
+                                    <img src="img/index_images/software-developer.png" alt="Slide 1"
+                                        style="width: 70px; height: 70px;">
+                                    <p class="text-white fs-6 pt-3">We deliver top-notch, innovative software solutions
+                                    </p>
+                                </div>
+                            </div>
+                            <!-- Slide 2 -->
+                            <div class="swiper-slide">
+                                <div class="wcu-box">
+                                    <img src="img/index_images/professional-success.png" alt="Slide 2"
+                                        style="width: 70px; height: 70px;">
+                                    <p class="text-white fs-6 pt-3">We’re dedicated to meeting deadlines and client
+                                        expectations</p>
+                                </div>
+                            </div>
+                            <!-- Slide 3 -->
+                            <div class="swiper-slide">
+                                <div class="wcu-box">
+                                    <img src="img/index_images/save-time.png" alt="Slide 3"
+                                        style="width: 70px; height: 70px;">
+                                    <p class="text-white fs-6 pt-3">Our competitive pricing ensures cost-effective
+                                        solutions</p>
+                                </div>
+                            </div>
+                            <!-- Slide 4 -->
+                            <div class="swiper-slide">
+                                <div class="wcu-box">
+                                    <img src="img/index_images/coding.jpg" alt="Slide 4"
+                                        style="width: 70px; height: 70px;">
+                                    <p class="text-white fs-6 pt-3">Our software is highly secure, portable, and
+                                        responsive</p>
+                                </div>
+                            </div>
+                            <!-- Slide 5 -->
+                            <div class="swiper-slide">
+                                <div class="wcu-box">
+                                    <img src="img/index_images/sw_implemention.jpg" alt="Slide 5"
+                                        style="width: 70px; height: 70px;">
+                                    <p class="text-white fs-6 pt-3">We provide flawless communication and project
+                                        management</p>
+                                </div>
+                            </div>
+                            <!-- Slide 6 -->
+                            <div class="swiper-slide">
+                                <div class="wcu-box">
+                                    <img src="img/index_images/badge.png" alt="Slide 6"
+                                        style="width: 70px; height: 70px;">
+                                    <p class="text-white fs-6 pt-3">Our quality assurance is backed by industry
+                                        certifications</p>
+                                </div>
+                            </div>
+                            <!-- Slide 7 -->
+                            <div class="swiper-slide">
+                                <div class="wcu-box">
+                                    <img src="img/index_images/app-development.jpg" alt="Slide 7"
+                                        style="width: 70px; height: 70px;">
+                                    <p class="text-white fs-6 pt-3">Custom app development to meet your business needs
+                                    </p>
+                                </div>
+                            </div>
+                            <!-- Slide 8 -->
+                            <div class="swiper-slide">
+                                <div class="wcu-box">
+                                    <img src="img/index_images/coding (1).png" alt="Slide 8"
+                                        style="width: 70px; height: 70px;">
+                                    <p class="text-white fs-6 pt-3">Advanced coding techniques for seamless user
+                                        experience</p>
+                                </div>
+                            </div>
+                            <!-- Slide 9 -->
+                            <div class="swiper-slide">
+                                <div class="wcu-box">
+                                    <img src="img/index_images/sw_conslutancy.jpg" alt="Slide 9"
+                                        style="width: 70px; height: 70px;">
+                                    <p class="text-white fs-6 pt-3">Expert consultancy to guide your software journey
+                                    </p>
+                                </div>
+                            </div>
+                            <!-- Slide 10 -->
+                            <div class="swiper-slide">
+                                <div class="wcu-box">
+                                    <img src="img/index_images/sw_training.jpg" alt="Slide 10"
+                                        style="width: 70px; height: 70px;">
+                                    <p class="text-white fs-6 pt-3">Hands-on training to ensure effective software
+                                        adoption</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Swiper Pagination -->
+                        <!-- <div class="swiper-pagination"></div> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Hero End -->
+
+
+    <!-- Full Screen Search Start -->
+    <div class="modal fade" id="searchModal" tabindex="-1">
+        <div class="modal-dialog modal-fullscreen">
+            <div class="modal-content" style="background: rgba(20, 24, 62, 0.7);">
+                <div class="modal-header border-0">
+                    <button type="button" class="btn btn-square bg-white btn-close" data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+                </div>
+                <div class="modal-body d-flex align-items-center justify-content-center">
+                    <div class="input-group" style="max-width: 600px;">
+                        <input type="text" class="form-control bg-transparent border-light p-3"
+                            placeholder="Type search keyword">
+                        <button class="btn btn-light px-4"><i class="bi bi-search"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Full Screen Search End -->
+
+
+
+    <section class="container-fluid">
+        <!-- first div -->
+        <div class="container my-5">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <h5 class="fw-bold fs-3">Gain WordPress Website Development Services from Leal Software Solution to
+                        Upraise
+                        Your
+                        Digital Presence</h1>
+                        <p class="text-muted mt-3">
+                            Agile, functional, responsive, and highly functional, what else do you expect from your
+                            Website?
+                            We believe that without expertise, no impeccable website with a phenomenal interface that
+                            can
+                            bind
+                            users can come into existence. Thus, if you want it all on your website, show your trust and
+                            rely on OrangeMantra.
+                            We are a reputed and competent WordPress Development Company that likes to cross our
+                            creative
+                            boundaries
+                            to deliver SEO-laden, efficient, and robust solutions based on WordPress.
+                        </p>
+                </div>
+            </div>
+
+            <div class="row mt-4">
+                <div class="col-12 col-md-6 col-lg-3 d-flex justify-content-center mb-3">
+                    <div class="text-center border border-secondary rounded-3 p-4 w-100 max-w-250">
+                        <div class="bg-primary text-white rounded-circle d-flex justify-content-center align-items-center mx-auto"
+                            style="width: 70px; height: 70px;">
+                            <i class="bi bi-briefcase-fill fs-2"></i>
+                        </div>
+                        <h2 class="fw-bold my-2 text-primary">300+</h2>
+                        <p class="text-muted fs-6">Clients Worldwide</p>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3 d-flex justify-content-center mb-3">
+                    <div class="text-center border border-secondary rounded-3 p-4 w-100 max-w-250">
+                        <div class="bg-primary text-white rounded-circle d-flex justify-content-center align-items-center mx-auto"
+                            style="width: 70px; height: 70px;">
+                            <i class="bi bi-award-fill fs-2"></i>
+                        </div>
+                        <h2 class="fw-bold my-2 text-primary">99%</h2>
+                        <p class="text-muted fs-6">Success Rate</p>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3 d-flex justify-content-center mb-3">
+                    <div class="text-center border border-secondary rounded-3 p-4 w-100 max-w-250">
+                        <div class="bg-primary text-white rounded-circle d-flex justify-content-center align-items-center mx-auto"
+                            style="width: 70px; height: 70px;">
+                            <i class="bi bi-person-check-fill fs-2"></i>
+                        </div>
+                        <h2 class="fw-bold my-2 text-primary">10+</h2>
+                        <p class="text-muted fs-6">WordPress Experts</p>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3 d-flex justify-content-center mb-3">
+                    <div class="text-center border border-secondary rounded-3 p-4 w-100 max-w-250">
+                        <div class="bg-primary text-white rounded-circle d-flex justify-content-center align-items-center mx-auto"
+                            style="width: 70px; height: 70px;">
+                            <i class="bi bi-emoji-smile-fill fs-2"></i>
+                        </div>
+                        <h2 class="fw-bold my-2 text-primary">89%</h2>
+                        <p class="text-muted fs-6">Retention Rate</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Second div -->
+        <div class="container py-5 my-5">
+            <div class="row">
+                <div class="col-12 col-md-7 d-flex justify-content-center">
+                    <div>
+                        <h5 class="fw-bold fs-3 text-start">Transform your Website with our WordPress Development
+                            Services to Accelerate Your Business Growth</h5>
+                        <p class="text-muted mt-3 text-start">If you wish to set up your special contributions to a blog
+                            webpage or are hoping to make a feature-rich and intuitive business site, then look no
+                            further than one of the best WordPress development service providers: OrangeMantra. We are
+                            one of the most recognized WordPress development organizations around the globe and have
+                            been in this business for two decades. Our skilled group of WordPress developers has the
+                            intuition to deliver out-of-the-box web solutions utilizing state-of-the-art WordPress
+                            innovation.<br><br>
+
+                            WordPress is one of the easiest and most powerful content management systems and comes with
+                            numerous features to make your experience pleasing and appealing. It maintains a worldwide
+                            community to help you 24*7. Numerous plugins are available to add features to your
+                            site.<br><br>
+
+                            Orange Mantra offers WordPress development and solutions at cost-effective prices as well as
+                            high-end solutions. We strive hard to offer everyone with top-notch WordPress Website
+                            development services.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-5 mt-4 mt-md-0 d-flex justify-content-center align-items-center">
+                    <img src="img/wp_images/wp2.jpg" alt="Description of Image" class="img-fluid"
+                        style="max-width: 100%; height: auto;">
+                </div>
+            </div>
+        </div>
+
+        <!-- Third div -->
+        <div class="container text-center my-5">
+            <h5 class="fw-bold fs-3">Diverse WordPress Services Offered By Us</h5>
+            <p class="pb-3">Check out the range of services we provide to get your WordPress website development project
+                done.</p>
+
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="p-3 service-card">
+                        <div class="mb-3">
+                            <img src="https://via.placeholder.com/50" alt="WordPress Services" style="width: 50px;">
+                        </div>
+                        <h5 style="font-weight: bold;">WordPress Services</h5>
+                        <p style="font-size: 15px;">OrangeMantra offers all possible WordPress services, ranging from
+                            custom
+                            WordPress theme development, plugin customization, WordPress speed optimization, SEO, and
+                            integration.p>
+                    </div>
+                </div>
+
+
+                <div class="col-md-4">
+                    <div class="p-3 service-card">
+                        <div class="mb-3">
+                            <img src="https://via.placeholder.com/50" alt="WordPress Services" style="width: 50px;">
+                        </div>
+                        <h5 style="font-weight: bold;">WordPress SEO</h5>
+                        <p style="font-size: 15px;">OrangeMantra follows the best practices as per the latest strategy
+                            to
+                            advance your site for web indexing. We search for relevant keywords, valuable content,
+                            backlinks
+                            for websites, and more.</p>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="p-3 service-card">
+                        <div class="mb-3">
+                            <img src="https://via.placeholder.com/50" alt="WordPress Support" style="width: 50px;">
+                        </div>
+                        <h5 style="font-weight: bold;">WordPress Support</h5>
+                        <p style="font-size: 15px;">We offer quality WordPress support services including customization,
+                            migration, staging, maintenance, and troubleshooting to match the pace of updates.</p>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="p-3 service-card">
+                        <div class="mb-3">
+                            <img src="https://via.placeholder.com/50" alt="WordPress Design" style="width: 50px;">
+                        </div>
+                        <h5 style="font-weight: bold;">WordPress Design</h5>
+                        <p style="font-size: 15px;">The design remains our foremost focus. We offer a full service that
+                            includes a simple and user-friendly interface, ensuring high-end service levels on your
+                            site.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="p-3 service-card">
+                        <div class="mb-3">
+                            <img src="https://via.placeholder.com/50" alt="WordPress Upgradation Service"
+                                style="width: 50px;">
+                        </div>
+                        <h5 style="font-weight: bold;">WordPress Upgradation Service</h5>
+                        <p style="font-size: 15px;">A site without security is life without breath. We provide high-end
+                            security levels on your site with WordPress upgradation services.</p>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="p-3 service-card">
+                        <div class="mb-3">
+                            <img src="https://via.placeholder.com/50" alt="WordPress Customization"
+                                style="width: 50px;">
+                        </div>
+                        <h5 style="font-weight: bold;">WordPress Customization</h5>
+                        <p style="font-size: 15px;">WordPress customization is done according to client requirements.
+                            Our
+                            developers integrate third-party plugins and modules seamlessly.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Fourth div -->
+        <div class="container text-center py-5 my-5">
+            <h5 class="fw-bold fs-3">Technical Stack used in our WordPress Development Company</h5>
+            <p>As a forerunner in the field of WordPress Website development services, we rely upon the latest tools and
+                technologies to provide you with top-notch solutions of your choice.</p>
+
+            <div class="row g-4">
+                <!-- Languages -->
+                <div class="col-md-3">
+                    <div class="p-3"
+                        style="border: 2px solid #1363C6; border-radius: 10px; background-color: rgb(240, 244, 245);">
+                        <h5 class="text-white text-center bg-primary py-2" style="border-radius: 10px 10px 0 0;">
+                            Languages</h5>
+                        <ul class="list-unstyled text-start">
+                            <li class=py-2><img src="img/wp_images/php-img.png" alt="PHP" style="width: 25px;"> PHP</li>
+                            <li class=py-2><img src="img/wp_images/html.png" alt="HTML" style="width: 25px;"> HTML</li>
+                            <li class=py-2><img src="img/wp_images/CSS.png" alt="CSS" style="width: 25px;"> CSS</li>
+                            <li class=py-2><img src="img/wp_images/MySql.png" alt="MySQL" style="width: 25px;"> MySQL
+                            </li>
+                            <li class=py-2><img src="img/wp_images/Javascript.png" alt="JavaScript"
+                                    style="width: 25px;">
+                                JavaScript</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Tools -->
+                <div class="col-md-3">
+                    <div class="p-3"
+                        style="border: 2px solid #1363C6; border-radius: 10px; background-color: rgb(240, 244, 245);">
+                        <h5 class="text-white text-center bg-primary py-2" style="border-radius: 10px 10px 0 0;">Tools
+                        </h5>
+                        <ul class="list-unstyled text-start">
+                            <li class=py-2><img src="img/wp_images/sublime.webp" alt="Sublime Text"
+                                    style="width: 25px;">
+                                Sublime Text</li>
+                            <li class=py-2><img src="img/wp_images/PhpStorm-1.png" alt="PhpStorm" style="width: 25px;">
+                                PhpStorm
+                            </li>
+                            <li class=py-2><img src="img/wp_images/mamp.webp" alt="MAMP" style="width: 25px;"> MAMP</li>
+                            <li class=py-2><img src="img/wp_images/xamp.webp" alt="XAMPP" style="width: 25px;"> XAMPP
+                            </li>
+                            <li class=py-2><img src="img/wp_images/git.png" alt="Git" style="width: 25px;"> Git</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Frameworks -->
+                <div class="col-md-3">
+                    <div class="p-3"
+                        style="border: 2px solid #1363C6; border-radius: 10px; background-color: rgb(240, 244, 245);">
+                        <h5 class="text-white text-center bg-primary py-2" style="border-radius: 10px 10px 0 0;">
+                            Frameworks</h5>
+                        <ul class="list-unstyled text-start">
+                            <li class=py-2><img src="img/wp_images/beans.png" alt="Beans" style="width: 25px;"> Beans
+                            </li>
+                            <li class=py-2><img src="img/wp_images/bootstrap.webp" alt="Bootstrap" style="width: 25px;">
+                                Bootstrap</li>
+                            <li class=py-2><img src="img/wp_images/Elementor.png" alt="Elementor" style="width: 25px;">
+                                Elementor</li>
+                            <li class=py-2><img src="img/wp_images/Divi.png" alt="Divi" style="width: 25px;"> Divi</li>
+                            <li class=py-2><img src="img/wp_images/genesis-framework.png" alt="Genesis Framework"
+                                    style="width: 25px;">
+                                Genesis Framework</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Plugins -->
+                <div class="col-md-3">
+                    <div class="p-3"
+                        style="border: 2px solid #1363C6; border-radius: 10px; background-color: rgb(240, 244, 245);">
+                        <h5 class="text-white text-center bg-primary py-2" style="border-radius: 10px 10px 0 0;">Plugins
+                        </h5>
+                        <ul class="list-unstyled text-start">
+                            <li class=py-2><img src="img/wp_images/Jetpack.png" alt="Jetpack" style="width: 25px;">
+                                Jetpack
+                            </li>
+                            <li class=py-2><img src="img/wp_images/yoast.png" alt="Yoast SEO" style="width: 25px;">
+                                Yoast
+                                SEO</li>
+                            <li class=py-2><img src="img/wp_images/woocommerce-1.avif" alt="WooCommerce"
+                                    style="width: 25px;">
+                                WooCommerce</li>
+                            <li class=py-2><img src="img/wp_images/wp-super-cache.png" alt="WP Super Cache"
+                                    style="width: 25px;"> WP
+                                Super Cache</li>
+                            <li class=py-2><img src="img/wp_images/WPForms.png" alt="WPForms" style="width: 25px;">
+                                WPForms
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Fifth div -->
+        <div class="container my-5">
+            <div class="row align-items-center">
+                <!-- Left Content -->
+
+                <div class="text-center text-md-start">
+                    <h1 style="font-weight: bold;">Trusted WordPress Development Company in India</h1>
+                    <p style="color: #555;">
+                        From conceptualization to deployment with plugin development and API integration - we offer
+                        a comprehensive WordPress solution for your business.
+                        Recognized as a top WordPress development company in India, ensuring client satisfaction is
+                        at the heart of our service. Here’s why you should engage
+                        <span style="font-weight: bold; color: #1363C6;">website design services</span> from us:
+                    </p>
+                </div>
+                <div class="col-md-8">
+                    <div class="row g-4 pt-5 justify-content-center">
+                        <!-- Experienced Professionals -->
+                        <div class="col-md-5 custom-card-container">
+                            <div class="custom-card-image-container">
+                                <img src="img/wp_images/sublime.webp" alt="Icon" style="max-width: 100%; height: auto;">
+                            </div>
+                            <div class="text-start">
+                                <h5>Experienced Professionals</h5>
+                                <p>We hire only accomplished and seasoned developers to provide an unparalleled web
+                                    solution.
+                                    Irrespective of the project complexity, we can deliver you the perfect service.</p>
+                            </div>
+                        </div>
+
+                        <!-- Intuitive Admin Panel -->
+                        <div class="col-md-5 custom-card-container">
+                            <div class="custom-card-image-container">
+                                <img src="img/wp_images/sublime.webp" alt="Icon" style="max-width: 100%; height: auto;">
+                            </div>
+                            <div class="text-start">
+                                <h5>Intuitive Admin Panel</h5>
+                                <p>We create intuitive and simple admin panels to allow even the non-technical site
+                                    owners to
+                                    easily customize and manage the website.</p>
+                            </div>
+                        </div>
+
+                        <!-- SEO-Friendly Web Solution -->
+                        <div class="col-md-5 custom-card-container">
+                            <div class="custom-card-image-container">
+                                <img src="img/wp_images/html.png" alt="Icon" style="max-width: 100%; height: auto;">
+                            </div>
+                            <div class="text-start">
+                                <h5>SEO-Friendly Web Solution</h5>
+                                <p>We comply with the latest SEO guidelines while coding a WordPress site. We can also
+                                    optimize
+                                    your site to ensure a high rank on the search engine.</p>
+                            </div>
+                        </div>
+
+                        <!-- Agile Method -->
+                        <div class="col-md-5 custom-card-container">
+                            <div class="custom-card-image-container">
+                                <img src="img/wp_images/git.png" alt="Icon" style="max-width: 100%; height: auto;">
+                            </div>
+                            <div class="text-start">
+                                <h5>Agile Method</h5>
+                                <p>Adopting a result-driven approach, our developers work with agility and passion to
+                                    ensure a
+                                    robust web solution within a quick turnaround time.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Image Section -->
+                <div class="col-md-4 align-self-center text-center text-lg-center">
+                    <img src="img/wp_images/wp4.jpg" alt="Team Image" class="img-fluid">
+                </div>
+            </div>
+            <!-- Button Section -->
+            <div class="text-center text-md-start mt-4">
+                <button class="btn btn-primary px-4 py-2"
+                    style="background-color: #1363C6; border: none; border-radius: 5px;">LET’S TEAM UP</button>
+            </div>
+        </div>
+
+        <!-- Six div -->
+        <div class="container py-5">
+            <h1 class="fw-bold text-center mb-3" style="font-size: 2rem;">Why Choose #1 Leal Software Solution?</h1>
+            <p class="text-center mb-4" style="font-size: 1rem; color: #555;">Choosing #1 Leal Software Solution comes
+                with
+                a host of compelling reasons that set us apart and make us the preferred choice for your digital needs:
+            </p>
+            <div class="row gy-4">
+                <!-- Card 1 -->
+                <div class="col-12">
+                    <div class="d-flex align-items-center p-3" style="background-color: #f8f9fa; border-radius: 10px;">
+                        <img src="https://via.placeholder.com/40" alt="Icon"
+                            style="width: 40px; height: 40px; margin-right: 15px;">
+                        <div>
+                            <h5 style="font-weight: 600; margin-bottom: 0.3rem; color: #000;">Experience:</h5>
+                            <p style="margin: 0; font-size: 0.9rem; color: #555;">With a foundation dating back to 1999,
+                                we
+                                bring over two decades of experience in the digital marketing and website design
+                                industry.
+                                Our long-standing presence speaks volumes about our expertise and reliability.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card 2 -->
+                <div class="col-12">
+                    <div class="d-flex align-items-center p-3" style="background-color: #f8f9fa; border-radius: 10px;">
+                        <img src="https://via.placeholder.com/40" alt="Icon"
+                            style="width: 40px; height: 40px; margin-right: 15px;">
+                        <div>
+                            <h5 style="font-weight: 600; margin-bottom: 0.3rem; color: #000;">Comprehensive Digital
+                                Solutions:</h5>
+                            <p style="margin: 0; font-size: 0.9rem; color: #555;">We offer a wide range of digital
+                                services,
+                                including Website Designing, Digital Strategy, Social Media Marketing, SEO, Web
+                                Development,
+                                Video Corporate Presentation, and more. You can find all your digital marketing needs
+                                under
+                                one roof.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card 3 -->
+                <div class="col-12">
+                    <div class="d-flex align-items-center p-3" style="background-color: #f8f9fa; border-radius: 10px;">
+                        <img src="https://via.placeholder.com/40" alt="Icon"
+                            style="width: 40px; height: 40px; margin-right: 15px;">
+                        <div>
+                            <h5 style="font-weight: 600; margin-bottom: 0.3rem; color: #000;">Creative and Customized
+                                Approach:</h5>
+                            <p style="margin: 0; font-size: 0.9rem; color: #555;">Our team is driven by passion and
+                                creativity, ensuring that each website and marketing strategy is tailor-made to suit
+                                your
+                                brand's unique requirements and target audience.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card 4 -->
+                <div class="col-12">
+                    <div class="d-flex align-items-center p-3" style="background-color: #f8f9fa; border-radius: 10px;">
+                        <img src="https://via.placeholder.com/40" alt="Icon"
+                            style="width: 40px; height: 40px; margin-right: 15px;">
+                        <div>
+                            <h5 style="font-weight: 600; margin-bottom: 0.3rem; color: #000;">Creative and Customized
+                                Approach:</h5>
+                            <p style="margin: 0; font-size: 0.9rem; color: #555;">Our team is driven by passion and
+                                creativity, ensuring that each website and marketing strategy is tailor-made to suit
+                                your
+                                brand's unique requirements and target audience.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card 5 -->
+                <div class="col-12">
+                    <div class="d-flex align-items-center p-3" style="background-color: #f8f9fa; border-radius: 10px;">
+                        <img src="https://via.placeholder.com/40" alt="Icon"
+                            style="width: 40px; height: 40px; margin-right: 15px;">
+                        <div>
+                            <h5 style="font-weight: 600; margin-bottom: 0.3rem; color: #000;">Creative and Customized
+                                Approach:</h5>
+                            <p style="margin: 0; font-size: 0.9rem; color: #555;">Our team is driven by passion and
+                                creativity, ensuring that each website and marketing strategy is tailor-made to suit
+                                your
+                                brand's unique requirements and target audience.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card 6 -->
+                <div class="col-12">
+                    <div class="d-flex align-items-center p-3" style="background-color: #f8f9fa; border-radius: 10px;">
+                        <img src="https://via.placeholder.com/40" alt="Icon"
+                            style="width: 40px; height: 40px; margin-right: 15px;">
+                        <div>
+                            <h5 style="font-weight: 600; margin-bottom: 0.3rem; color: #000;">Creative and Customized
+                                Approach:</h5>
+                            <p style="margin: 0; font-size: 0.9rem; color: #555;">Our team is driven by passion and
+                                creativity, ensuring that each website and marketing strategy is tailor-made to suit
+                                your
+                                brand's unique requirements and target audience.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card 7 -->
+                <div class="col-12">
+                    <div class="d-flex align-items-center p-3" style="background-color: #f8f9fa; border-radius: 10px;">
+                        <img src="https://via.placeholder.com/40" alt="Icon"
+                            style="width: 40px; height: 40px; margin-right: 15px;">
+                        <div>
+                            <h5 style="font-weight: 600; margin-bottom: 0.3rem; color: #000;">Creative and Customized
+                                Approach:</h5>
+                            <p style="margin: 0; font-size: 0.9rem; color: #555;">Our team is driven by passion and
+                                creativity, ensuring that each website and marketing strategy is tailor-made to suit
+                                your
+                                brand's unique requirements and target audience.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card 8 -->
+                <div class="col-12">
+                    <div class="d-flex align-items-center p-3" style="background-color: #f8f9fa; border-radius: 10px;">
+                        <img src="https://via.placeholder.com/40" alt="Icon"
+                            style="width: 40px; height: 40px; margin-right: 15px;">
+                        <div>
+                            <h5 style="font-weight: 600; margin-bottom: 0.3rem; color: #000;">Creative and Customized
+                                Approach:</h5>
+                            <p style="margin: 0; font-size: 0.9rem; color: #555;">Our team is driven by passion and
+                                creativity, ensuring that each website and marketing strategy is tailor-made to suit
+                                your
+                                brand's unique requirements and target audience.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Section -->
+
+
+    <!--  -->
+    <div class="container-fluid bg-primary text-white">
+        <div class="container py-5">
+            <div class="row text-center">
+                <div class="col-12">
+                    <h1 class="fw-bold text-start" style="font-size: 5em; -webkit-text-stroke: 2px #000000; paint-order: stroke fill; color: transparent;
+                    margin-bottom: 10px;">WordPress</h1>
+                    <h5 class="text-start" style="font-size: 1.5rem; font-weight: bold; color: #ffffff;">Availing
+                        excellence<br> With over decades
+                        experience!</h5>
+                </div>
+            </div>
+            <div class="row mt-5">
+                <div class="col-md-6">
+                    <p style="font-size: 1rem; line-height: 1.8;">
+                        Have a WordPress website and want to take it to the next level? We can better assist you at
+                        Pixlogix as we don’t “DO” merely WordPress design & development but can even back you with
+                        WooCommerce, API Integrations, Custom PHP development, modern-day CSS, Bootstrap, and much
+                        more.
+                    </p>
+                </div>
+                <div class="col-md-6">
+                    <p style="font-size: 1rem; line-height: 1.8;">
+                        We are aware of popular WordPress Themes and Page builder plugins. We work on a daily basis
+                        with famous WordPress themes such as Avada, The7, Betheme, Enfold, X | The Theme, Flatsome,
+                        and Bridge.
+                    </p>
+                </div>
+            </div>
+            <div class="row mt-4">
+                <div class="col-md-6">
+                    <p style="font-size: 1rem; line-height: 1.8;">
+                        Our teams can help you with WooCommerce, which runs on WordPress and empowers your online
+                        stores globally. As the best WordPress development company in India, we take a modern Web
+                        development approach with custom PHP to implement high-end technology projects.
+                    </p>
+                </div>
+                <div class="col-md-6">
+                    <p style="font-size: 1rem; line-height: 1.8;">
+                        Our teams can even back you with advanced WordPress Plugins for your website, comprising but
+                        not limited to Contact Form 7, Yoast SEO, RankMath, Woocommerce, All in one migration,
+                        Wordfence, Advanced custom field, Redirection, W3 Total cache, WPML and WP mail SMTP. Ready
+                        to give the full-fledged online presence of your imagination with WordPress Development
+                        Services. Share the idea, and we will contact you with high-quality personalized solutions
+                        to match your vision.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- -->
+
+
+    <!--  -->
+    <div class="container py-5" style="background-color: #f9f9f9;">
+        <div style="padding: 20px; max-width: 1200px; margin: auto;">
+            <div style="text-align: center; margin-bottom: 30px;">
+                <h5 class="fs-2 fw-bold">Why Choose <span style="color: #007bff;">Leal Software Solution</span> for
+                    WordPress Development Services?</h1>
+                    <p class="py-3" style="font-size: 1rem;">We provide a lot of different solutions through our
+                        WordPress Website
+                        Development Services which can be extremely helpful for you and your clients including:</p>
+            </div>
+            <div style="display: flex; flex-wrap: wrap;">
+                <div style="flex: 1; min-width: 300px; padding: 10px;">
+                    <ul style="list-style-type: none; padding-left: 0; font-size: 1rem;">
+                        <li class="list-item"><span>&#9670;</span> We can develop robust, creative and completely
+                            functional
+                            WordPress websites for you based on your company’s requirements.</li>
+                        <li class="list-item"><span>&#9670;</span> If you need to add specific features to your website,
+                            we
+                            can also develop different innovative modules to enhance your website.</li>
+                        <li class="list-item"><span>&#9670;</span> Our designs are completely responsive, meaning any
+                            user
+                            having any device can access your website seamlessly.</li>
+                        <li class="list-item"><span>&#9670;</span> We also provide a range of customization options
+                            wherein
+                            our experts develop smart features based on your needs.</li>
+                        <li class="list-item"><span>&#9670;</span> Our tech experts can also help you build a smart and
+                            customized content management system using WordPress.</li>
+                        <li class="list-item"><span>&#9670;</span> At Nevina, we even provide WordPress-based e-commerce
+                            development services to build productive and highly profitable websites.</li>
+                    </ul>
+                </div>
+                <div style="flex: 1; min-width: 300px; padding: 10px;">
+                    <ul style="list-style-type: none; padding-left: 0; font-size: 1rem;">
+                        <li class="list-item"><span>&#9670;</span> If you already have a website and want to migrate it
+                            to a
+                            new WordPress-based website, we can help the transition smoothly.</li>
+                        <li class="list-item"><span>&#9670;</span> To aid and enhance your company’s content marketing,
+                            we
+                            can also build a robust WordPress-based blog for you.</li>
+                        <li class="list-item"><span>&#9670;</span> If you want a customized theme for your website that
+                            is
+                            parallel to your brand image, our team can do that creatively!</li>
+                        <li class="list-item"><span>&#9670;</span> Not just the theme, but if you get <strong>WordPress
+                                Development Services</strong> from Nevina, you can get a completely customized template.
+                        </li>
+                        <li class="list-item"><span>&#9670;</span> Our experts can also install pre-designed WordPress
+                            templates in your website and make them function smoothly and easily.</li>
+                        <li class="list-item"><span>&#9670;</span> We also provide quick and dedicated WordPress support
+                            services during your course of using any of our products or services.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--  -->
+
+
+    <!-- FAQs Start -->
+    <div class="container-fluid py-0 py-lg-5">
+        <div class="container">
+            <div class="mx-auto text-center wow fadeIn" data-wow-delay="0.1s" style="max-width: 500px;">
+                <h1 class="mb-4">Frequently Asked Questions</h1>
+            </div>
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="accordion" id="accordionFAQ1">
+                        <div class="accordion-item wow fadeIn" data-wow-delay="0.1s">
+                            <h2 class="accordion-header" id="headingOne">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                                    What is WordPress development?
+                                </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
+                                data-bs-parent="#accordionFAQ1">
+                                <div class="accordion-body">
+                                    WordPress development involves designing and building websites or plugins using the
+                                    WordPress platform, ensuring custom functionality and seamless performance.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item wow fadeIn" data-wow-delay="0.2s">
+                            <h2 class="accordion-header" id="headingTwo">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    Can you customize WordPress themes?
+                                </button>
+                            </h2>
+                            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                                data-bs-parent="#accordionFAQ1">
+                                <div class="accordion-body">
+                                    Yes, we can customize existing WordPress themes to meet your specific design and
+                                    functionality needs.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item wow fadeIn" data-wow-delay="0.3s">
+                            <h2 class="accordion-header" id="headingThree">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    Do you offer WordPress plugin development?
+                                </button>
+                            </h2>
+                            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                                data-bs-parent="#accordionFAQ1">
+                                <div class="accordion-body">
+                                    Absolutely. We specialize in developing custom WordPress plugins to add unique
+                                    features to your website.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item wow fadeIn" data-wow-delay="0.4s">
+                            <h2 class="accordion-header" id="headingFour">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
+                                    Is WordPress secure for my website?
+                                </button>
+                            </h2>
+                            <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+                                data-bs-parent="#accordionFAQ1">
+                                <div class="accordion-body">
+                                    Yes, WordPress is secure when configured properly. We implement best practices to
+                                    ensure your website is protected from vulnerabilities.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="accordion" id="accordionFAQ2">
+                        <div class="accordion-item wow fadeIn" data-wow-delay="0.5s">
+                            <h2 class="accordion-header" id="headingFive">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                    Can you integrate third-party tools with WordPress?
+                                </button>
+                            </h2>
+                            <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive"
+                                data-bs-parent="#accordionFAQ2">
+                                <div class="accordion-body">
+                                    Yes, we can seamlessly integrate third-party tools, APIs, and services with your
+                                    WordPress website.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item wow fadeIn" data-wow-delay="0.6s">
+                            <h2 class="accordion-header" id="headingSix">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                                    How do you optimize WordPress websites for performance?
+                                </button>
+                            </h2>
+                            <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix"
+                                data-bs-parent="#accordionFAQ2">
+                                <div class="accordion-body">
+                                    We optimize WordPress websites using caching, CDN integration, image optimization,
+                                    and clean coding practices.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item wow fadeIn" data-wow-delay="0.7s">
+                            <h2 class="accordion-header" id="headingSeven">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                                    Can you migrate my existing website to WordPress?
+                                </button>
+                            </h2>
+                            <div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="headingSeven"
+                                data-bs-parent="#accordionFAQ2">
+                                <div class="accordion-body">
+                                    Yes, we provide website migration services to transfer your existing website to
+                                    WordPress without any data loss.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item wow fadeIn" data-wow-delay="0.8s">
+                            <h2 class="accordion-header" id="headingEight">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
+                                    Do you provide ongoing support for WordPress websites?
+                                </button>
+                            </h2>
+                            <div id="collapseEight" class="accordion-collapse collapse" aria-labelledby="headingEight"
+                                data-bs-parent="#accordionFAQ2">
+                                <div class="accordion-body">
+                                    Yes, we offer ongoing support and maintenance to keep your WordPress website running
+                                    smoothly and securely.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- FAQs End -->
+
+
+    <!-- Footer Start -->
+    <div class="container-fluid bg-dark text-white-50 footer pt-5">
+        <div class="container py-3 py-lg-5">
+            <div class="row g-5">
+                <div class="col-md-6 col-lg-3 wow fadeInLeftBig" data-wow-delay="0.1s">
+                    <a href="index.html" class="d-inline-block mb-3">
+                        <h1 class="text-white text-white-nav">Leal Software Solution Pvt Ltd <span
+                                class="text-primary"></span>
+                        </h1>
+                    </a>
+                    <p class="mb-0">Leal Software Solution excels in delivering innovative, high-quality
+                        refrigeration
+                        solutions. With a focus on custom design, efficiency, and reliability, we provide tailored
+                        systems and exceptional service to meet diverse industry needs.</p>
+                </div>
+
+                <div class="col-md-6 col-lg-2 wow fadeInLeftBig" data-wow-delay="0.5s">
+                    <h5 class="text-white mb-3">Popular Link</h5>
+                    <a class="btn btn-link" href="about.html">Wordpress Development</a>
+                    <a class="btn btn-link" href="about.html">Projects</a>
+                    <a class="btn btn-link" href="service.html">Services</a>
+                    <a class="btn btn-link" href="contact.html">Contact Us</a>
+                    <a class="btn btn-link" href="">Privacy Policy</a>
+                    <a class="btn btn-link" href="">Terms & Condition</a>
+                </div>
+                <div class="col-md-6 col-lg-4 pe-0 wow fadeIn" data-wow-delay="1.3s">
+                    <h5 class="text-white mb-4">Our Services</h5>
+                    <a class="btn btn-link" href="">Software Development</a>
+                    <a class="btn btn-link" href="">Mobile Application Development</a>
+                    <a class="btn btn-link" href="">Web App Development</a>
+                    <a class="btn btn-link" href="">HVAC Heat Load Calculator</a>
+                    <a class="btn btn-link" href="">HLC Leal Bussiness Solution</a>
+                    <a class="btn btn-link" href="">Leal GADraw</a>
+                    <a class="btn btn-link" href="">Odoo ERP Cloud</a>
+                    <a class="btn btn-link" href="">TaskTrak Hub Manager</a>
+
+                </div>
+                <div class="col-md-6 col-lg-3 wow fadeIn" data-wow-delay="1.8s">
+                    <h5 class="text-white mb-4">Get In Touch</h5>
+                    <p><i class="fa fa-map-marker-alt me-3"></i>Flat No. B-102, Laxmi Chowk, Phase 1, Hinjawadi
+                        Rajiv
+                        Gandhi Infotech Park, Hinjawadi, Pimpri-Chinchwad, Maharashtra 411057</p>
+                    <p><i class="fa fa-phone-alt me-3"></i>0253 24651409</p>
+                    <p><i class="fa fa-phone-alt me-3"></i>+91 7410016111/13/14</p>
+                    <p><i class="fa fa-envelope me-3"></i>career@lealsolution.com</p>
+                    <div class="d-flex pt-2">
+                        <a class="btn btn-outline-light btn-social"
+                            href="https://www.linkedin.com/company/leal-software-solution/" target="_blank">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a class="btn btn-outline-light btn-social" href="https://www.facebook.com/LealSoftwareSolution"
+                            target="_blank">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a class="btn btn-outline-light btn-social"
+                            href="https://www.youtube.com/@lealsoftwaresolutionpvtltd8833" target="_blank">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                        <a class="btn btn-outline-light btn-social" href="https://www.instagram.com/smurkewar/"
+                            target="_blank">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a class="btn btn-outline-light btn-social" href="https://wa.me/7410016111" target="_blank">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container wow fadeIn" data-wow-delay="0.1s">
+            <div class="copyright">
+                <div class="row">
+                    <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                        &copy; <a class="border-bottom" href="index.html">Leal Software Solution Pvt Ltd © 2024</a>
+                        | All Rights Reserved.<a class="border-bottom" href="https://www.lealsolution.com/"
+                            target="_blank"></a>
+                    </div>
+                    <div class="col-md-6 text-center text-md-end">
+                        <div class="footer-menu">
+                            <a href="">Home</a>
+                            <a href="">Cookies</a>
+                            <a href="">Help</a>
+                            <a href="">FAQs</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top pt-2"><i class="bi bi-arrow-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            var swiper = new Swiper('.swiper-container', {
+                slidesPerView: 3,       // Number of logos to show at a time
+                spaceBetween: 20,       // Space between slides
+                loop: true,             // Loop through slides
+                autoplay: {
+                    delay: 2000,        // Delay between slides (in ms)
+                    disableOnInteraction: false, // Keep autoplay active after interaction
+                },
+                pagination: {
+                    el: '.swiper-pagination',
+                    clickable: true,
+                },
+                breakpoints: {
+                    320: { slidesPerView: 1 },   // 1 logo per view on small screens
+                    768: { slidesPerView: 2 },   // 2 logos per view on medium screens
+                    1024: { slidesPerView: 5 }   // 3 logos per view on large screens
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>
