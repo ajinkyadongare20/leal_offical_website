@@ -73,10 +73,19 @@
                             <div class="dropdown-menu dropdown-menu-end shadow-lg rounded border-0 mt-2"
                                 aria-labelledby="dropdownMenuButton" style="background-color: #f8f9fa;">
                                 <a class="dropdown-item py-3 px-4 text-dark" href="service.html">
-                                    <i class="fas fa-drafting-compass me-2"></i> SOFTWARE SERVICES
+                                    <i class="fas fa-code me-2"></i> SOFTWARE DEVELOPMENT
                                 </a>
-                                <a class="dropdown-item py-3 px-4 text-dark" href="service1.html">
-                                    <i class="fas fa-tasks me-2"></i> OTHER SERVICES
+                                <a class="dropdown-item py-3 px-4 text-dark" href="web-development.html">
+                                    <i class="fas fa-laptop-code me-2"></i> WEB APP DEVELOPMENT
+                                </a>
+                                <a class="dropdown-item py-3 px-4 text-dark" href="programming_frameworks.html">
+                                    <i class="fas fa-layer-group me-2"></i> FULLSTACK DEVELOPMENT
+                                </a>
+                                <a class="dropdown-item py-3 px-4 text-dark" href="wordpress-development.html">
+                                    <i class="fab fa-wordpress me-2"></i> WORDPRESS DEVELOPMENT
+                                </a>
+                                <a class="dropdown-item py-3 px-4 text-dark" href="digital_marketing.html">
+                                    <i class="fas fa-chart-line me-2"></i> DIGITAL MARKETING & SEO
                                 </a>
                             </div>
                         </div>
@@ -139,20 +148,13 @@
             <div class="row g-5 pt-5">
                 <div class="col-lg-6 align-self-center text-start mb-lg-5">
                     <h1 class="display-4 text-white mb-4 animated slideInRight">Career</h1>
-                    <nav aria-label="breadcrumb">
-                        <ol class="breadcrumb justify-content-start justify-content-lg-start mb-0">
-                            <li class="breadcrumb-item"><a class="text-white" href="#">Home</a></li>
-                            <li class="breadcrumb-item text-white active" aria-current="page">Career
-                            </li>
-                        </ol>
-                    </nav>
                     <p class="text-white mb-4 pt-3 animated fadeInLeftBig">Leal Software Solution is a trusted software
                         company, dedicated to delivering cutting-edge technology solutions tailored to your business
                         needs. Our expertise spans various industries, enabling businesses to optimize their processes,
                         boost productivity, and drive innovation. Partner with us to transform your operations and
                         achieve long-term success through reliable software solutions.</p>
                 </div>
-                <div class="col-lg-6 align-self-end text-center text-lg-end mt-0 pb-4">
+                <div class="col-lg-6 align-self-end text-center text-lg-end mt-0 pb-5">
                     <!-- <img class="img-hero-banner img-fluid w-100 shadow-lg" src="img/test/ecosystem-spotlight-banner.jpg" alt=""> -->
 
                     <!-- Bootstrap Carousel Slider -->
@@ -280,470 +282,622 @@
     <!-- Full Screen Search End -->
 
 
-    <section>
+    <section class="py-3">
         <div class="container">
-            <h2 class="text-center p-4">Apply to Leal Software Solution Jobs</h2>
-            <!-- Job Listings -->
-            <div class="row">
-                <!-- Job Listing 1 -->
-                <div class="col-12 col-md-12">
-                    <div class="job-listing card p-3 my-4">
-                        <div
-                            class="d-flex flex-column flex-lg-row justify-content-between align-items-start align-items-lg-center">
-                            <div class="mb-3 mb-lg-0">
-                                <h5 class="mb-0 text-start">
-                                    <a href="#" class="toggle-form text-decoration-none text-dark"
-                                        data-bs-toggle="collapse" data-bs-target="#job1-form">
-                                        Junior Software Engineer
-                                    </a>
-                                </h5>
-                                <p class="small text-start">Pune, Maharashtra, India</p>
-                                <p class="small text-start">08/23/2024</p>
+            <h5 class="fs-3 text-center p-4 wow fadeIn" data-wow-delay="0.1s">Apply to Leal Software Solution Jobs</h2>
+                <!-- Job Listings -->
+                <div class="row">
+                    <!-- Job Listing 1 -->
+                    <div class="col-12 col-md-12  wow fadeIn" data-wow-delay="0.2s">
+                        <div class="job-listing card p-3 my-4">
+                            <div
+                                class="d-flex flex-column flex-lg-row justify-content-between align-items-start align-items-lg-center">
+                                <div class="mb-3 mb-lg-0">
+                                    <h5 class="mb-0 text-start">
+                                        <a href="#" class="toggle-form text-decoration-none text-dark"
+                                            data-bs-toggle="collapse" data-bs-target="#job1-form">
+                                            Junior Software Engineer
+                                        </a>
+                                    </h5>
+                                    <p class="small text-start">Pune, Maharashtra, India</p>
+                                    <p class="small text-start">10/01/2025</p>
+                                </div>
+                                <div>
+                                    <button class="btn btn-primary btn-apply-job fw-bold py-2"
+                                        style="width: 150px; border: none; border-radius: 5px; transition: background-color 0.3s;">
+                                        Apply Now
+                                    </button>
+                                </div>
                             </div>
-                            <div>
-                                <button class="btn btn-primary btn-apply-job fw-bold py-2"
-                                    style="width: 150px; border: none; border-radius: 5px; transition: background-color 0.3s;">
-                                    Apply Now
-                                </button>
+                            <!-- Application Form -->
+                            <div id="job1-form"
+                                class="collapse show apply-form card p-2 p-lg-4 mt-5 rounded-0 border-0">
+                                <h3>Apply for Junior Software Developer</h3>
+                                <div class="badge bg-secondary rounded-0 mb-2 p-2">EXPERIENCE - 0 TO 2 YEARS</div>
+                                <ul class="list-unstyled">
+                                    <li class="py-1">Collaborating with senior developers to design and implement
+                                        software
+                                        applications</li>
+                                    <li class="py-1">Writing clean, maintainable, and efficient code in programming
+                                        languages such as JavaScript, Python, or Java</li>
+                                    <li class="py-1">Assisting in debugging and troubleshooting software issues</li>
+                                    <li class="py-1">Working on software development projects under supervision</li>
+                                    <li class="py-1">Testing and maintaining software systems to ensure high performance
+                                    </li>
+                                    <li class="py-1">Participating in code reviews to ensure adherence to best practices
+                                    </li>
+                                    <li class="py-1">Collaborating with cross-functional teams to gather requirements
+                                        and
+                                        develop user-friendly applications</li>
+                                    <li class="py-1">Contributing to continuous learning and knowledge sharing within
+                                        the
+                                        development team</li>
+                                </ul>
+                                <div class="container p-0">
+                                    <div class="card border-0 shadow-sm rounded-0">
+                                        <div class="card-body px-2 py-3">
+                                            <form action="https://api.web3forms.com/submit" method="POST"
+                                                class="px-1 px-lg-3">
+                                                <div class="row g-3">
+                                                    <!-- Hidden Input for Web3Forms Access Key -->
+                                                    <input type="hidden" name="access_key"
+                                                        value="7b32a9fd-f2c6-4a55-98db-92ac1526dedb">
+
+                                                    <div class="col-md-6">
+                                                        <label class="form-label">Your Name <span
+                                                                class="text-danger">*</span></label>
+                                                        <input type="text" class="form-control" name="name"
+                                                            placeholder="Enter your name" required>
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <label class="form-label">Your Email <span
+                                                                class="text-danger">*</span></label>
+                                                        <input type="email" class="form-control" name="email"
+                                                            placeholder="Enter your email" required>
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <label class="form-label">Experience (in years) <span
+                                                                class="text-danger">*</span></label>
+                                                        <input type="text" class="form-control" name="experience"
+                                                            placeholder="Enter your experience" required>
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <label class="form-label">Mobile Number <span
+                                                                class="text-danger">*</span></label>
+                                                        <input type="text" class="form-control" name="mobile_number"
+                                                            placeholder="Enter your mobile number" required>
+                                                    </div>
+                                                    <div class="col-md-6 mb-3">
+                                                        <label for="roleDropdown" class="form-label">Choose Your
+                                                            Field: <span class="text-danger">*</span></label>
+                                                        <select class="form-select" id="roleDropdown" name="role"
+                                                            required>
+                                                            <option value="" selected disabled>Select an option</option>
+                                                            <option value="junior_software_engineer">Junior Software
+                                                                Engineer</option>
+                                                            <option value="software_engineer">Software Engineer</option>
+                                                            <option value="senior_software_engineer">Senior Software
+                                                                Engineer</option>
+                                                            <option value="hvac_engineer">HVAC Engineer</option>
+                                                            <option value="sales_marketing_engineer">Sales/Marketing
+                                                                Engineer</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <label class="form-label">Upload Resume <span
+                                                                class="text-danger">*</span></label>
+                                                        <input type="file" class="form-control" name="resume" required>
+                                                    </div>
+                                                    <div class="col-12">
+                                                        <label class="form-label">Message (optional)</label>
+                                                        <textarea class="form-control" rows="4" name="message"
+                                                            placeholder="Write your message here"></textarea>
+                                                    </div>
+                                                    <div class="col-12 text-center">
+                                                        <button type="submit" class="btn btn-primary px-5">Submit
+                                                            Application</button>
+                                                    </div>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                        <!-- Application Form -->
-                        <div id="job1-form" class="collapse show apply-form card p-2 p-lg-4 mt-5 rounded-0 border-0">
-                            <h3>Apply for Junior Software Engineer</h3>
-                            <div class="badge bg-secondary rounded-0 mb-2 p-2">EXPERIENCE - 7 TO 8 YEARS</div>
-                            <ul class="list-unstyled">
-                                <li class="py-1">Coordination with other departments for process input/output data</li>
-                                <li class="py-1">Co-ordination with vendors</li>
-                                <li class="py-1">Preparation of Process flow diagrams based on block flow diagrams, Heat
-                                    & Mass balance</li>
-                                <li class="py-1">Coordination with other departments for process input/output data</li>
-                                <li class="py-1">Co-ordination with vendors</li>
-                                <li class="py-1">Preparation of Process flow diagrams based on block flow diagrams, Heat
-                                    & Mass balance</li>
-                            </ul>
-                            <div class="container p-0">
-                                <div class="card border-0  shadow-sm rounded-0">
-                                    <div class="card-body px-2 py-3">
-                                        <form class="px-1 px-lg-3">
-                                            <div class="row g-3">
-                                                <div class="col-md-6">
-                                                    <label class="form-label">Your Name <span
-                                                            class="text-danger">*</span></label>
-                                                    <input type="text" class="form-control"
-                                                        placeholder="Enter your name" required>
+                    </div>
+                    <!-- Job Listing 2 -->
+                    <div class="col-12 col-md-12 wow fadeIn" data-wow-delay="0.3s">
+                        <div class="job-listing card p-3 my-4">
+                            <div
+                                class="d-flex flex-column flex-lg-row justify-content-between align-items-start align-items-lg-center">
+                                <div class="mb-3 mb-lg-0">
+                                    <h5 class="mb-0 text-start">
+                                        <a href="#" class="toggle-form text-decoration-none text-dark"
+                                            data-bs-toggle="collapse" data-bs-target="#job1-form">
+                                            Software Engineer
+                                        </a>
+                                    </h5>
+                                    <p class="small text-start">Pune, Maharashtra, India</p>
+                                    <p class="small text-start">20/01/2025</p>
+                                </div>
+                                <div>
+                                    <button class="btn btn-primary btn-apply-job fw-bold py-2"
+                                        style="width: 150px; border: none; border-radius: 5px; transition: background-color 0.3s;">
+                                        Apply Now
+                                    </button>
+                                </div>
+                            </div>
+
+                            <!-- Application Form -->
+                            <div class="apply-form card p-3 mt-5 rounded-0 border-0">
+                                <h3>Apply for Software Engineer</h3>
+                                <div class="badge bg-secondary rounded-0 mb-2 p-2">EXPERIENCE - 2 TO 4 YEARS</div>
+                                <ul class="list-unstyled">
+                                    <li class="py-1">Collaborating with cross-functional teams to design, develop, and
+                                        deploy software applications</li>
+                                    <li class="py-1">Writing clean, efficient, and maintainable code in multiple
+                                        programming
+                                        languages</li>
+                                    <li class="py-1">Managing the full software development lifecycle, from concept
+                                        through
+                                        to implementation</li>
+                                    <li class="py-1">Optimizing applications for maximum speed and scalability</li>
+                                    <li class="py-1">Writing and maintaining technical documentation for software
+                                        systems
+                                    </li>
+                                    <li class="py-1">Performing code reviews and ensuring compliance with coding
+                                        standards
+                                    </li>
+                                    <li class="py-1">Identifying and resolving bugs and issues in the software</li>
+                                    <li class="py-1">Staying up to date with emerging trends and technologies to improve
+                                        system functionality</li>
+                                </ul>
+                                <div class="container p-0">
+                                    <div class="card border-0 shadow-sm rounded-0">
+                                        <div class="card-body px-2 py-3">
+                                            <form action="https://api.web3forms.com/submit" method="POST"
+                                                class="px-1 px-lg-3">
+                                                <div class="row g-3">
+                                                    <!-- Hidden Input for Web3Forms Access Key -->
+                                                    <input type="hidden" name="access_key"
+                                                        value="7b32a9fd-f2c6-4a55-98db-92ac1526dedb">
+
+                                                    <div class="col-md-6">
+                                                        <label class="form-label">Your Name <span
+                                                                class="text-danger">*</span></label>
+                                                        <input type="text" class="form-control" name="name"
+                                                            placeholder="Enter your name" required>
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <label class="form-label">Your Email <span
+                                                                class="text-danger">*</span></label>
+                                                        <input type="email" class="form-control" name="email"
+                                                            placeholder="Enter your email" required>
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <label class="form-label">Experience (in years) <span
+                                                                class="text-danger">*</span></label>
+                                                        <input type="text" class="form-control" name="experience"
+                                                            placeholder="Enter your experience" required>
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <label class="form-label">Mobile Number <span
+                                                                class="text-danger">*</span></label>
+                                                        <input type="text" class="form-control" name="mobile_number"
+                                                            placeholder="Enter your mobile number" required>
+                                                    </div>
+                                                    <div class="col-md-6 mb-3">
+                                                        <label for="roleDropdown" class="form-label">Choose Your
+                                                            Field: <span class="text-danger">*</span></label>
+                                                        <select class="form-select" id="roleDropdown" name="role"
+                                                            required>
+                                                            <option value="" selected disabled>Select an option</option>
+                                                            <option value="junior_software_engineer">Junior Software
+                                                                Engineer</option>
+                                                            <option value="software_engineer">Software Engineer</option>
+                                                            <option value="senior_software_engineer">Senior Software
+                                                                Engineer</option>
+                                                            <option value="hvac_engineer">HVAC Engineer</option>
+                                                            <option value="sales_marketing_engineer">Sales/Marketing
+                                                                Engineer</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <label class="form-label">Upload Resume <span
+                                                                class="text-danger">*</span></label>
+                                                        <input type="file" class="form-control" name="resume" required>
+                                                    </div>
+                                                    <div class="col-12">
+                                                        <label class="form-label">Message (optional)</label>
+                                                        <textarea class="form-control" rows="4" name="message"
+                                                            placeholder="Write your message here"></textarea>
+                                                    </div>
+                                                    <div class="col-12 text-center">
+                                                        <button type="submit" class="btn btn-primary px-5">Submit
+                                                            Application</button>
+                                                    </div>
                                                 </div>
-                                                <div class="col-md-6">
-                                                    <label class="form-label">Your Email <span
-                                                            class="text-danger">*</span></label>
-                                                    <input type="email" class="form-control"
-                                                        placeholder="Enter your email" required>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Job Listing 3 -->
+                    <div class="col-12 col-md-12 wow fadeIn" data-wow-delay="0.4s">
+                        <div class="job-listing card p-3 my-4">
+                            <div
+                                class="d-flex flex-column flex-lg-row justify-content-between align-items-start align-items-lg-center">
+                                <div class="mb-3 mb-lg-0">
+                                    <h5 class="mb-0 text-start">
+                                        <a href="#" class="toggle-form text-decoration-none text-dark"
+                                            data-bs-toggle="collapse" data-bs-target="#job1-form">
+                                            Senior Software Engineer
+                                        </a>
+                                    </h5>
+                                    <p class="small text-start">Pune, Maharashtra, India</p>
+                                    <p class="small text-start">08/12/2024</p>
+                                </div>
+                                <div>
+                                    <button class="btn btn-primary btn-apply-job fw-bold py-2"
+                                        style="width: 150px; border: none; border-radius: 5px; transition: background-color 0.3s;">
+                                        Apply Now
+                                    </button>
+                                </div>
+                            </div>
+
+                            <!-- Application Form -->
+                            <div class="apply-form card p-3 mt-5 rounded-0 border-0">
+                                <h3>Apply for Senior Software Engineer</h3>
+                                <div class="badge bg-secondary rounded-0 mb-2 p-2">EXPERIENCE - 5 TO 7 YEARS</div>
+                                <ul class="list-unstyled">
+                                    <li class="py-1">Leading software development projects and mentoring junior team
+                                        members
+                                    </li>
+                                    <li class="py-1">Designing and architecting scalable software solutions to meet
+                                        client
+                                        requirements</li>
+                                    <li class="py-1">Reviewing and optimizing code to ensure efficiency, quality, and
+                                        security</li>
+                                    <li class="py-1">Collaborating with cross-functional teams to gather requirements
+                                        and
+                                        deliver solutions</li>
+                                    <li class="py-1">Troubleshooting and resolving complex technical issues in
+                                        production
+                                        environments</li>
+                                    <li class="py-1">Ensuring best practices in software development and recommending
+                                        improvements</li>
+                                    <li class="py-1">Providing technical leadership and guidance on complex projects
+                                    </li>
+                                    <li class="py-1">Staying current with new technologies and industry trends to drive
+                                        innovation</li>
+                                </ul>
+                                <div class="container p-0">
+                                    <div class="card border-0 shadow-sm rounded-0">
+                                        <div class="card-body px-2 py-3">
+                                            <form action="https://api.web3forms.com/submit" method="POST"
+                                                class="px-1 px-lg-3">
+                                                <div class="row g-3">
+                                                    <!-- Hidden Input for Web3Forms Access Key -->
+                                                    <input type="hidden" name="access_key"
+                                                        value="7b32a9fd-f2c6-4a55-98db-92ac1526dedb">
+
+                                                    <div class="col-md-6">
+                                                        <label class="form-label">Your Name <span
+                                                                class="text-danger">*</span></label>
+                                                        <input type="text" class="form-control" name="name"
+                                                            placeholder="Enter your name" required>
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <label class="form-label">Your Email <span
+                                                                class="text-danger">*</span></label>
+                                                        <input type="email" class="form-control" name="email"
+                                                            placeholder="Enter your email" required>
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <label class="form-label">Experience (in years) <span
+                                                                class="text-danger">*</span></label>
+                                                        <input type="text" class="form-control" name="experience"
+                                                            placeholder="Enter your experience" required>
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <label class="form-label">Mobile Number <span
+                                                                class="text-danger">*</span></label>
+                                                        <input type="text" class="form-control" name="mobile_number"
+                                                            placeholder="Enter your mobile number" required>
+                                                    </div>
+                                                    <div class="col-md-6 mb-3">
+                                                        <label for="roleDropdown" class="form-label">Choose Your
+                                                            Field:<span class="text-danger">*</span></label>
+                                                        <select class="form-select" id="roleDropdown" name="role"
+                                                            required>
+                                                            <option value="" selected disabled>Select an option</option>
+                                                            <option value="junior_software_engineer">Junior Software
+                                                                Engineer</option>
+                                                            <option value="software_engineer">Software Engineer</option>
+                                                            <option value="senior_software_engineer">Senior Software
+                                                                Engineer</option>
+                                                            <option value="hvac_engineer">HVAC Engineer</option>
+                                                            <option value="sales_marketing_engineer">Sales/Marketing
+                                                                Engineer</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <label class="form-label">Upload Resume <span
+                                                                class="text-danger">*</span></label>
+                                                        <input type="file" class="form-control" name="resume" required>
+                                                    </div>
+                                                    <div class="col-12">
+                                                        <label class="form-label">Message (optional)</label>
+                                                        <textarea class="form-control" rows="4" name="message"
+                                                            placeholder="Write your message here"></textarea>
+                                                    </div>
+                                                    <div class="col-12 text-center">
+                                                        <button type="submit" class="btn btn-primary px-5">Submit
+                                                            Application</button>
+                                                    </div>
                                                 </div>
-                                                <div class="col-md-6">
-                                                    <label class="form-label">Experience (in years) <span
-                                                            class="text-danger">*</span></label>
-                                                    <input type="text" class="form-control"
-                                                        placeholder="Enter your experience" required>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Job Listing 4 -->
+                    <div class="col-12 col-md-12 wow fadeIn" data-wow-delay="0.5s">
+                        <div class="job-listing card p-3 my-4">
+                            <div
+                                class="d-flex flex-column flex-lg-row justify-content-between align-items-start align-items-lg-center">
+                                <div class="mb-3 mb-lg-0">
+                                    <h5 class="mb-0 text-start">
+                                        <a href="#" class="toggle-form text-decoration-none text-dark"
+                                            data-bs-toggle="collapse" data-bs-target="#job1-form">
+                                            HVAC Engineer
+                                        </a>
+                                    </h5>
+                                    <p class="small text-start">Pune, Maharashtra, India</p>
+                                    <p class="small text-start">12/02/2025</p>
+                                </div>
+                                <div>
+                                    <button class="btn btn-primary btn-apply-job fw-bold py-2"
+                                        style="width: 150px; border: none; border-radius: 5px; transition: background-color 0.3s;">
+                                        Apply Now
+                                    </button>
+                                </div>
+                            </div>
+
+                            <!-- Application Form -->
+                            <div class="apply-form card p-3 mt-5 rounded-0 border-0">
+                                <h3>Apply for HVAC Systems Manager</h3>
+                                <div class="badge bg-secondary rounded-0 mb-2 p-2">EXPERIENCE - 5 TO 7 YEARS</div>
+                                <ul class="list-unstyled">
+                                    <li class="py-1">Overseeing the installation, operation, and maintenance of HVAC
+                                        systems
+                                    </li>
+                                    <li class="py-1">Managing and guiding a team of HVAC engineers and technicians</li>
+                                    <li class="py-1">Ensuring strict adherence to safety protocols and building codes
+                                    </li>
+                                    <li class="py-1">Planning and coordinating preventive maintenance schedules for HVAC
+                                        systems</li>
+                                    <li class="py-1">Managing project budgets, cost estimation, and resource allocation
+                                    </li>
+                                    <li class="py-1">Reviewing and approving HVAC system designs and installations</li>
+                                    <li class="py-1">Maintaining effective communication with clients and stakeholders
+                                    </li>
+                                    <li class="py-1">Troubleshooting and resolving HVAC system issues to ensure
+                                        operational
+                                        efficiency</li>
+                                </ul>
+                                <div class="container p-0">
+                                    <div class="card border-0 shadow-sm rounded-0">
+                                        <div class="card-body px-2 py-3">
+                                            <form action="https://api.web3forms.com/submit" method="POST"
+                                                class="px-1 px-lg-3">
+                                                <div class="row g-3">
+                                                    <!-- Hidden Input for Web3Forms Access Key -->
+                                                    <input type="hidden" name="access_key"
+                                                        value="7b32a9fd-f2c6-4a55-98db-92ac1526dedb">
+
+                                                    <div class="col-md-6">
+                                                        <label class="form-label">Your Name <span
+                                                                class="text-danger">*</span></label>
+                                                        <input type="text" class="form-control" name="name"
+                                                            placeholder="Enter your name" required>
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <label class="form-label">Your Email <span
+                                                                class="text-danger">*</span></label>
+                                                        <input type="email" class="form-control" name="email"
+                                                            placeholder="Enter your email" required>
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <label class="form-label">Experience (in years) <span
+                                                                class="text-danger">*</span></label>
+                                                        <input type="text" class="form-control" name="experience"
+                                                            placeholder="Enter your experience" required>
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <label class="form-label">Mobile Number <span
+                                                                class="text-danger">*</span></label>
+                                                        <input type="text" class="form-control" name="mobile_number"
+                                                            placeholder="Enter your mobile number" required>
+                                                    </div>
+                                                    <div class="col-md-6 mb-3">
+                                                        <label for="roleDropdown" class="form-label">Choose Your
+                                                            Field: <span class="text-danger">*</span></label>
+                                                        <select class="form-select" id="roleDropdown" name="role"
+                                                            required>
+                                                            <option value="" selected disabled>Select an option</option>
+                                                            <option value="junior_software_engineer">Junior Software
+                                                                Engineer</option>
+                                                            <option value="software_engineer">Software Engineer</option>
+                                                            <option value="senior_software_engineer">Senior Software
+                                                                Engineer</option>
+                                                            <option value="hvac_engineer">HVAC Engineer</option>
+                                                            <option value="sales_marketing_engineer">Sales/Marketing
+                                                                Engineer</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <label class="form-label">Upload Resume <span
+                                                                class="text-danger">*</span></label>
+                                                        <input type="file" class="form-control" name="resume" required>
+                                                    </div>
+                                                    <div class="col-12">
+                                                        <label class="form-label">Message (optional)</label>
+                                                        <textarea class="form-control" rows="4" name="message"
+                                                            placeholder="Write your message here"></textarea>
+                                                    </div>
+                                                    <div class="col-12 text-center">
+                                                        <button type="submit" class="btn btn-primary px-5">Submit
+                                                            Application</button>
+                                                    </div>
                                                 </div>
-                                                <div class="col-md-6">
-                                                    <label class="form-label">Mobile Number <span
-                                                            class="text-danger">*</span></label>
-                                                    <input type="text" class="form-control"
-                                                        placeholder="Enter your mobile number" required>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Job Listing 5 -->
+                    <div class="col-12 col-md-12 wow fadeIn" data-wow-delay="0.6s">
+                        <div class="job-listing card p-3 my-4">
+                            <div
+                                class="d-flex flex-column flex-lg-row justify-content-between align-items-start align-items-lg-center">
+                                <div class="mb-3 mb-lg-0">
+                                    <h5 class="mb-0 text-start">
+                                        <a href="#" class="toggle-form text-decoration-none text-dark"
+                                            data-bs-toggle="collapse" data-bs-target="#job1-form">
+                                            Sales/Marketing Engineer
+                                        </a>
+                                    </h5>
+                                    <p class="small text-start">Nashik, Maharashtra, India</p>
+                                    <p class="small text-start">25/01/2025</p>
+                                </div>
+                                <div>
+                                    <button class="btn btn-primary btn-apply-job fw-bold py-2"
+                                        style="width: 150px; border: none; border-radius: 5px; transition: background-color 0.3s;">
+                                        Apply Now
+                                    </button>
+                                </div>
+                            </div>
+
+                            <!-- Application Form -->
+                            <div class="apply-form card p-3 mt-5 rounded-0 border-0">
+                                <h3>Apply for Sales/Marketing Engineer</h3>
+                                <div class="badge bg-secondary rounded-0 mb-2 p-2">EXPERIENCE - 0 TO 2 YEARS</div>
+                                <ul class="list-unstyled">
+                                    <li class="py-1">Identifying and pursuing new sales opportunities in the HVAC
+                                        industry
+                                    </li>
+                                    <li class="py-1">Developing and executing marketing strategies to promote HVAC
+                                        products
+                                        and services</li>
+                                    <li class="py-1">Building and maintaining strong relationships with clients and
+                                        potential customers</li>
+                                    <li class="py-1">Conducting market research to understand customer needs and
+                                        industry
+                                        trends</li>
+                                    <li class="py-1">Collaborating with technical teams to prepare customized HVAC
+                                        solutions
+                                        for clients</li>
+                                    <li class="py-1">Negotiating contracts and pricing with clients while ensuring
+                                        profitability</li>
+                                    <li class="py-1">Monitoring and reporting on sales performance and adjusting
+                                        strategies
+                                        as needed</li>
+                                    <li class="py-1">Representing the company at industry events, trade shows, and
+                                        meetings
+                                    </li>
+                                </ul>
+                                <div class="container p-0">
+                                    <div class="card border-0 shadow-sm rounded-0">
+                                        <div class="card-body px-2 py-3">
+                                            <form action="https://api.web3forms.com/submit" method="POST"
+                                                class="px-1 px-lg-3">
+                                                <div class="row g-3">
+                                                    <!-- Hidden Input for Web3Forms Access Key -->
+                                                    <input type="hidden" name="access_key"
+                                                        value="7b32a9fd-f2c6-4a55-98db-92ac1526dedb">
+
+                                                    <div class="col-md-6">
+                                                        <label class="form-label">Your Name <span
+                                                                class="text-danger">*</span></label>
+                                                        <input type="text" class="form-control" name="name"
+                                                            placeholder="Enter your name" required>
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <label class="form-label">Your Email <span
+                                                                class="text-danger">*</span></label>
+                                                        <input type="email" class="form-control" name="email"
+                                                            placeholder="Enter your email" required>
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <label class="form-label">Experience (in years) <span
+                                                                class="text-danger">*</span></label>
+                                                        <input type="text" class="form-control" name="experience"
+                                                            placeholder="Enter your experience" required>
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <label class="form-label">Mobile Number <span
+                                                                class="text-danger">*</span></label>
+                                                        <input type="text" class="form-control" name="mobile_number"
+                                                            placeholder="Enter your mobile number" required>
+                                                    </div>
+                                                    <div class="col-md-6 mb-3">
+                                                        <label for="roleDropdown" class="form-label">Choose Your
+                                                            Field: <span class="text-danger">*</span></label>
+                                                        <select class="form-select" id="roleDropdown" name="role"
+                                                            required>
+                                                            <option value="" selected disabled>Select an option</option>
+                                                            <option value="junior_software_engineer">Junior Software
+                                                                Engineer</option>
+                                                            <option value="software_engineer">Software Engineer</option>
+                                                            <option value="senior_software_engineer">Senior Software
+                                                                Engineer</option>
+                                                            <option value="hvac_engineer">HVAC Engineer</option>
+                                                            <option value="sales_marketing_engineer">Sales/Marketing
+                                                                Engineer</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <label class="form-label">Upload Resume <span
+                                                                class="text-danger">*</span></label>
+                                                        <input type="file" class="form-control" name="resume" required>
+                                                    </div>
+                                                    <div class="col-12">
+                                                        <label class="form-label">Message (optional)</label>
+                                                        <textarea class="form-control" rows="4" name="message"
+                                                            placeholder="Write your message here"></textarea>
+                                                    </div>
+                                                    <div class="col-12 text-center">
+                                                        <button type="submit" class="btn btn-primary px-5">Submit
+                                                            Application</button>
+                                                    </div>
                                                 </div>
-                                                <div class="col-12">
-                                                    <label class="form-label">Upload Resume <span
-                                                            class="text-danger">*</span></label>
-                                                    <input type="file" class="form-control" required>
-                                                </div>
-                                                <div class="col-12">
-                                                    <label class="form-label">Message (optional)</label>
-                                                    <textarea class="form-control" rows="4"
-                                                        placeholder="Write your message here"></textarea>
-                                                </div>
-                                                <div class="col-12 text-center">
-                                                    <button type="submit" class="btn btn-primary px-5">Submit
-                                                        Application</button>
-                                                </div>
-                                            </div>
-                                        </form>
+                                            </form>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <!-- Job Listing 2 -->
-                <div class="col-12 col-md-12">
-                    <div class="job-listing card p-3 my-4">
-                        <div
-                            class="d-flex flex-column flex-lg-row justify-content-between align-items-start align-items-lg-center">
-                            <div class="mb-3 mb-lg-0">
-                                <h5 class="mb-0 text-start">
-                                    <a href="#" class="toggle-form text-decoration-none text-dark"
-                                        data-bs-toggle="collapse" data-bs-target="#job1-form">
-                                        Software Engineer
-                                    </a>
-                                </h5>
-                                <p class="small text-start">Pune, Maharashtra, India</p>
-                                <p class="small text-start">08/23/2024</p>
-                            </div>
-                            <div>
-                                <button class="btn btn-primary btn-apply-job fw-bold py-2"
-                                    style="width: 150px; border: none; border-radius: 5px; transition: background-color 0.3s;">
-                                    Apply Now
-                                </button>
-                            </div>
-                        </div>
-
-                        <!-- Application Form -->
-                        <div class="apply-form card p-3 mt-5 rounded-0 border-0">
-                            <h3>Apply for Software Engineer</h3>
-                            <div class="badge bg-secondary rounded-0 mb-2 p-2">EXPERIENCE - 7 TO 8 YEARS</div>
-                            <ul class="list-unstyled">
-                                <li class="py-1">Coordination with other departments for process input/output data</li>
-                                <li class="py-1">Co-ordination with vendors</li>
-                                <li class="py-1">Preparation of Process flow diagrams based on block flow diagrams, Heat
-                                    & Mass balance</li>
-                                <li class="py-1">Preparation of P&IDs</li>
-                                <li class="py-1">Performing process calculations like line sizing, pump hydraulics,
-                                    Relief valve sizing, Heat exchanger design</li>
-                                <li class="py-1">Preparation of Process datasheets for different process equipment</li>
-                                <li class="py-1">Preparation of different lists like line list, Equipment list, Utility
-                                    summary list, SM list & Tie-in list</li>
-                                <li class="py-1">Preparation of calculation reports etc.</li>
-                            </ul>
-                            <div class="container p-0">
-                                <div class="card border-0  shadow-sm rounded-0">
-                                    <div class="card-body px-2 py-3">
-                                        <form class="px-1 px-lg-3">
-                                            <div class="row g-3">
-                                                <div class="col-md-6">
-                                                    <label class="form-label">Your Name <span
-                                                            class="text-danger">*</span></label>
-                                                    <input type="text" class="form-control"
-                                                        placeholder="Enter your name" required>
-                                                </div>
-                                                <div class="col-md-6">
-                                                    <label class="form-label">Your Email <span
-                                                            class="text-danger">*</span></label>
-                                                    <input type="email" class="form-control"
-                                                        placeholder="Enter your email" required>
-                                                </div>
-                                                <div class="col-md-6">
-                                                    <label class="form-label">Experience (in years) <span
-                                                            class="text-danger">*</span></label>
-                                                    <input type="text" class="form-control"
-                                                        placeholder="Enter your experience" required>
-                                                </div>
-                                                <div class="col-md-6">
-                                                    <label class="form-label">Mobile Number <span
-                                                            class="text-danger">*</span></label>
-                                                    <input type="text" class="form-control"
-                                                        placeholder="Enter your mobile number" required>
-                                                </div>
-                                                <div class="col-12">
-                                                    <label class="form-label">Upload Resume <span
-                                                            class="text-danger">*</span></label>
-                                                    <input type="file" class="form-control" required>
-                                                </div>
-                                                <div class="col-12">
-                                                    <label class="form-label">Message (optional)</label>
-                                                    <textarea class="form-control" rows="4"
-                                                        placeholder="Write your message here"></textarea>
-                                                </div>
-                                                <div class="col-12 text-center">
-                                                    <button type="submit" class="btn btn-primary px-5">Submit
-                                                        Application</button>
-                                                </div>
-                                            </div>
-                                        </form>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Job Listing 3 -->
-                <div class="col-12 col-md-12">
-                    <div class="job-listing card p-3 my-4">
-                        <div
-                            class="d-flex flex-column flex-lg-row justify-content-between align-items-start align-items-lg-center">
-                            <div class="mb-3 mb-lg-0">
-                                <h5 class="mb-0 text-start">
-                                    <a href="#" class="toggle-form text-decoration-none text-dark"
-                                        data-bs-toggle="collapse" data-bs-target="#job1-form">
-                                        Senior Software Engineer
-                                    </a>
-                                </h5>
-                                <p class="small text-start">Pune, Maharashtra, India</p>
-                                <p class="small text-start">08/23/2024</p>
-                            </div>
-                            <div>
-                                <button class="btn btn-primary btn-apply-job fw-bold py-2"
-                                    style="width: 150px; border: none; border-radius: 5px; transition: background-color 0.3s;">
-                                    Apply Now
-                                </button>
-                            </div>
-                        </div>
-
-                        <!-- Application Form -->
-                        <div class="apply-form card p-3 mt-5 rounded-0 border-0">
-                            <h3>Apply for Senior Software Engineer</h3>
-                            <div class="badge bg-secondary rounded-0 mb-2 p-2">EXPERIENCE - 7 TO 8 YEARS</div>
-                            <ul class="list-unstyled">
-                                <li class="py-1">Coordination with other departments for process input/output data</li>
-                                <li class="py-1">Co-ordination with vendors</li>
-                                <li class="py-1">Preparation of Process flow diagrams based on block flow diagrams, Heat
-                                    & Mass balance</li>
-                                <li class="py-1">Preparation of P&IDs</li>
-                                <li class="py-1">Performing process calculations like line sizing, pump hydraulics,
-                                    Relief valve sizing, Heat exchanger design</li>
-                                <li class="py-1">Preparation of Process datasheets for different process equipment</li>
-                                <li class="py-1">Preparation of different lists like line list, Equipment list, Utility
-                                    summary list, SM list & Tie-in list</li>
-                                <li class="py-1">Preparation of calculation reports etc.</li>
-                            </ul>
-                            <div class="container p-0">
-                                <div class="card border-0  shadow-sm rounded-0">
-                                    <div class="card-body px-2 py-3">
-                                        <form class="px-1 px-lg-3">
-                                            <div class="row g-3">
-                                                <div class="col-md-6">
-                                                    <label class="form-label">Your Name <span
-                                                            class="text-danger">*</span></label>
-                                                    <input type="text" class="form-control"
-                                                        placeholder="Enter your name" required>
-                                                </div>
-                                                <div class="col-md-6">
-                                                    <label class="form-label">Your Email <span
-                                                            class="text-danger">*</span></label>
-                                                    <input type="email" class="form-control"
-                                                        placeholder="Enter your email" required>
-                                                </div>
-                                                <div class="col-md-6">
-                                                    <label class="form-label">Experience (in years) <span
-                                                            class="text-danger">*</span></label>
-                                                    <input type="text" class="form-control"
-                                                        placeholder="Enter your experience" required>
-                                                </div>
-                                                <div class="col-md-6">
-                                                    <label class="form-label">Mobile Number <span
-                                                            class="text-danger">*</span></label>
-                                                    <input type="text" class="form-control"
-                                                        placeholder="Enter your mobile number" required>
-                                                </div>
-                                                <div class="col-12">
-                                                    <label class="form-label">Upload Resume <span
-                                                            class="text-danger">*</span></label>
-                                                    <input type="file" class="form-control" required>
-                                                </div>
-                                                <div class="col-12">
-                                                    <label class="form-label">Message (optional)</label>
-                                                    <textarea class="form-control" rows="4"
-                                                        placeholder="Write your message here"></textarea>
-                                                </div>
-                                                <div class="col-12 text-center">
-                                                    <button type="submit" class="btn btn-primary px-5">Submit
-                                                        Application</button>
-                                                </div>
-                                            </div>
-                                        </form>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Job Listing 4 -->
-                <div class="col-12 col-md-12">
-                    <div class="job-listing card p-3 my-4">
-                        <div
-                            class="d-flex flex-column flex-lg-row justify-content-between align-items-start align-items-lg-center">
-                            <div class="mb-3 mb-lg-0">
-                                <h5 class="mb-0 text-start">
-                                    <a href="#" class="toggle-form text-decoration-none text-dark"
-                                        data-bs-toggle="collapse" data-bs-target="#job1-form">
-                                        HVAC Engineer
-                                    </a>
-                                </h5>
-                                <p class="small text-start">Pune, Maharashtra, India</p>
-                                <p class="small text-start">08/23/2024</p>
-                            </div>
-                            <div>
-                                <button class="btn btn-primary btn-apply-job fw-bold py-2"
-                                    style="width: 150px; border: none; border-radius: 5px; transition: background-color 0.3s;">
-                                    Apply Now
-                                </button>
-                            </div>
-                        </div>
-
-                        <!-- Application Form -->
-                        <div class="apply-form card p-3 mt-5 rounded-0 border-0">
-                            <h3>Apply for Process Design Engineer - 002</h3>
-                            <div class="badge bg-secondary rounded-0 mb-2 p-2">EXPERIENCE - 7 TO 8 YEARS</div>
-                            <ul class="list-unstyled">
-                                <li class="py-1">Coordination with other departments for process input/output data</li>
-                                <li class="py-1">Co-ordination with vendors</li>
-                                <li class="py-1">Preparation of Process flow diagrams based on block flow diagrams, Heat
-                                    & Mass balance</li>
-                                <li class="py-1">Preparation of P&IDs</li>
-                                <li class="py-1">Performing process calculations like line sizing, pump hydraulics,
-                                    Relief valve sizing, Heat exchanger design</li>
-                                <li class="py-1">Preparation of Process datasheets for different process equipment</li>
-                                <li class="py-1">Preparation of different lists like line list, Equipment list, Utility
-                                    summary list, SM list & Tie-in list</li>
-                                <li class="py-1">Preparation of calculation reports etc.</li>
-                            </ul>
-                            <div class="container p-0">
-                                <div class="card border-0  shadow-sm rounded-0">
-                                    <div class="card-body px-2 py-3">
-                                        <form class="px-1 px-lg-3">
-                                            <div class="row g-3">
-                                                <div class="col-md-6">
-                                                    <label class="form-label">Your Name <span
-                                                            class="text-danger">*</span></label>
-                                                    <input type="text" class="form-control"
-                                                        placeholder="Enter your name" required>
-                                                </div>
-                                                <div class="col-md-6">
-                                                    <label class="form-label">Your Email <span
-                                                            class="text-danger">*</span></label>
-                                                    <input type="email" class="form-control"
-                                                        placeholder="Enter your email" required>
-                                                </div>
-                                                <div class="col-md-6">
-                                                    <label class="form-label">Experience (in years) <span
-                                                            class="text-danger">*</span></label>
-                                                    <input type="text" class="form-control"
-                                                        placeholder="Enter your experience" required>
-                                                </div>
-                                                <div class="col-md-6">
-                                                    <label class="form-label">Mobile Number <span
-                                                            class="text-danger">*</span></label>
-                                                    <input type="text" class="form-control"
-                                                        placeholder="Enter your mobile number" required>
-                                                </div>
-                                                <div class="col-12">
-                                                    <label class="form-label">Upload Resume <span
-                                                            class="text-danger">*</span></label>
-                                                    <input type="file" class="form-control" required>
-                                                </div>
-                                                <div class="col-12">
-                                                    <label class="form-label">Message (optional)</label>
-                                                    <textarea class="form-control" rows="4"
-                                                        placeholder="Write your message here"></textarea>
-                                                </div>
-                                                <div class="col-12 text-center">
-                                                    <button type="submit" class="btn btn-primary px-5">Submit
-                                                        Application</button>
-                                                </div>
-                                            </div>
-                                        </form>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Job Listing 5 -->
-                <div class="col-12 col-md-12">
-                    <div class="job-listing card p-3 my-4">
-                        <div
-                            class="d-flex flex-column flex-lg-row justify-content-between align-items-start align-items-lg-center">
-                            <div class="mb-3 mb-lg-0">
-                                <h5 class="mb-0 text-start">
-                                    <a href="#" class="toggle-form text-decoration-none text-dark"
-                                        data-bs-toggle="collapse" data-bs-target="#job1-form">
-                                        Sales/Marketing Engineer
-                                    </a>
-                                </h5>
-                                <p class="small text-start">Nashik, Maharashtra, India</p>
-                                <p class="small text-start">08/23/2024</p>
-                            </div>
-                            <div>
-                                <button class="btn btn-primary btn-apply-job fw-bold py-2"
-                                    style="width: 150px; border: none; border-radius: 5px; transition: background-color 0.3s;">
-                                    Apply Now
-                                </button>
-                            </div>
-                        </div>
-
-                        <!-- Application Form -->
-                        <div class="apply-form card p-3 mt-5 rounded-0 border-0">
-                            <h3>Apply for HVAC Systems Manager</h3>
-                            <div class="badge bg-secondary rounded-0 mb-2 p-2">EXPERIENCE - 5 TO 7 YEARS</div>
-                            <ul class="list-unstyled">
-                                <li class="py-1">Managing HVAC installation and maintenance projects</li>
-                                <li class="py-1">Leading a team of HVAC technicians</li>
-                                <li class="py-1">Ensuring compliance with safety and building regulations</li>
-                                <li class="py-1">Developing HVAC maintenance plans</li>
-                                <li class="py-1">Budget management and cost estimation for HVAC projects</li>
-                            </ul>
-                            <div class="container p-0">
-                                <div class="card border-0  shadow-sm rounded-0">
-                                    <div class="card-body px-2 py-3">
-                                        <form class="px-1 px-lg-3">
-                                            <div class="row g-3">
-                                                <div class="col-md-6">
-                                                    <label class="form-label">Your Name <span
-                                                            class="text-danger">*</span></label>
-                                                    <input type="text" class="form-control"
-                                                        placeholder="Enter your name" required>
-                                                </div>
-                                                <div class="col-md-6">
-                                                    <label class="form-label">Your Email <span
-                                                            class="text-danger">*</span></label>
-                                                    <input type="email" class="form-control"
-                                                        placeholder="Enter your email" required>
-                                                </div>
-                                                <div class="col-md-6">
-                                                    <label class="form-label">Experience (in years) <span
-                                                            class="text-danger">*</span></label>
-                                                    <input type="text" class="form-control"
-                                                        placeholder="Enter your experience" required>
-                                                </div>
-                                                <div class="col-md-6">
-                                                    <label class="form-label">Mobile Number <span
-                                                            class="text-danger">*</span></label>
-                                                    <input type="text" class="form-control"
-                                                        placeholder="Enter your mobile number" required>
-                                                </div>
-                                                <div class="col-12">
-                                                    <label class="form-label">Upload Resume <span
-                                                            class="text-danger">*</span></label>
-                                                    <input type="file" class="form-control" required>
-                                                </div>
-                                                <div class="col-12">
-                                                    <label class="form-label">Message (optional)</label>
-                                                    <textarea class="form-control" rows="4"
-                                                        placeholder="Write your message here"></textarea>
-                                                </div>
-                                                <div class="col-12 text-center">
-                                                    <button type="submit" class="btn btn-primary px-5">Submit
-                                                        Application</button>
-                                                </div>
-                                            </div>
-                                        </form>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
         </div>
     </section>
     <!-- End Section -->
 
 
     <!-- Contact Us Start -->
-    <section class="bg-lightdark py-5">
+    <!-- <section class="bg-light py-5">
         <div class="container contact-section">
             <div class="row">
-                <!-- Left Side: Contact Info -->
                 <div class="col-md-6">
                     <h3 class="h3 fw-bold mb-4 text-dark">Contact us</h3>
                     <div class="contact-info">
@@ -770,14 +924,13 @@
                     <p class="mt-4 text-muted text-dark">Copyright © 2024 www.lealsolution.com - All rights reserved</p>
                 </div>
 
-                <!-- Right Side: Contact Form -->
                 <div class="col-md-6">
                     <h3 class="contact-title">Join Us</h3>
                     <form>
                         <div class="mb-3">
                             <label for="productSelect" class="form-label">Product</label>
                             <select class="form-select form-control" id="productSelect">
-                                <option selected>Career</option>
+                                <option selected>HVAC Heat Load Calculator</option>
                                 <option value="1">HLC Leal Bussiness Solution</option>
                                 <option value="2">HVAC GADraw</option>
                                 <option value="2">TaskTrak Hub Manager</option>
@@ -798,7 +951,6 @@
                             <textarea class="form-control" id="messageInput" rows="3"
                                 placeholder="Your message"></textarea>
                         </div>
-                        <!-- <button type="submit" class="btn submit-btn">SUBMIT</button> -->
                         <button class="btn btn-primary w-100 fw-bold py-2 bg-primary"
                             style=" border: none; border-radius: 5px; transition: background-color 0.3s;">
                             Submit
@@ -807,7 +959,7 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
     <!-- Contact Us End -->
 
 
@@ -815,9 +967,10 @@
     <div class="container-fluid bg-dark text-white-50 footer pt-5">
         <div class="container py-3 py-lg-5">
             <div class="row g-5">
-                <div class="col-md-6 col-lg-3 wow fadeInLeftBig" data-wow-delay="0.1s">
+                <div class="col-md-6 col-lg-3 wow fadeIn" data-wow-delay="0.2s">
                     <a href="index.html" class="d-inline-block mb-3">
-                        <h1 class="text-white text-white-nav">Leal Software Solution Pvt Ltd <span class="text-primary"></span>
+                        <h1 class="text-white text-white-nav">Leal Software Solution Pvt Ltd <span
+                                class="text-primary"></span>
                         </h1>
                     </a>
                     <p class="mb-0">Leal Software Solution excels in delivering innovative, high-quality
@@ -826,7 +979,7 @@
                         systems and exceptional service to meet diverse industry needs.</p>
                 </div>
 
-                <div class="col-md-6 col-lg-2 wow fadeInLeftBig" data-wow-delay="0.5s">
+                <div class="col-md-6 col-lg-2 wow fadeIn" data-wow-delay="0.3s">
                     <h5 class="text-white mb-3">Popular Link</h5>
                     <a class="btn btn-link" href="about.html">About Us</a>
                     <a class="btn btn-link" href="about.html">Projects</a>
@@ -835,7 +988,7 @@
                     <a class="btn btn-link" href="">Privacy Policy</a>
                     <a class="btn btn-link" href="">Terms & Condition</a>
                 </div>
-                <div class="col-md-6 col-lg-4 pe-0 wow fadeIn" data-wow-delay="1.3s">
+                <div class="col-md-6 col-lg-4 pe-0 wow fadeIn" data-wow-delay="0.4s">
                     <h5 class="text-white mb-4">Our Services</h5>
                     <a class="btn btn-link" href="">Software Development</a>
                     <a class="btn btn-link" href="">Mobile Application Development</a>
@@ -847,7 +1000,7 @@
                     <a class="btn btn-link" href="">TaskTrak Hub Manager</a>
 
                 </div>
-                <div class="col-md-6 col-lg-3 wow fadeIn" data-wow-delay="1.8s">
+                <div class="col-md-6 col-lg-3 wow fadeIn" data-wow-delay="0.5s">
                     <h5 class="text-white mb-4">Get In Touch</h5>
                     <p><i class="fa fa-map-marker-alt me-3"></i>Flat No. B-102, Laxmi Chowk, Phase 1, Hinjawadi
                         Rajiv
@@ -879,7 +1032,7 @@
                 </div>
             </div>
         </div>
-        <div class="container wow fadeIn" data-wow-delay="0.1s">
+        <div class="container wow fadeIn" data-wow-delay="0.4s">
             <div class="copyright">
                 <div class="row">
                     <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
@@ -900,6 +1053,7 @@
         </div>
     </div>
     <!-- Footer End -->
+
 
 
     <!-- Back to Top -->

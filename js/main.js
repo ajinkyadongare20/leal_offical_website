@@ -212,3 +212,18 @@ document.querySelectorAll('.app-store-btn, .google-play-btn').forEach(button => 
     });
 });
 
+
+function openVideo(videoUrl) {
+    // Set the video URL in the iframe
+    document.getElementById('videoIframe').src = videoUrl;
+
+    // Show the Bootstrap modal
+    const videoModal = new bootstrap.Modal(document.getElementById('videoModal'));
+    videoModal.show();
+
+    // Clear the video URL when the modal is closed to stop playback
+    document.getElementById('videoModal').addEventListener('hidden.bs.modal', function () {
+        document.getElementById('videoIframe').src = '';
+    });
+}
+

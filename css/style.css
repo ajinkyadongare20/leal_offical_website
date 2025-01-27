@@ -215,7 +215,7 @@ h5 {
     background: linear-gradient(rgba(19, 99, 198, 0.5), rgba(19, 99, 198, 0.5)),
         url(../img/test/ecosystem-spotlight-banner.jpg) center center no-repeat;
     background-size: cover;
-    height: 100vh;
+    min-height: 100vh;
 }
 
 @media (max-width: 420px) {
@@ -293,8 +293,8 @@ h5 {
 
 /*** Index / Home Page ***/
 .strategy-desc {
-    font-size: 1.1rem;
-    max-width: 600px;
+    font-size: 17px;
+    max-width: 900px;
     margin: 20px auto;
     color: #414040;
 }
@@ -481,11 +481,15 @@ img.me-3.mb-0:hover {
     text-decoration: none;
 }
 
+.key-rounded {
+    background-color: #f8fbff;
+    transition: transform 0.5s ease-in-out, box-shadow 0.5s ease-in-out;
+}
+
 .key-rounded:hover {
     border-radius: var(--bs-border-radius) !important;
     transform: scale(1.05);
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 @media (max-width: 991.98px) {
@@ -504,7 +508,6 @@ img.me-3.mb-0:hover {
     padding: 60px 30px;
     margin: 0px auto;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
 }
 
 
@@ -725,13 +728,13 @@ img.me-3.mb-0:hover {
     overflow: hidden;
     transition: transform 0.3s ease;
     cursor: pointer;
-    border: none;
-    border-radius: 5px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
     margin: 10px 20px;
     background-color: #f4f7f7;
     padding: 20px;
-    height: auto;
+    height: 550px;
+    border: 3px solid #1363C6;
+    border-radius: 10px;
 }
 
 .card-vision:hover {
@@ -811,6 +814,9 @@ img.me-3.mb-0:hover {
         flex: 1 1 100%;
         padding: 20px !important;
         min-height: 200px;
+    }
+    .card-vision { 
+        height: auto !important;
     }
 
 }
@@ -1378,7 +1384,7 @@ li.nav-item {
 
 .tasktrak-feature-img {
     width: 100%;
-    height: 550px;
+    height: 100vh;
     border-radius: 10px;
 }
 
@@ -1447,13 +1453,13 @@ li.nav-item {
     background-color: #ffffff;
 }
 
-.service-card:hover {
-    /* border-color:  var(--primary)!important; */
+.service-card:hover{
     background-color: var(--primary)!important;
     color: white;
     border-top-left-radius: 30px;
     border-bottom-right-radius: 30px;
 }
+
 .card-container {
     border: 2px solid #6f42c1;
     border-radius: 10px;
@@ -1507,7 +1513,6 @@ li.nav-item {
     border-bottom: 1px dotted #000;
     padding-top: 15px;
     position: relative;
-    padding-left: 20px;
     padding-bottom: 15px;
 }
 
@@ -1520,8 +1525,8 @@ li.nav-item {
     background-color: #f8f9fa;
     position: sticky;
     top: 0;
-    height: 100vh;
-    padding: 20px;
+    height: 500px;
+    padding: 30px 20px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -1529,7 +1534,7 @@ li.nav-item {
 
 .wp-right-section {
     overflow-y: auto;
-    height: 100vh;
+    height: 500px;
     scroll-snap-type: y mandatory;
 }
 
@@ -1543,7 +1548,25 @@ li.nav-item {
 .wp-section-3 { background-color: #f7fff7; }
 
 
-/* Remove sticky behavior for smaller screens */
+.scroll-item .text-center {
+    position: relative;
+}
+
+.scroll-item .text-center::after {
+    content: "";
+    position: absolute;
+    top: 60px;
+    left: 30px;
+    width: 1px;
+    height: 180%;
+    border: 1px dashed #000;
+    z-index: 0;
+}
+.ml-3.d-flex.flex-column.justify-content-center {
+    padding-left: 20px;
+}
+
+
 @media (max-width: 767px) {
     .wp-left-section {
         position: relative; 
@@ -1555,33 +1578,10 @@ li.nav-item {
     .ml-3.d-flex.flex-column.justify-content-center {
         padding-left: 0px !important;
     }
-}
-
-.scroll-item {
-    scroll-snap-align: start;
-    padding: 20px;
-}
-
-.wp-section-1 { background-color: #eaf6ff; }
-.wp-section-2 { background-color: #fff7f7; }
-.wp-section-3 { background-color: #f7fff7; }
-
-.scroll-item .text-center {
-    position: relative;
-}
-
-.scroll-item .text-center::after {
-    content: "";
-    position: absolute;
-    top: 60px;
-    left: 30px;
-    width: 1px;
-    height: 170%;
-    border: 1px dashed #000;
-    z-index: 0;
-}
-.ml-3.d-flex.flex-column.justify-content-center {
-    padding-left: 20px;
+    .wp-scroll-item{
+        border: 1px solid;
+        margin: 10px 0px;
+    }
 }
 
 

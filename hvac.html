@@ -73,10 +73,19 @@
                             <div class="dropdown-menu dropdown-menu-end shadow-lg rounded border-0 mt-2"
                                 aria-labelledby="dropdownMenuButton" style="background-color: #f8f9fa;">
                                 <a class="dropdown-item py-3 px-4 text-dark" href="service.html">
-                                    <i class="fas fa-drafting-compass me-2"></i> SOFTWARE SERVICES
+                                    <i class="fas fa-code me-2"></i> SOFTWARE DEVELOPMENT
                                 </a>
-                                <a class="dropdown-item py-3 px-4 text-dark" href="service1.html">
-                                    <i class="fas fa-tasks me-2"></i> OTHER SERVICES
+                                <a class="dropdown-item py-3 px-4 text-dark" href="web-development.html">
+                                    <i class="fas fa-laptop-code me-2"></i> WEB APP DEVELOPMENT
+                                </a>
+                                <a class="dropdown-item py-3 px-4 text-dark" href="programming_frameworks.html">
+                                    <i class="fas fa-layer-group me-2"></i> FULLSTACK DEVELOPMENT
+                                </a>
+                                <a class="dropdown-item py-3 px-4 text-dark" href="wordpress-development.html">
+                                    <i class="fab fa-wordpress me-2"></i> WORDPRESS DEVELOPMENT
+                                </a>
+                                <a class="dropdown-item py-3 px-4 text-dark" href="digital_marketing.html">
+                                    <i class="fas fa-chart-line me-2"></i> DIGITAL MARKETING & SEO
                                 </a>
                             </div>
                         </div>
@@ -139,13 +148,6 @@
             <div class="row g-5 pt-5">
                 <div class="col-lg-6 align-self-center text-start mb-lg-5">
                     <h1 class="display-4 text-white mb-4 animated slideInRight">HVAC Heat Load Calculator</h1>
-                    <nav aria-label="breadcrumb">
-                        <ol class="breadcrumb justify-content-center justify-content-lg-start mb-0">
-                            <li class="breadcrumb-item"><a class="text-white" href="#">Home</a></li>
-                            <li class="breadcrumb-item text-white active" aria-current="page">HVAC Heat Load Calculator
-                            </li>
-                        </ol>
-                    </nav>
                     <p class="text-white mb-4 pt-3 animated fadeInLeftBig">What’s revolutionary today can turn ordinary
                         tomorrow. Therefore, brands must continuously evolve and transform for better customer
                         experience, engagement, and profitability. Our software development services and capabilities
@@ -261,7 +263,7 @@
 
 
     <!-- Main Start -->
-    <section class="hvac-container position-relative">
+    <section class="hvac-container position-relative wow fadeIn" data-wow-delay="0.3s">
         <svg class="background-hvac-svg">
             <defs>
                 <style>
@@ -334,30 +336,44 @@
 
 
     <!-- Start Section -->
-    <section class="bg-light py-5">
+    <section class="bg-light py-5 wow fadeIn" data-wow-delay="0.5s">
         <div class="container text-center my-5">
             <h1>Take the HVAC Heat Load Calculation Videos</h1>
             <p>See for yourself why Forbes ranked Contractor Foreman as Easiest to Use.</p>
             <div class="row py-5">
                 <!-- Video Card 1 -->
                 <div class="col-md-3 mb-4">
-                    <div class="card video-card rounded-0 service-item p-0"
-                        onclick="openVideo('https://www.youtube.com/embed/8r33gAykHA0')">
-                        <img src="img/hvac_images/hvac_cal.jpg" class="card-img-top rounded-top px-5 py-3"
-                            alt="Overview">
-                        <div class="play-btn">
+                    <div class="card rounded-0 service-item p-0">
+                        <img src="img/hvac_images/hvac_cal.jpg" class="card-img-top rounded-top px-5 py-3" alt="Overview">
+                        <div class="play-btn" onclick="openVideo('https://www.youtube.com/embed/8r33gAykHA0')">
                             <i class="bi bi-play-circle play-icon"></i>
                         </div>
                         <div class="card-body px-3">
                             <h5 class="card-title">Overview</h5>
-                            <p class="pt-2">Calculate precise heating and cooling needs for optimal HVAC system
-                                efficiency and performance.</p>
+                            <p class="pt-2">Calculate precise heating and cooling needs for optimal HVAC system efficiency and performance.</p>
                         </div>
                     </div>
                 </div>
+                
+                <!-- Bootstrap Modal -->
+                <div class="modal fade" id="videoModal" tabindex="-1" aria-labelledby="videoModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-lg">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="videoModalLabel">Video Overview</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <iframe id="videoIframe" width="100%" height="400" frameborder="0" allowfullscreen></iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+
                 <!-- Video Card 2 -->
                 <div class="col-md-3 mb-4">
-                    <div class="card video-card rounded-0 service-item p-0"
+                    <div class="card rounded-0 service-item p-0"
                         onclick="openVideo('https://www.youtube.com/embed/8r33gAykHA0')">
                         <img src="img/hvac_images/hvac_main1.jpg" class="card-img-top px-5 py-3"
                             alt="Project Management">
@@ -371,9 +387,10 @@
                         </div>
                     </div>
                 </div>
+
                 <!-- Video Card 3 -->
                 <div class="col-md-3 mb-4">
-                    <div class="card video-card rounded-0 service-item p-0"
+                    <div class="card rounded-0 service-item p-0"
                         onclick="openVideo('https://www.youtube.com/embed/8r33gAykHA0')">
                         <img src="img/hvac_images/hvac_team.jpg" class="card-img-top px-5 py-3" alt="Documentation">
                         <div class="play-btn">
@@ -386,9 +403,10 @@
                         </div>
                     </div>
                 </div>
+                
                 <!-- Video Card 4 -->
                 <div class="col-md-3 mb-4">
-                    <div class="card video-card rounded-0 service-item p-0"
+                    <div class="card  rounded-0 service-item p-0"
                         onclick="openVideo('https://www.youtube.com/embed/8r33gAykHA0')">
                         <img src="img/hvac_images/hvac_cal.jpg" class="card-img-top px-5 py-3" alt="Finance">
                         <div class="play-btn">
@@ -407,80 +425,55 @@
     </section>
     <!-- End Section -->
 
-    <!-- Start Section -->
-    <section class="bg-light py-5">
-        <div class="container text-center my-5">
-            <h1>Take the HVAC Heat Load Calculation Videos</h1>
-            <p>See for yourself why Forbes ranked Contractor Foreman as Easiest to Use.</p>
-            <div class="row py-5">
-                <!-- Video Card 1 -->
-                <div class="col-md-3 mb-4">
-                    <div class="card video-card rounded-0 service-item p-0">
-                        <img src="img/hvac_images/hvac_cal.jpg" class="card-img-top rounded-top px-5 py-3"
-                            alt="Overview">
-                        <div class="card-body px-3">
-                            <h5 class="card-title">Overview</h5>
-                            <p class="pt-2">Calculate precise heating and cooling needs for optimal HVAC system
-                                efficiency and performance.</p>
-                        </div>
-                    </div>
-                </div>
-                <!-- Video Card 2 -->
-                <div class="col-md-3 mb-4">
-                    <div class="card video-card rounded-0 service-item p-0">
-                        <img src="img/hvac_images/hvac_cal.jpg" class="card-img-top rounded-top px-5 py-3"
-                            alt="Overview">
-                        <div class="card-body px-3">
-                            <h5 class="card-title">Overview</h5>
-                            <p class="pt-2">Calculate precise heating and cooling needs for optimal HVAC system
-                                efficiency and performance.</p>
-                        </div>
-                    </div>
-                </div>
-                <!-- Video Card 3 -->
-                <div class="col-md-3 mb-4">
-                    <div class="card video-card rounded-0 service-item p-0">
-                        <img src="img/hvac_images/hvac_cal.jpg" class="card-img-top rounded-top px-5 py-3"
-                            alt="Overview">
-                        <div class="card-body px-3">
-                            <h5 class="card-title">Overview</h5>
-                            <p class="pt-2">Calculate precise heating and cooling needs for optimal HVAC system
-                                efficiency and performance.</p>
-                        </div>
-                    </div>
-                </div>
-                <!-- Video Card 4 -->
-                <div class="col-md-3 mb-4">
-                    <div class="card video-card rounded-0 service-item p-0">
-                        <img src="img/hvac_images/hvac_cal.jpg" class="card-img-top rounded-top px-5 py-3"
-                            alt="Overview">
-                        <div class="card-body px-3">
-                            <h5 class="card-title">Overview</h5>
-                            <p class="pt-2">Calculate precise heating and cooling needs for optimal HVAC system
-                                efficiency and performance.</p>
-                        </div>
-                    </div>
+
+    <section class="wow fadeIn" data-wow-delay="0.3s">
+        <div class="container py-5">
+            <div class="row text-center">
+                <div class="col-12">
+                    <h1 style="font-weight: bold;">HVAC Heat Load Calculator</h1>
+                    <p style="font-style: italic; font-size: 1.2rem;">“Simplify HVAC planning with precise heat load
+                        calculations.”</p>
                 </div>
             </div>
-            <p>All of your project management needs in one easy and affordable tool.</p>
+            <div class="row align-items-center mt-4">
+                <div class="col-md-6 text-center">
+                    <img src="img/adv_prg_framework/mobile_adf.webp" alt="HVAC Heat Load Image" class="img-fluid"
+                        style="max-height: 400px;">
+                </div>
+                <div class="col-md-6">
+                    <p>Accurate HVAC heat load calculations are crucial for optimizing energy efficiency and ensuring
+                        comfortable environments. Our advanced tools and expertise provide detailed insights into heat
+                        gains and losses, enabling you to select the most suitable HVAC systems.</p>
+                    <p>With our user-friendly HVAC heat load calculator, you can effortlessly analyze factors like
+                        building size, insulation, occupancy, and climate conditions to determine the perfect system for
+                        your needs.</p>
+                    <p>Partner with us to streamline your HVAC projects, reduce operational costs, and deliver top-notch
+                        solutions that meet client expectations every time.</p>
+                </div>
+            </div>
+            <div class="row mt-4">
+                <div class="col-12 text-center">
+                    <button class="btn btn-primary btn-lg" style="border-radius: 30px; padding: 10px 20px;">Start
+                        Calculating</button>
+                </div>
+            </div>
         </div>
     </section>
-    <!-- End Section -->
 
 
 
     <!-- Service Start -->
     <div class="container-fluid bg-light py-5">
-        <div class="container py-5">
+        <div class="container pt-5">
             <div class="row g-5 align-items-center">
-                <div class="col-lg-5 wow fadeInLeftBig" data-wow-delay="0.1s">
+                <div class="col-lg-5">
                     <div class="col-lg-12 pb-5">
                         <!-- First Flex Column Div -->
-                        <div class="d-flex flex-column align-items-start justify-content-center p-4 mb-4 wow fadeInRightBig"
-                            data-wow-delay="0.5s" style="background-color: rgba(256, 256, 256, 1);">
+                        <div class="d-flex flex-column align-items-start justify-content-center p-4 mb-4 wow fadeIn"
+                            data-wow-delay="0.3s" style="background-color: rgba(256, 256, 256, 1);">
                             <div class="d-flex align-items-center">
-                                <img src="img/odoo_images/expertise.jpg" alt="Client 4" class="me-3 rounded-circle mb-3"
-                                    style="width: 70px; height: 70px;">
+                                <img src="img/index_images/coding.jpg" alt="Client 4"
+                                    style="width: 55px; height: 55px;">
                                 <div class="px-3">
                                     <h4 class="text-dark mb-3">Accurate Heat Load Calculations</h4>
                                 </div>
@@ -492,11 +485,11 @@
                         </div>
 
                         <!-- Second Flex Column Div -->
-                        <div class="d-flex flex-column align-items-start justify-content-center p-4 mb-4 wow fadeInRightBig"
-                            data-wow-delay="0.7s" style="background-color: rgba(256, 256, 256, 1);">
+                        <div class="d-flex flex-column align-items-start justify-content-center p-4 mb-4 wow fadeIn"
+                            data-wow-delay="0.4s" style="background-color: rgba(256, 256, 256, 1);">
                             <div class="d-flex align-items-center">
-                                <img src="img/odoo_images/technology.jpg" alt="Client 4"
-                                    class="me-3 rounded-circle mb-3" style="width: 70px; height: 70px;">
+                                <img src="img/index_images/sw_implemention.jpg" alt="Client 4"
+                                    style="width: 55px; height: 55px;">
                                 <div class="px-3">
                                     <h4 class="text-dark mb-3">Comprehensive System Analysis</h4>
                                 </div>
@@ -508,11 +501,11 @@
                         </div>
 
                         <!-- Third Flex Column Div -->
-                        <div class="d-flex flex-column align-items-start justify-content-center p-4 mb-4 wow fadeInRightBig"
-                            data-wow-delay="0.9s" style="background-color: rgba(256, 256, 256, 1);">
+                        <div class="d-flex flex-column align-items-start justify-content-center p-4 mb-4 wow fadeIn"
+                            data-wow-delay="0.5s" style="background-color: rgba(256, 256, 256, 1);">
                             <div class="d-flex align-items-center">
-                                <img src="img/odoo_images/VGroup-13.jpg" alt="Client 4" class="me-3 rounded-circle mb-3"
-                                    style="width: 70px; height: 70px;">
+                                <img src="img/index_images/sw_development.jpg" alt="Client 4"
+                                    style="width: 55px; height: 55px;">
                                 <div class="px-3">
                                     <h4 class="text-dark mb-3">HVAC Integration with Other Tools</h4>
                                 </div>
@@ -528,7 +521,7 @@
                     <div class="row g-4">
                         <div class="col-md-6">
                             <div class="row g-4">
-                                <div class="col-12 wow fadeInDownBig" data-wow-delay="0.1s">
+                                <div class="col-12 wow fadeIn" data-wow-delay="0.2s">
                                     <div
                                         class="service-item d-flex flex-column justify-content-center text-center rounded">
                                         <div class="service-icon btn-square">
@@ -541,7 +534,7 @@
                                             efficiency for your business operations.</p>
                                     </div>
                                 </div>
-                                <div class="col-12 wow fadeInDownBig" data-wow-delay="0.5s">
+                                <div class="col-12 wow fadeIn" data-wow-delay="0.3s">
                                     <div
                                         class="service-item d-flex flex-column justify-content-center text-center rounded">
                                         <div class="service-icon btn-square">
@@ -558,7 +551,7 @@
                         </div>
                         <div class="col-md-6 pt-md-4">
                             <div class="row g-4">
-                                <div class="col-12 wow fadeInDownBig" data-wow-delay="0.3s">
+                                <div class="col-12 wow fadeIn" data-wow-delay="0.4s">
                                     <div
                                         class="service-item d-flex flex-column justify-content-center text-center rounded">
                                         <div class="service-icon btn-square">
@@ -571,7 +564,7 @@
                                             without the hassle.</p>
                                     </div>
                                 </div>
-                                <div class="col-12 wow fadeInDownBig" data-wow-delay="0.7s">
+                                <div class="col-12 wow fadeIn" data-wow-delay="0.5s">
                                     <div
                                         class="service-item d-flex flex-column justify-content-center text-center rounded">
                                         <div class="service-icon btn-square">
@@ -596,14 +589,14 @@
 
 
     <!--  -->
-    <section class="py-5">
+    <section class="container-fluid py-5 wow fadeIn" data-wow-delay="0.3s">
         <h2 class="fw-bold text-center py-3"> Starting at yearly Subscriptions.</h2>
         <p class="text-center px-3 pb-5"> <b>Heat Load Calculator</b> is an all-in-one construction management suite for
             your tablet, phone or
             computer.<br> With
             plans starting at <b>$49/month</b>, it is the most affordable project management software for contractors.
         </p>
-        <div class="container py-5 px-4 bg-light">
+        <div class="container py-5 px-4 bg-light wow fadeIn" data-wow-delay="0.3s">
             <div class="row align-items-center">
                 <!-- Text Section -->
                 <div class="col-md-7 mb-4 mb-md-0">
@@ -686,7 +679,7 @@
             </p>
         </div>
 
-        <div class="container my-5 py-5 px-4 bg-light">
+        <div class="container my-5 py-5 px-4 bg-light wow fadeIn" data-wow-delay="0.4s">
             <div class="row align-items-center">
                 <div class="col-md-5 text-center">
                     <img src="img/hvac_images/Software development web application (2).png"
@@ -765,7 +758,7 @@
             </p>
         </div>
 
-        <div class="container my-5 py-5 px-4 bg-light">
+        <div class="container my-5 py-5 px-4 bg-light wow fadeIn" data-wow-delay="0.5s">
             <div class="row align-items-center">
                 <!-- Text Section -->
                 <div class="col-md-7 mb-4 mb-md-0">
@@ -840,7 +833,7 @@
             </p>
         </div>
 
-        <div class="container my-5 py-5 px-4 bg-light">
+        <div class="container my-5 py-5 px-4 bg-light wow fadeIn" data-wow-delay="0.6s">
             <div class="row align-items-center">
                 <div class="col-md-5 text-center">
                     <img src="img/hvac_images/hvac_main1.jpg" class="img-fluid rounded pb-5"
@@ -915,13 +908,10 @@
     </section>
 
 
-    <section>
+    <section class="wow fadeIn" data-wow-delay="0.5s">
         <div class="container mt-5">
-            <!-- Section Title -->
             <h2 class="font-weight-bold text-center">Here is a list of all the<br> benefits you get with HLC
             </h2>
-
-            <!-- Benefits List -->
             <p class="text-center mt-3">
                 Accurate load calculations, energy efficiency optimization, <span
                     class="text-primary font-weight-bold">cost savings</span>, easy-to-use interface, <span
@@ -933,7 +923,6 @@
                 support for <span class="text-primary font-weight-bold">multiple HVAC systems</span>.
             </p>
 
-            <!-- Images Section -->
             <div class="row mt-4 py-5">
                 <!-- Image 1 -->
                 <div class="col-md-4 p-3">
@@ -1391,10 +1380,9 @@
 
 
     <!-- Contact Us Start -->
-    <section class="bg-lightdark py-5">
+    <!-- <section class="bg-light py-5">
         <div class="container contact-section">
             <div class="row">
-                <!-- Left Side: Contact Info -->
                 <div class="col-md-6">
                     <h3 class="h3 fw-bold mb-4 text-dark">Contact us</h3>
                     <div class="contact-info">
@@ -1421,7 +1409,6 @@
                     <p class="mt-4 text-muted text-dark">Copyright © 2024 www.lealsolution.com - All rights reserved</p>
                 </div>
 
-                <!-- Right Side: Contact Form -->
                 <div class="col-md-6">
                     <h3 class="contact-title">Join Us</h3>
                     <form>
@@ -1449,7 +1436,6 @@
                             <textarea class="form-control" id="messageInput" rows="3"
                                 placeholder="Your message"></textarea>
                         </div>
-                        <!-- <button type="submit" class="btn submit-btn">SUBMIT</button> -->
                         <button class="btn btn-primary w-100 fw-bold py-2 bg-primary"
                             style=" border: none; border-radius: 5px; transition: background-color 0.3s;">
                             Submit
@@ -1458,7 +1444,7 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
     <!-- Contact Us End -->
 
 
@@ -1466,7 +1452,7 @@
     <div class="container-fluid bg-dark text-white-50 footer pt-5">
         <div class="container py-3 py-lg-5">
             <div class="row g-5">
-                <div class="col-md-6 col-lg-3 wow fadeInLeftBig" data-wow-delay="0.1s">
+                <div class="col-md-6 col-lg-3 wow fadeIn" data-wow-delay="0.2s">
                     <a href="index.html" class="d-inline-block mb-3">
                         <h1 class="text-white text-white-nav">Leal Software Solution Pvt Ltd <span
                                 class="text-primary"></span>
@@ -1478,7 +1464,7 @@
                         systems and exceptional service to meet diverse industry needs.</p>
                 </div>
 
-                <div class="col-md-6 col-lg-2 wow fadeInLeftBig" data-wow-delay="0.5s">
+                <div class="col-md-6 col-lg-2 wow fadeIn" data-wow-delay="0.3s">
                     <h5 class="text-white mb-3">Popular Link</h5>
                     <a class="btn btn-link" href="about.html">About Us</a>
                     <a class="btn btn-link" href="about.html">Projects</a>
@@ -1487,7 +1473,7 @@
                     <a class="btn btn-link" href="">Privacy Policy</a>
                     <a class="btn btn-link" href="">Terms & Condition</a>
                 </div>
-                <div class="col-md-6 col-lg-4 pe-0 wow fadeIn" data-wow-delay="1.3s">
+                <div class="col-md-6 col-lg-4 pe-0 wow fadeIn" data-wow-delay="0.4s">
                     <h5 class="text-white mb-4">Our Services</h5>
                     <a class="btn btn-link" href="">Software Development</a>
                     <a class="btn btn-link" href="">Mobile Application Development</a>
@@ -1499,7 +1485,7 @@
                     <a class="btn btn-link" href="">TaskTrak Hub Manager</a>
 
                 </div>
-                <div class="col-md-6 col-lg-3 wow fadeIn" data-wow-delay="1.8s">
+                <div class="col-md-6 col-lg-3 wow fadeIn" data-wow-delay="0.5s">
                     <h5 class="text-white mb-4">Get In Touch</h5>
                     <p><i class="fa fa-map-marker-alt me-3"></i>Flat No. B-102, Laxmi Chowk, Phase 1, Hinjawadi
                         Rajiv
@@ -1531,11 +1517,11 @@
                 </div>
             </div>
         </div>
-        <div class="container wow fadeIn" data-wow-delay="0.1s">
+        <div class="container wow fadeIn" data-wow-delay="0.4s">
             <div class="copyright">
                 <div class="row">
                     <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-                        &copy; <a class="border-bottom" href="index.html">Leal Software Solution Pvt Ltd © 2024</a>
+                        &copy; <a class="border-bottom" href="index.html">Leal Software Solution Pvt Ltd © 2025</a>
                         | All Rights Reserved.<a class="border-bottom" href="https://www.lealsolution.com/"
                             target="_blank"></a>
                     </div>
